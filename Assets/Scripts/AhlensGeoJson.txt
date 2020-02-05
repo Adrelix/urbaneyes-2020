@@ -1,0 +1,79 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-02-05T17:06:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24210274",
+        "building": "retail",
+        "building:architecture": "modernism",
+        "building:levels": "5",
+        "building:material": "brick",
+        "changing_table": "yes",
+        "name": "Åhléns Stockholm City",
+        "opening_hours": "Mo-Fr 10:00-21:00; Sa 10:00-19:00; Su 11:00-19:00",
+        "phone": "+4686766000",
+        "roof:colour": "MediumAquamarine",
+        "roof:material": "copper",
+        "shop": "department_store",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "tourism": "attraction",
+        "website": "https://www.ahlens.se/varuhus/stockholm-city",
+        "wheelchair": "yes",
+        "wikidata": "Q10726246",
+        "wikipedia": "sv:Åhléns City"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.0603469,
+              59.332224
+            ],
+            [
+              18.06065,
+              59.3319112
+            ],
+            [
+              18.0627168,
+              59.3324321
+            ],
+            [
+              18.0624137,
+              59.3327449
+            ],
+            [
+              18.0609862,
+              59.3323851
+            ],
+            [
+              18.0603469,
+              59.332224
+            ]
+          ]
+        ]
+      },
+      "id": "way/24210274"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2156697997",
+        "amenity": "parking_entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0609862,
+          59.3323851
+        ]
+      },
+      "id": "node/2156697997"
+    }
+  ]
+}
