@@ -5,64 +5,68 @@ using System.Collections.Generic;
 // How to use:
 // Add this script as a component of a GameObject in your scene. Then, in the 
 // inspector, set the public field values and click the "Build Object" button
-// to generate an object with a rectangular mesh on the XY plane
-// Note: The mesh will only be visible from one side
+// to generate building GameObjects on the XZ plane of the scene.
+// Note: The meshes will only be visible from above
 
-// TODO: Generate 3D meshes of buildings given GEOjson data 
-// TODO: Come up with sceme for only generating GameObjects for new buildings
+// TODO: Generate 3D meshes of buildings given GEOjson data (instead of just 2D bases of buildings)
+// TODO: Come up with sceme for only generating GameObjects for new buildings?
+// TODO: Support generation of buildings with "holes"
 
 public class ObjectBuilder : MonoBehaviour 
 {
     public TextAsset geojsonData;
     public Material material;
-    public Vector3 spawnPoint;
-    public float width = 5f;
-    public float height = 5f;
 
-    // Adds a GameObject to the scene with a dynamically created rectangular mesh
+
+    // Uses GeoJsonParser to get building information from a file. Then, for each building
+    // described by the file, creates a GameObject in the scene by dynamically creating the 
+    // buiding's mesh and placing it in the screen accordingly.
+    // Right now only generates a 2D base mesh for each building
     public void BuildObject()
     {
-
+        // Get building data from GEOjson file
         GeoJsonParser p = new GeoJsonParser(geojsonData);
+        List<Building> buildings = p.GetBuildings();
 
+        foreach (Building building in buildings)
+        {
+            // Convert building shape into Vector2s
+            Vector2[] vertices2D = new Vector2[building.basePolygon.Count];
+            for (int i = 0; i < building.basePolygon.Count; i++)
+            {
+                vertices2D[i] = new Vector2((float)building.basePolygon[i][0], (float)building.basePolygon[i][1]);
+            }
 
-        // Define rectangles coords
-        Vector2[] vertices2D = new Vector2[] {
-            new Vector2(0,0),
-            new Vector2(0,height),
-            new Vector2(width,height),
-            new Vector2(width,0),
-        };
+            // Triangulation
+            Triangulator tr = new Triangulator(vertices2D);
+            int[] indices = tr.Triangulate();
 
-        // Triangulation
-        Triangulator tr = new Triangulator(vertices2D);
-        int[] indices = tr.Triangulate();
-
-        // Create the Vector3 vertices
-        Vector3[] vertices = new Vector3[vertices2D.Length];
-        for (int i=0; i<vertices.Length; i++) {
-            vertices[i] = new Vector3(vertices2D[i].x, vertices2D[i].y, 0);
+            // Create the Vector3 vertices
+            Vector3[] vertices = new Vector3[vertices2D.Length];
+            for (int i=0; i<vertices.Length; i++) {
+                vertices[i] = new Vector3(vertices2D[i].x, 0, vertices2D[i].y);
+            }
+    
+            // Create the mesh
+            Mesh mesh = new Mesh();
+            mesh.vertices = vertices;
+            mesh.triangles = indices;
+            mesh.RecalculateNormals();
+            mesh.RecalculateBounds();
+    
+            // Set up game object with mesh;
+            GameObject obj = new GameObject(building.id); // Gets added to scene without calling Instantiate for some reason
+            obj.AddComponent<MeshFilter>();
+            obj.AddComponent<MeshRenderer>();
+            obj.GetComponent<Transform>().position = building.position;
+            obj.GetComponent<MeshRenderer>().material = material;
+            obj.GetComponent<MeshFilter>().mesh = mesh;
         }
- 
-        // Create the mesh
-        Mesh mesh = new Mesh();
-        mesh.vertices = vertices;
-        mesh.triangles = indices;
-        mesh.RecalculateNormals();
-        mesh.RecalculateBounds();
- 
-        // Set up game object with mesh;
-        GameObject obj = new GameObject("Empty"); // Gets added to scene without calling Instantiate for some reason
-        obj.AddComponent<MeshFilter>();
-        obj.AddComponent<MeshRenderer>();
-        obj.GetComponent<Transform>().position = spawnPoint;
-        obj.GetComponent<MeshRenderer>().material = material;
-        obj.GetComponent<MeshFilter>().mesh = mesh;
     }
 
 
     // Taken from: http://wiki.unity3d.com/index.php?title=Triangulator#C.23-_Triangulator.cs
-    // Takes a list of 2d points describing a polygon and divides the polygon in triangle
+    // Takes a list of 2d points describing a polygon and divides the polygon into triangle
     // vertices to be used for creating a Unity mesh. Can handle concave polygons but not holes or 3D polygons
     // TODO: Use better triangulation algorithm (Delaunay triangulation?)
     private class Triangulator

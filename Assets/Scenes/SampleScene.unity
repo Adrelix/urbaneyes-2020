@@ -1057,11 +1057,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579eb518cfd4e1fd0923e4af1ba9f056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  geojsonData: {fileID: 4900000, guid: 0caaf636540bbb5e3bd2305eb67fc2d6, type: 3}
+  geojsonData: {fileID: 4900000, guid: 94f9608c45de817158edc7fccdc9d6b6, type: 3}
   material: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  spawnPoint: {x: 0, y: 0, z: 0}
-  width: 5
-  height: 5
 --- !u!4 &1606222272
 Transform:
   m_ObjectHideFlags: 0
