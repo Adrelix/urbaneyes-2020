@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
+using System.Text.RegularExpressions;
 
 // Handles the parsing of a GEOjson file into Building objects (defined below)
 // To generate GEOjson files go to https://overpass-turbo.eu/
@@ -10,9 +11,6 @@ public class GeoJsonParser
 {
     public TextAsset geojson;
     private FeatureCollection parsedData;
-    // origin describes some point in the middle of Klarabergsgatan
-    private const double ORIGIN_LONGITUDE = 18.062910d;
-    private const double ORIGIN_LATITUDE = 59.332349d;
 
 
     // Parses GEOjson data into a FeatureCollection structure (defined below)
@@ -20,6 +18,7 @@ public class GeoJsonParser
     {
         var text = geojson.text;
         parsedData = JsonConvert.DeserializeObject<FeatureCollection>(text);
+
     }
 
 
@@ -31,49 +30,27 @@ public class GeoJsonParser
         {
             if (feature.properties.building != null && feature.geometry.type == "Polygon") // TODO: Handle when geometry.type == "Multipolygon"
             {
-                Building building = new Building();
-                building.id = feature.id;
-                building.buildingLevels = feature.properties.buildingLevels;
-                List<List<double>> outerPolygon = feature.geometry.coordinates[0].ToObject<List<List<double>>>(); // Only take first polygon, the rest describe the polygon's holes
-                building.position = GetBuildingPosition(outerPolygon[0][0], outerPolygon[0][1]);
-                TranslateCoordsToBuildingShape(outerPolygon);
-                building.basePolygon = outerPolygon;
+                string id = feature.id;
+                int buildingLevels = feature.properties.buildingLevels == null ? 1 : (int)feature.properties.buildingLevels;
+                int? buildingMinLevel = feature.properties.buildingMinLevel;
+                
+                string heightString = feature.properties.buildingHeight == null ? "" : feature.properties.buildingHeight;
+                heightString = Regex.Replace(heightString, "[A-Za-z ]", "");
+                float temp;
+                float? buildingHeight = float.TryParse(heightString, out temp) ? float.Parse(heightString): (float?)null;
+
+                List<double[]> outerPolygon = feature.geometry.coordinates[0].ToObject<List<double[]>>(); // Only take first polygon, the rest describe the polygon's holes
+                
+                Building building = new Building(id, outerPolygon, buildingHeight, buildingLevels, buildingMinLevel);
+
+                //Debug.Log($"JSONCONVERT: {feature.properties.buildingHeight}");
+                //Debug.Log($"heightString: {heightString}");
+                //Debug.Log($"after tryParse: {buildingHeight}");
+                //Debug.Log($"building field: {building.height}");
                 buildings.Add(building);
             }
         }
         return buildings;
-    }
-
-
-    // Translates a list of GEOjson coordinates into a list of distances in meters relative to the first coordinate of the list.
-    // Therefore the first coordinate will be translated to (0,0) and the rest translated to their distance in meters from this "origin".
-    // Uses the approximation that 1degree latitude is 111km and 1degree longitude is 111km * cos(latitude) when distances are small
-    private void TranslateCoordsToBuildingShape(List<List<double>> latLonCoordList)
-    {
-        latLonCoordList.RemoveAt(latLonCoordList.Count - 1); // Last element in GEOjson coordinates is always first coordinate repeated
-        double buildingLonOrigin = latLonCoordList[0][0];
-        double buildingLatOrigin = latLonCoordList[0][1];
-
-        for (int i = 0; i < latLonCoordList.Count; i++)
-        {
-            double changeInLongitude = (latLonCoordList[i][0] - buildingLonOrigin);
-            double changeInLatitude = (latLonCoordList[i][1] - buildingLatOrigin);
-            latLonCoordList[i][0] = changeInLongitude * 111316 * System.Math.Cos(buildingLatOrigin * System.Math.PI / 180d);
-            latLonCoordList[i][1] = changeInLatitude * 111111d;
-        }
-    }
-
-
-    // Takes a coordinate and returns a vector representing the coordinate's direction in meters from the origin (ORIGIN_LATITUDE, ORIGIN_LONGITUDE) 
-    private Vector3 GetBuildingPosition(double lon, double lat){
-        double changeInLongitude = lon - ORIGIN_LONGITUDE;
-        double changeInLatitude = lat - ORIGIN_LATITUDE;
-        double avgLat = (lat + ORIGIN_LATITUDE) / 2;
-
-        double distFromOriginX = changeInLongitude * 111316 * System.Math.Cos(avgLat * System.Math.PI / 180d);
-        double distFromOriginZ = changeInLatitude * 111111d;
-
-        return new Vector3((float)distFromOriginX, 0, (float)distFromOriginZ);
     }
 
 
@@ -103,7 +80,11 @@ public class GeoJsonParser
         public string id { get; set; }
         public string building { get; set; }
         [JsonProperty("building:levels")]
-        public int buildingLevels { get; set; }
+        public int? buildingLevels { get; set; }
+        [JsonProperty("building:min_level")]
+        public int? buildingMinLevel { get; set; }
+        [JsonProperty("building:height")]
+        public string buildingHeight { get; set; }
         public string type { get; set; }
     }
 
@@ -118,8 +99,71 @@ public class GeoJsonParser
 // Structure for holding data of parsed buildings
 public class Building
 {
+    // origin describes some point in the middle of Klarabergsgatan
+    private const double ORIGIN_LONGITUDE = 18.062910d;
+    private const double ORIGIN_LATITUDE = 59.332349d;
+    private const float FLOOR_HEIGHT = 5f;
     public string id { get; set; }
-    public int buildingLevels { get; set; }
-    public List<List<double>> basePolygon { get; set; } // set of points describing polygon shape of building's base
+    public int levels { get; set; }
+    public int? minLevel { get; set; }
+    public float? height { get; set; }
     public Vector3 position { get; set; } // position of first point in basePolygon in relation to (ORIGIN_LATITUDE, ORIGIN_LONGITUDE) (in meters)
+    public Vector3[] basePolygon { get; set; } // set of vertices describing polygon shape of building's base
+    public Vector3[] roofPolygon { get; set; } // set of vertices describing polygon shape of building's roof
+
+    public Building(string buildingID, List<double[]> roofVertexList, float? buildingHeight, int buildingLevels, int? buildingMinLevel){
+        id = buildingID;
+        levels = buildingLevels;
+        minLevel = buildingMinLevel;
+        position = GetBuildingPosition(roofVertexList[0][0], roofVertexList[0][1]); // Relative position from origin to first vertex
+        basePolygon = TranslateCoordsToBuildingVertices(roofVertexList);
+
+        // Create roof vertices from base
+        roofPolygon = new Vector3[basePolygon.Length];
+        float roofHeight;
+        if(buildingHeight != null){
+            roofHeight = (float)buildingHeight;
+        }
+        else {
+            roofHeight = (levels * FLOOR_HEIGHT) + 2;
+        }
+
+        for(int i = 0; i<basePolygon.Length; i++)
+        {
+            roofPolygon[i] = new Vector3(basePolygon[i].x, roofHeight, basePolygon[i].z);
+        }
+    }
+
+    // Translates a list of GEOjson coordinates into a list of distances in meters relative to the first coordinate of the list.
+    // Therefore the first coordinate will be translated to (0,0) and the rest translated to their distance in meters from this "origin".
+    // Uses the approximation that 1degree latitude is 111km and 1degree longitude is 111km * cos(latitude) when distances are small
+    private Vector3[] TranslateCoordsToBuildingVertices(List<double[]> latLonCoordList)
+    {
+        Vector3[] vertices = new Vector3[latLonCoordList.Count-1]; // One less element since last element in GEOjson coordinates is always first coordinate repeated
+        double buildingLonOrigin = latLonCoordList[0][0];
+        double buildingLatOrigin = latLonCoordList[0][1];
+
+        for (int i = 0; i < latLonCoordList.Count-1; i++) 
+        {
+            double changeInLongitude = (latLonCoordList[i][0] - buildingLonOrigin);
+            double changeInLatitude = (latLonCoordList[i][1] - buildingLatOrigin);
+
+            double xRelative = changeInLongitude * 111316 * System.Math.Cos(buildingLatOrigin * System.Math.PI / 180d);
+            double zRelative = changeInLatitude * 111111d;
+            float yRelative = minLevel == null ? 0 : (int)minLevel * FLOOR_HEIGHT;
+            vertices[i] = new Vector3((float)xRelative, yRelative ,(float)zRelative);
+        }
+        return vertices;
+    }
+
+    // Takes a coordinate and returns a vector representing the coordinate's direction in meters from the origin (ORIGIN_LATITUDE, ORIGIN_LONGITUDE) 
+    private Vector3 GetBuildingPosition(double lon, double lat){
+        double changeInLongitude = lon - ORIGIN_LONGITUDE;
+        double changeInLatitude = lat - ORIGIN_LATITUDE;
+        double avgLat = (lat + ORIGIN_LATITUDE) / 2;
+
+        double distFromOriginX = changeInLongitude * 111316 * System.Math.Cos(avgLat * System.Math.PI / 180d);
+        double distFromOriginZ = changeInLatitude * 111111d;
+        return new Vector3((float)distFromOriginX, 0, (float)distFromOriginZ);
+    }
 }
