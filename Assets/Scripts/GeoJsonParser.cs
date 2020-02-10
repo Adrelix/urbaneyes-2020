@@ -34,19 +34,15 @@ public class GeoJsonParser
                 int buildingLevels = feature.properties.buildingLevels == null ? 1 : (int)feature.properties.buildingLevels;
                 int? buildingMinLevel = feature.properties.buildingMinLevel;
                 
+                // Parse height into nullable float
                 string heightString = feature.properties.buildingHeight == null ? "" : feature.properties.buildingHeight;
-                heightString = Regex.Replace(heightString, "[A-Za-z ]", "");
+                heightString = Regex.Replace(heightString, "[A-Za-z ]", ""); // Remove unit labels
                 float temp;
                 float? buildingHeight = float.TryParse(heightString, out temp) ? float.Parse(heightString): (float?)null;
 
                 List<double[]> outerPolygon = feature.geometry.coordinates[0].ToObject<List<double[]>>(); // Only take first polygon, the rest describe the polygon's holes
                 
                 Building building = new Building(id, outerPolygon, buildingHeight, buildingLevels, buildingMinLevel);
-
-                //Debug.Log($"JSONCONVERT: {feature.properties.buildingHeight}");
-                //Debug.Log($"heightString: {heightString}");
-                //Debug.Log($"after tryParse: {buildingHeight}");
-                //Debug.Log($"building field: {building.height}");
                 buildings.Add(building);
             }
         }
@@ -104,8 +100,8 @@ public class Building
     private const double ORIGIN_LATITUDE = 59.332349d;
     private const float FLOOR_HEIGHT = 5f;
     public string id { get; set; }
-    public int levels { get; set; }
-    public int? minLevel { get; set; }
+    public int levels { get; set; } // Number of floors
+    public int? minLevel { get; set; } // Minimum floor level of this building piece
     public float? height { get; set; }
     public Vector3 position { get; set; } // position of first point in basePolygon in relation to (ORIGIN_LATITUDE, ORIGIN_LONGITUDE) (in meters)
     public Vector3[] basePolygon { get; set; } // set of vertices describing polygon shape of building's base
@@ -118,7 +114,7 @@ public class Building
         position = GetBuildingPosition(roofVertexList[0][0], roofVertexList[0][1]); // Relative position from origin to first vertex
         basePolygon = TranslateCoordsToBuildingVertices(roofVertexList);
 
-        // Create roof vertices from base
+        // Create roof vertices from basePolygon
         roofPolygon = new Vector3[basePolygon.Length];
         float roofHeight;
         if(buildingHeight != null){
@@ -134,7 +130,7 @@ public class Building
         }
     }
 
-    // Translates a list of GEOjson coordinates into a list of distances in meters relative to the first coordinate of the list.
+    // Translates a list of GEOjson coordinates into an array of distances (in meters) relative to the first GEOjson coordinate.
     // Therefore the first coordinate will be translated to (0,0) and the rest translated to their distance in meters from this "origin".
     // Uses the approximation that 1degree latitude is 111km and 1degree longitude is 111km * cos(latitude) when distances are small
     private Vector3[] TranslateCoordsToBuildingVertices(List<double[]> latLonCoordList)
@@ -143,7 +139,7 @@ public class Building
         double buildingLonOrigin = latLonCoordList[0][0];
         double buildingLatOrigin = latLonCoordList[0][1];
 
-        for (int i = 0; i < latLonCoordList.Count-1; i++) 
+        for (int i = 0; i < vertices.Length; i++) 
         {
             double changeInLongitude = (latLonCoordList[i][0] - buildingLonOrigin);
             double changeInLatitude = (latLonCoordList[i][1] - buildingLatOrigin);

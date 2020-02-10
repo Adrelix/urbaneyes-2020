@@ -8,7 +8,6 @@ using System.Collections.Generic;
 // to generate building GameObjects on the XZ plane of the scene.
 // Note: The meshes will only be visible from above
 
-// TODO: Generate 3D meshes of buildings given GEOjson data (instead of just 2D bases of buildings)
 // TODO: Come up with sceme for only generating GameObjects for new buildings?
 // TODO: Support generation of buildings with "holes"
 
@@ -20,8 +19,8 @@ public class ObjectBuilder : MonoBehaviour
 
     // Uses GeoJsonParser to get building information from a file. Then, for each building
     // described by the file, creates a GameObject in the scene by dynamically creating the 
-    // buiding's mesh and placing it in the screen accordingly.
-    // Right now only generates a 2D base mesh for each building
+    // buiding's mesh and triangles and placing it in the scene accordingly.
+    // Right now only generates buildings with flat roofs.
     public void BuildObject()
     {
         // Get building data from GEOjson file
@@ -36,32 +35,35 @@ public class ObjectBuilder : MonoBehaviour
             int[] roofTriangles = tr.Triangulate();
 
             // Create wall vertices
+            // Each face of the polygon must not share vertices with the other faces in order
+            // for shaders to consider them as seperate faces and draw sharp edges between them
             Vector3[] baseVertices = building.basePolygon;
             int numWalls = baseVertices.Length;
             Vector3[] vertices = new Vector3[roofVertices.Length + (4 * numWalls)];
             roofVertices.CopyTo(vertices, 0);
 
             for(int i = 0; i < numWalls; i++){
-                vertices[(i*4) + roofVertices.Length] = roofVertices[i];
+                vertices[(i*4)     + roofVertices.Length] = roofVertices[i];
                 vertices[(i*4) + 1 + roofVertices.Length] = i == numWalls-1 ? roofVertices[0] : roofVertices[i+1]; // If last iteration connect with beginning of polygon
                 vertices[(i*4) + 2 + roofVertices.Length] = i == numWalls-1 ? baseVertices[0] : baseVertices[i+1];
                 vertices[(i*4) + 3 + roofVertices.Length] = baseVertices[i];
             }
 
-            // Generate wall triangles   
+            // Generate wall triangles
+            // Each triangle if drawn by connecting points from first to last must
+            // be drawn clockwise assuming you are looking at the polygon face
             int[] triangles = new int[roofTriangles.Length + (numWalls * 6)];
             roofTriangles.CopyTo(triangles, 0);
 
             for(int i = 0; i < numWalls; i++)
             {
-                triangles[(i*6) + roofTriangles.Length] =   (i*4)     + numWalls;
-                triangles[(i*6)+1 + roofTriangles.Length] = (i*4) + 1 + numWalls; 
-                triangles[(i*6)+2 + roofTriangles.Length] = (i*4) + 2 + numWalls;
-                triangles[(i*6)+3 + roofTriangles.Length] = (i*4) + 2 + numWalls;
-                triangles[(i*6)+4 + roofTriangles.Length] = (i*4) + 3 + numWalls;
-                triangles[(i*6)+5 + roofTriangles.Length] = (i*4)     + numWalls;  
+                triangles[(i*6)     + roofTriangles.Length] = (i*4)     + numWalls;
+                triangles[(i*6) + 1 + roofTriangles.Length] = (i*4) + 1 + numWalls; 
+                triangles[(i*6) + 2 + roofTriangles.Length] = (i*4) + 2 + numWalls;
+                triangles[(i*6) + 3 + roofTriangles.Length] = (i*4) + 2 + numWalls;
+                triangles[(i*6) + 4 + roofTriangles.Length] = (i*4) + 3 + numWalls;
+                triangles[(i*6) + 5 + roofTriangles.Length] = (i*4)     + numWalls;  
             }
-
 
             // Create the mesh
             Mesh mesh = new Mesh();
@@ -84,8 +86,9 @@ public class ObjectBuilder : MonoBehaviour
 
 
     // Taken from: http://wiki.unity3d.com/index.php?title=Triangulator#C.23-_Triangulator.cs
-    // Takes a list of 2d points describing a polygon and divides the polygon into triangle
-    // vertices to be used for creating a Unity mesh. Can handle concave polygons but not holes or 3D polygons
+    // Modified to take list of 3d points describing a polygon on the XZ plane. Takes this list and
+    // divides the polygon into clockwise triangle vertices to be used for creating a Unity mesh.
+    // Can handle concave polygons but not holes or 3D polygons
     // TODO: Use better triangulation algorithm (Delaunay triangulation?)
     private class Triangulator
     {
