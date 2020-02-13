@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
+using OsmSharp.Complete;
+
 // How to use:
 // Add this script as a component of a GameObject in your scene. Then, in the 
 // inspector, set the public field values and click the "Build Object" button
@@ -15,7 +17,7 @@ public class ObjectBuilder : MonoBehaviour
 {
     public TextAsset geojsonData;
     public Material material;
-
+    
 
     // Uses GeoJsonParser to get building information from a file. Then, for each building
     // described by the file, creates a GameObject in the scene by dynamically creating the 
@@ -50,8 +52,10 @@ public class ObjectBuilder : MonoBehaviour
             }
 
             // Generate wall triangles
-            // Each triangle if drawn by connecting points from first to last must
-            // be drawn clockwise assuming you are looking at the polygon face
+            // Each wall is rectangular and therefore divided into two triangles.
+            // Triangles are described as three integers referring to the index of their
+            // corresponding vertex in vertices. The index the triangles are placed at ensures 
+            // that they are "clockwise" if facing the face of the rectangle.
             int[] triangles = new int[roofTriangles.Length + (numWalls * 6)];
             roofTriangles.CopyTo(triangles, 0);
 
@@ -71,6 +75,7 @@ public class ObjectBuilder : MonoBehaviour
             mesh.triangles = triangles;
             mesh.RecalculateNormals();
             mesh.RecalculateBounds();
+            //mesh.uv = GeneratePerTriangleUV(mesh);
             //mesh.Optimize();
     
             // Set up game object with mesh;
@@ -81,6 +86,7 @@ public class ObjectBuilder : MonoBehaviour
             obj.GetComponent<MeshRenderer>().material = material;
             obj.GetComponent<MeshFilter>().mesh = mesh;
             obj.AddComponent<MeshCollider>();
+            //obj.AddComponent<BuildingEditor>(); 
         }
     }
 
