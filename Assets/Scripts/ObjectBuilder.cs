@@ -23,6 +23,9 @@ public class ObjectBuilder : MonoBehaviour
     // described by the file, creates a GameObject in the scene by dynamically creating the 
     // buiding's mesh and triangles and placing it in the scene accordingly.
     // Right now only generates buildings with flat roofs.
+    // Useful links:
+    // https://docs.unity3d.com/Manual/AnatomyofaMesh.html
+    // http://wiki.unity3d.com/index.php/ProceduralPrimitives
     public void BuildObject()
     {
         // Get building data from GEOjson file
@@ -86,7 +89,7 @@ public class ObjectBuilder : MonoBehaviour
             obj.GetComponent<MeshRenderer>().material = material;
             obj.GetComponent<MeshFilter>().mesh = mesh;
             obj.AddComponent<MeshCollider>();
-            //obj.AddComponent<BuildingEditor>(); 
+            //obj.AddComponent<BuildingEditor>(); // TODO: Add component that handles mesh editing after its created
         }
     }
 
