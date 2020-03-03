@@ -26,8 +26,8 @@ public class GeoJsonParser
 
 
     // Creates a list of Building objects from data in parsedData field
-    public List<Building> GetBuildings(){
-        List<Building> buildings = new List<Building>();
+    public List<BuildingData> GetBuildings(){
+        List<BuildingData> buildings = new List<BuildingData>();
 
         foreach (Feature feature in parsedData.features)
         {
@@ -45,7 +45,7 @@ public class GeoJsonParser
 
                 List<double[]> outerPolygon = feature.geometry.coordinates[0].ToObject<List<double[]>>(); // Only take first polygon, the rest describe the polygon's holes
                 
-                Building building = new Building(id, outerPolygon, buildingHeight, buildingLevels, buildingMinLevel);
+                BuildingData building = new BuildingData(id, outerPolygon, buildingHeight, buildingLevels, buildingMinLevel);
                 buildings.Add(building);
             }
         }
@@ -96,7 +96,7 @@ public class GeoJsonParser
 
 
 // Structure for holding data of parsed buildings
-public class Building
+public class BuildingData
 {
     // origin describes some point in the middle of Klarabergsgatan
     private const double ORIGIN_LONGITUDE = 18.062910d;
@@ -110,7 +110,7 @@ public class Building
     public Vector3[] basePolygon { get; set; } // set of vertices describing polygon shape of building's base
     public Vector3[] roofPolygon { get; set; } // set of vertices describing polygon shape of building's roof
 
-    public Building(string buildingID, List<double[]> roofVertexList, float? buildingHeight, int buildingLevels, int buildingMinLevel){
+    public BuildingData(string buildingID, List<double[]> roofVertexList, float? buildingHeight, int buildingLevels, int buildingMinLevel){
         id = buildingID;
         levels = buildingLevels;
         minLevel = buildingMinLevel;
@@ -126,7 +126,7 @@ public class Building
         }
     }
 
-    public Building(CompleteWay buildingWay)
+    public BuildingData(CompleteWay buildingWay)
     {
         id = buildingWay.Id.ToString();
         levels = buildingWay.Tags.ContainsKey("building:levels") ? int.Parse(buildingWay.Tags.GetValue("building:levels")) : 1;

@@ -30,66 +30,13 @@ public class ObjectBuilder : MonoBehaviour
     {
         // Get building data from GEOjson file
         GeoJsonParser p = new GeoJsonParser(geojsonData);
-        List<Building> buildings = p.GetBuildings();
+        List<BuildingData> buildings = p.GetBuildings();
 
-        foreach (Building building in buildings)
+        foreach (BuildingData building in buildings)
         {
-            // Triangulation of roof vertices
-            Vector3[] roofVertices = building.roofPolygon;
-            Triangulator tr = new Triangulator(roofVertices);
-            int[] roofTriangles = tr.Triangulate();
-
-            // Create wall vertices
-            // Each face of the polygon must not share vertices with the other faces in order
-            // for shaders to consider them as seperate faces and draw sharp edges between them
-            Vector3[] baseVertices = building.basePolygon;
-            int numWalls = baseVertices.Length;
-            Vector3[] vertices = new Vector3[roofVertices.Length + (4 * numWalls)];
-            roofVertices.CopyTo(vertices, 0);
-
-            for(int i = 0; i < numWalls; i++){
-                vertices[(i*4)     + roofVertices.Length] = roofVertices[i];
-                vertices[(i*4) + 1 + roofVertices.Length] = i == numWalls-1 ? roofVertices[0] : roofVertices[i+1]; // If last iteration connect with beginning of polygon
-                vertices[(i*4) + 2 + roofVertices.Length] = i == numWalls-1 ? baseVertices[0] : baseVertices[i+1];
-                vertices[(i*4) + 3 + roofVertices.Length] = baseVertices[i];
-            }
-
-            // Generate wall triangles
-            // Each wall is rectangular and therefore divided into two triangles.
-            // Triangles are described as three integers referring to the index of their
-            // corresponding vertex in vertices. The index the triangles are placed at ensures 
-            // that they are "clockwise" if facing the face of the rectangle.
-            int[] triangles = new int[roofTriangles.Length + (numWalls * 6)];
-            roofTriangles.CopyTo(triangles, 0);
-
-            for(int i = 0; i < numWalls; i++)
-            {
-                triangles[(i*6)     + roofTriangles.Length] = (i*4)     + numWalls;
-                triangles[(i*6) + 1 + roofTriangles.Length] = (i*4) + 1 + numWalls; 
-                triangles[(i*6) + 2 + roofTriangles.Length] = (i*4) + 2 + numWalls;
-                triangles[(i*6) + 3 + roofTriangles.Length] = (i*4) + 2 + numWalls;
-                triangles[(i*6) + 4 + roofTriangles.Length] = (i*4) + 3 + numWalls;
-                triangles[(i*6) + 5 + roofTriangles.Length] = (i*4)     + numWalls;  
-            }
-
-            // Create the mesh
-            Mesh mesh = new Mesh();
-            mesh.vertices = vertices;
-            mesh.triangles = triangles;
-            mesh.RecalculateNormals();
-            mesh.RecalculateBounds();
-            //mesh.uv = GeneratePerTriangleUV(mesh);
-            //mesh.Optimize();
-    
-            // Set up game object with mesh;
-            GameObject obj = new GameObject(building.id); // Gets added to scene without calling Instantiate for some reason
-            obj.AddComponent<MeshFilter>();
-            obj.AddComponent<MeshRenderer>();
-            obj.GetComponent<Transform>().position = building.position;
-            obj.GetComponent<MeshRenderer>().material = material;
-            obj.GetComponent<MeshFilter>().mesh = mesh;
-            obj.AddComponent<MeshCollider>();
-            //obj.AddComponent<BuildingEditor>(); // TODO: Add component that handles mesh editing after its created
+            GameObject obj = new GameObject(building.id); // Adds to the scene
+            obj.AddComponent<Building>();
+            obj.GetComponent<Building>().initBuilding(building);
         }
     }
 
