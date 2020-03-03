@@ -49,6 +49,10 @@ public class GeoJsonParser
         return buildings;
     }
 
+    public List<Street> GetStreets() {
+        
+    }
+
 
 // ------------------------------------------------- Defining GEOjson structure -----------------------------------------------------------------------------
 // If field isnt defined then JsonConvert.DeserializeObject will ignore it

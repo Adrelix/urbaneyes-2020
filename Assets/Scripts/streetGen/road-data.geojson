@@ -1,0 +1,6465 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-03-03T09:35:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4231109",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Mäster Samuelsgatan",
+        "surface": "asphalt",
+        "wikidata": "Q10593269",
+        "wikipedia": "sv:Mäster Samuelsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0581361,
+            59.3317523
+          ],
+          [
+            18.0583112,
+            59.3317973
+          ]
+        ]
+      },
+      "id": "way/4231109"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4573340",
+        "cycleway:both": "no",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Bryggargatan",
+        "surface": "asphalt",
+        "wikidata": "Q10436566",
+        "wikipedia": "sv:Bryggargatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0585013,
+            59.3327587
+          ],
+          [
+            18.0593088,
+            59.3329833
+          ]
+        ]
+      },
+      "id": "way/4573340"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4689693",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Korgmakargränd",
+        "oneway": "yes",
+        "surface": "sett"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0605384,
+            59.3333314
+          ],
+          [
+            18.060559,
+            59.3333097
+          ]
+        ]
+      },
+      "id": "way/4689693"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4689695",
+        "highway": "unclassified",
+        "name": "Vasaplan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10713287",
+        "wikipedia": "sv:Vasaplan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0562959,
+            59.33222
+          ],
+          [
+            18.0564542,
+            59.3322244
+          ],
+          [
+            18.0572413,
+            59.3324333
+          ],
+          [
+            18.057301,
+            59.332448
+          ],
+          [
+            18.0574777,
+            59.3324946
+          ]
+        ]
+      },
+      "id": "way/4689695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4693666",
+        "highway": "unclassified",
+        "name": "Slöjdgatan",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0624279,
+            59.3340143
+          ],
+          [
+            18.0628291,
+            59.3336124
+          ],
+          [
+            18.062969,
+            59.333467
+          ],
+          [
+            18.0633052,
+            59.3331214
+          ]
+        ]
+      },
+      "id": "way/4693666"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4700199",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "maxheight": "3",
+        "maxspeed": "50",
+        "name": "Klaratunneln",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt",
+        "wikidata": "Q10546062",
+        "wikipedia": "sv:Klaratunneln"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0639622,
+            59.3350697
+          ],
+          [
+            18.0640643,
+            59.3350017
+          ],
+          [
+            18.0641465,
+            59.3349214
+          ],
+          [
+            18.0641992,
+            59.3348454
+          ],
+          [
+            18.0645435,
+            59.3342853
+          ],
+          [
+            18.065169,
+            59.3332499
+          ]
+        ]
+      },
+      "id": "way/4700199"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4700200",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "lanes": "1",
+        "layer": "-1",
+        "lit": "24/7",
+        "maxheight": "3",
+        "maxspeed": "50",
+        "name": "Klaratunneln",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "tunnel": "yes",
+        "wikidata": "Q10546062",
+        "wikipedia": "sv:Klaratunneln"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.065169,
+            59.3332499
+          ],
+          [
+            18.0657031,
+            59.3322105
+          ]
+        ]
+      },
+      "id": "way/4700200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4700203",
+        "highway": "service",
+        "name": "Beridarebansgatan",
+        "oneway": "yes",
+        "wikidata": "Q10428639",
+        "wikipedia": "sv:Beridarebansgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0655679,
+            59.3315022
+          ],
+          [
+            18.0655136,
+            59.3315227
+          ],
+          [
+            18.0653217,
+            59.3318118
+          ],
+          [
+            18.0652612,
+            59.3318478
+          ]
+        ]
+      },
+      "id": "way/4700203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4700207",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary_link",
+        "lanes": "1",
+        "maxspeed": "30",
+        "name": "Herkulesgatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10522357",
+        "wikipedia": "sv:Herkulesgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0625556,
+            59.329685
+          ],
+          [
+            18.0628264,
+            59.3297419
+          ]
+        ]
+      },
+      "id": "way/4700207"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4802608",
+        "bicycle": "no",
+        "bridge": "yes",
+        "foot": "no",
+        "highway": "trunk_link",
+        "lanes": "1",
+        "layer": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Vattugatan",
+        "oneway": "yes",
+        "source": "survey",
+        "surface": "asphalt",
+        "wikidata": "Q10713471",
+        "wikipedia": "sv:Vattugatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0608662,
+            59.3296874
+          ],
+          [
+            18.0604559,
+            59.3295461
+          ],
+          [
+            18.0599068,
+            59.3293949
+          ],
+          [
+            18.0597322,
+            59.3293434
+          ],
+          [
+            18.0596103,
+            59.3292961
+          ],
+          [
+            18.0595177,
+            59.32924
+          ],
+          [
+            18.0594268,
+            59.3291716
+          ],
+          [
+            18.0593747,
+            59.3290788
+          ],
+          [
+            18.0593559,
+            59.3289626
+          ],
+          [
+            18.0593693,
+            59.3288695
+          ],
+          [
+            18.0594131,
+            59.3287646
+          ],
+          [
+            18.0595687,
+            59.3285775
+          ],
+          [
+            18.0598588,
+            59.3283176
+          ]
+        ]
+      },
+      "id": "way/4802608"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/5179080",
+        "access": "no",
+        "bicycle": "yes",
+        "cycleway:right": "track",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Klarabergsgatan",
+        "oneway": "yes",
+        "psv": "yes",
+        "railway": "tram",
+        "surface": "asphalt",
+        "wikidata": "Q10546048",
+        "wikipedia": "sv:Klarabergsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0644251,
+            59.3327062
+          ],
+          [
+            18.0636886,
+            59.3325347
+          ],
+          [
+            18.0630215,
+            59.3323699
+          ],
+          [
+            18.0629395,
+            59.3323499
+          ]
+        ]
+      },
+      "id": "way/5179080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/8048437",
+        "foot": "no",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Klara Södra Kyrkogata",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0611534,
+            59.3303685
+          ],
+          [
+            18.0613466,
+            59.3304181
+          ],
+          [
+            18.0617641,
+            59.3305176
+          ],
+          [
+            18.061904,
+            59.330515
+          ],
+          [
+            18.0620006,
+            59.3304796
+          ],
+          [
+            18.0623023,
+            59.3301786
+          ],
+          [
+            18.0623569,
+            59.3301242
+          ]
+        ]
+      },
+      "id": "way/8048437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/8169433",
+        "foot": "no",
+        "highway": "service",
+        "lanes": "2",
+        "maxheight": "3.3",
+        "maxspeed": "30",
+        "name": "Klarafaret",
+        "surface": "asphalt",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0630576,
+            59.3293198
+          ],
+          [
+            18.0627419,
+            59.3296501
+          ]
+        ]
+      },
+      "id": "way/8169433"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/20148784",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "layer": "0",
+        "maxspeed": "50",
+        "name": "Vattugatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10713471",
+        "wikipedia": "sv:Vattugatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0625889,
+            59.3300616
+          ],
+          [
+            18.0618531,
+            59.3298942
+          ],
+          [
+            18.0614187,
+            59.3298254
+          ]
+        ]
+      },
+      "id": "way/20148784"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/20152181",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Herkulesgatan",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0611869,
+            59.3293602
+          ],
+          [
+            18.0619805,
+            59.329644
+          ],
+          [
+            18.0624555,
+            59.3297921
+          ]
+        ]
+      },
+      "id": "way/20152181"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/23089009",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary_link",
+        "maxspeed": "50",
+        "name": "Rödbodgatan",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0626365,
+            59.3300075
+          ],
+          [
+            18.0625561,
+            59.3299757
+          ],
+          [
+            18.0625076,
+            59.3299537
+          ],
+          [
+            18.0624589,
+            59.3299095
+          ],
+          [
+            18.0624424,
+            59.3298698
+          ],
+          [
+            18.0624555,
+            59.3297921
+          ]
+        ]
+      },
+      "id": "way/23089009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/23089329",
+        "foot": "no",
+        "highway": "tertiary",
+        "maxspeed": "30",
+        "name": "Rödbodgatan",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0634925,
+            59.3289404
+          ],
+          [
+            18.0634154,
+            59.3290396
+          ],
+          [
+            18.0633166,
+            59.3291817
+          ],
+          [
+            18.0632463,
+            59.3292941
+          ],
+          [
+            18.0628604,
+            59.3297056
+          ],
+          [
+            18.0628264,
+            59.3297419
+          ]
+        ]
+      },
+      "id": "way/23089329"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/23089330",
+        "foot": "no",
+        "highway": "unclassified",
+        "layer": "-1",
+        "maxspeed": "30",
+        "name": "Klara Västra Kyrkogata",
+        "surface": "asphalt",
+        "tunnel": "yes",
+        "wikidata": "Q10546047",
+        "wikipedia": "sv:Klara västra kyrkogata"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0615659,
+            59.3299237
+          ],
+          [
+            18.0615109,
+            59.3299826
+          ]
+        ]
+      },
+      "id": "way/23089330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24354555",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Klara Norra Kyrkogata",
+        "surface": "asphalt",
+        "wikidata": "Q10546043",
+        "wikipedia": "sv:Klara norra kyrkogata"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0593088,
+            59.3329833
+          ],
+          [
+            18.0594216,
+            59.332929
+          ],
+          [
+            18.0595309,
+            59.3328176
+          ],
+          [
+            18.0600073,
+            59.3323317
+          ],
+          [
+            18.0601207,
+            59.3322587
+          ]
+        ]
+      },
+      "id": "way/24354555"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24354722",
+        "cycleway": "opposite",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Klara Tvärgränd",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0645036,
+            59.3301716
+          ],
+          [
+            18.0640942,
+            59.3305767
+          ]
+        ]
+      },
+      "id": "way/24354722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/27343643",
+        "bridge": "yes",
+        "foot": "no",
+        "highway": "trunk_link",
+        "layer": "1",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Vattugatan",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0608662,
+            59.3296874
+          ],
+          [
+            18.0603792,
+            59.3296205
+          ],
+          [
+            18.0598872,
+            59.3294931
+          ]
+        ]
+      },
+      "id": "way/27343643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/34210508",
+        "bridge": "yes",
+        "highway": "unclassified",
+        "layer": "1",
+        "maxspeed": "30",
+        "name": "Mäster Samuelsgatan",
+        "surface": "asphalt",
+        "wikidata": "Q10593269",
+        "wikipedia": "sv:Mäster Samuelsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0637302,
+            59.3332362
+          ],
+          [
+            18.0651946,
+            59.3336016
+          ],
+          [
+            18.0654736,
+            59.3336712
+          ]
+        ]
+      },
+      "id": "way/34210508"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/34344433",
+        "access": "no",
+        "bicycle": "yes",
+        "cycleway:right": "track",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Klarabergsgatan",
+        "oneway": "yes",
+        "psv": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10546048",
+        "wikipedia": "sv:Klarabergsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0593884,
+            59.3313412
+          ],
+          [
+            18.0594591,
+            59.3313571
+          ],
+          [
+            18.0599994,
+            59.3314864
+          ],
+          [
+            18.0606717,
+            59.3316529
+          ]
+        ]
+      },
+      "id": "way/34344433"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/34344434",
+        "bridge": "yes",
+        "highway": "service",
+        "layer": "2",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0574761,
+            59.3309823
+          ],
+          [
+            18.0573708,
+            59.3310308
+          ],
+          [
+            18.0572594,
+            59.3310821
+          ],
+          [
+            18.0563444,
+            59.3308545
+          ],
+          [
+            18.0563521,
+            59.3307865
+          ]
+        ]
+      },
+      "id": "way/34344434"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/34344436",
+        "bridge": "yes",
+        "highway": "service",
+        "layer": "2",
+        "oneway": "yes",
+        "service": "parking_aisle"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0564759,
+            59.3306471
+          ],
+          [
+            18.0565263,
+            59.3306001
+          ],
+          [
+            18.0567597,
+            59.3305386
+          ],
+          [
+            18.0576132,
+            59.3307563
+          ],
+          [
+            18.0575907,
+            59.3308526
+          ],
+          [
+            18.0575542,
+            59.3309149
+          ]
+        ]
+      },
+      "id": "way/34344436"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35338925",
+        "highway": "steps",
+        "lit": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0572565,
+            59.329844
+          ],
+          [
+            18.0572717,
+            59.329888
+          ],
+          [
+            18.0571711,
+            59.3298994
+          ]
+        ]
+      },
+      "id": "way/35338925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35338926",
+        "highway": "steps",
+        "lit": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0575368,
+            59.3299127
+          ],
+          [
+            18.0575426,
+            59.3299565
+          ],
+          [
+            18.0574762,
+            59.3299602
+          ]
+        ]
+      },
+      "id": "way/35338926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35477777",
+        "highway": "steps",
+        "layer": "-1",
+        "ramp": "no",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0603659,
+            59.329732
+          ],
+          [
+            18.0605828,
+            59.3297853
+          ],
+          [
+            18.0607287,
+            59.3298203
+          ],
+          [
+            18.060781,
+            59.3297695
+          ]
+        ]
+      },
+      "id": "way/35477777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35477783",
+        "highway": "secondary_link",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0602658,
+            59.3296653
+          ],
+          [
+            18.0602112,
+            59.3296819
+          ],
+          [
+            18.0601535,
+            59.3296888
+          ],
+          [
+            18.0600951,
+            59.3296896
+          ],
+          [
+            18.0600321,
+            59.3296864
+          ]
+        ]
+      },
+      "id": "way/35477783"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35477785",
+        "highway": "service",
+        "motor_vehicle": "no",
+        "oneway": "yes",
+        "taxi": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0591054,
+            59.3306975
+          ],
+          [
+            18.0593116,
+            59.3307465
+          ]
+        ]
+      },
+      "id": "way/35477785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35559451",
+        "highway": "service",
+        "motor_vehicle": "no",
+        "oneway": "yes",
+        "taxi": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0586149,
+            59.3312241
+          ],
+          [
+            18.0581386,
+            59.3310974
+          ],
+          [
+            18.0581953,
+            59.3310419
+          ],
+          [
+            18.0582734,
+            59.3310616
+          ],
+          [
+            18.0583507,
+            59.3310808
+          ],
+          [
+            18.0584134,
+            59.3310953
+          ],
+          [
+            18.0586455,
+            59.3311523
+          ],
+          [
+            18.0586776,
+            59.3311602
+          ]
+        ]
+      },
+      "id": "way/35559451"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35583988",
+        "cycleway:right": "lane",
+        "foot": "no",
+        "highway": "secondary",
+        "lcn": "yes",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0588573,
+            59.3312396
+          ],
+          [
+            18.0586867,
+            59.3314159
+          ],
+          [
+            18.0584304,
+            59.3316726
+          ],
+          [
+            18.0583895,
+            59.3317161
+          ],
+          [
+            18.0583112,
+            59.3317973
+          ]
+        ]
+      },
+      "id": "way/35583988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/38213896",
+        "cycleway:left": "opposite",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Klara Norra Kyrkogata",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "surface": "asphalt",
+        "wikidata": "Q10546043",
+        "wikipedia": "sv:Klara norra kyrkogata"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0581191,
+            59.3341744
+          ],
+          [
+            18.0581793,
+            59.3341126
+          ],
+          [
+            18.0586567,
+            59.3336223
+          ],
+          [
+            18.0593088,
+            59.3329833
+          ]
+        ]
+      },
+      "id": "way/38213896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39222721",
+        "highway": "unclassified",
+        "layer": "-1",
+        "maxspeed": "30",
+        "name": "Korgmakargränd",
+        "oneway": "yes",
+        "surface": "sett",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0599302,
+            59.3339162
+          ],
+          [
+            18.0605384,
+            59.3333314
+          ]
+        ]
+      },
+      "id": "way/39222721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39222724",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Bryggargatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10436566",
+        "wikipedia": "sv:Bryggargatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.060559,
+            59.3333097
+          ],
+          [
+            18.0593088,
+            59.3329833
+          ]
+        ]
+      },
+      "id": "way/39222724"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39222725",
+        "highway": "service",
+        "layer": "-1",
+        "maxheight": "2",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0594156,
+            59.3319076
+          ],
+          [
+            18.0593893,
+            59.3319362
+          ]
+        ]
+      },
+      "id": "way/39222725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39265792",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0595309,
+            59.3328176
+          ],
+          [
+            18.0596794,
+            59.3328557
+          ]
+        ]
+      },
+      "id": "way/39265792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39265793",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0609036,
+            59.3324694
+          ],
+          [
+            18.0609862,
+            59.3323851
+          ]
+        ]
+      },
+      "id": "way/39265793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39467143",
+        "highway": "service",
+        "layer": "-1",
+        "maxheight": "2",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0619449,
+            59.3318074
+          ],
+          [
+            18.0620147,
+            59.3318275
+          ]
+        ]
+      },
+      "id": "way/39467143"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39749716",
+        "cycleway": "opposite_lane",
+        "foot": "no",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Klara Västra Kyrkogata",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10546047",
+        "wikipedia": "sv:Klara västra kyrkogata"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0604385,
+            59.331026
+          ],
+          [
+            18.06049,
+            59.3309799
+          ],
+          [
+            18.061026,
+            59.3304311
+          ],
+          [
+            18.0611534,
+            59.3303685
+          ]
+        ]
+      },
+      "id": "way/39749716"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39749717",
+        "foot": "yes",
+        "highway": "cycleway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0619451,
+            59.3319942
+          ],
+          [
+            18.0620091,
+            59.3319339
+          ],
+          [
+            18.0620512,
+            59.3318903
+          ]
+        ]
+      },
+      "id": "way/39749717"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39749721",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0606714,
+            59.3310262
+          ],
+          [
+            18.0606213,
+            59.3310131
+          ]
+        ]
+      },
+      "id": "way/39749721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39749728",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Vattugatan",
+        "oneway": "yes",
+        "parking:lane:right": "no_stopping",
+        "surface": "asphalt",
+        "wikidata": "Q10713471",
+        "wikipedia": "sv:Vattugatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0640942,
+            59.3305767
+          ],
+          [
+            18.063554,
+            59.3304364
+          ],
+          [
+            18.0625123,
+            59.3301659
+          ],
+          [
+            18.0623569,
+            59.3301242
+          ]
+        ]
+      },
+      "id": "way/39749728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39749731",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0619545,
+            59.3306749
+          ],
+          [
+            18.0619719,
+            59.3306444
+          ]
+        ]
+      },
+      "id": "way/39749731"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39926254",
+        "access": "no",
+        "bicycle": "yes",
+        "cycleway:right": "track",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Klarabergsgatan",
+        "oneway": "yes",
+        "psv": "yes",
+        "railway": "tram",
+        "surface": "asphalt",
+        "wikidata": "Q10546048",
+        "wikipedia": "sv:Klarabergsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0629395,
+            59.3323499
+          ],
+          [
+            18.0622484,
+            59.3321724
+          ],
+          [
+            18.0608051,
+            59.3318122
+          ]
+        ]
+      },
+      "id": "way/39926254"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/40094950",
+        "highway": "steps",
+        "layer": "-1",
+        "ramp": "no",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0613366,
+            59.3299118
+          ],
+          [
+            18.0612427,
+            59.3300127
+          ],
+          [
+            18.061318,
+            59.3300387
+          ]
+        ]
+      },
+      "id": "way/40094950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/40095894",
+        "bicycle": "dismount",
+        "check_date": "2019-12-19",
+        "highway": "steps",
+        "level": "-1;0",
+        "ramp": "yes",
+        "step_count": "32"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0644824,
+            59.3321815
+          ],
+          [
+            18.0647248,
+            59.3322069
+          ]
+        ]
+      },
+      "id": "way/40095894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/41274652",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "lanes": "2",
+        "layer": "-1",
+        "lit": "24/7",
+        "maxheight": "3",
+        "maxspeed": "50",
+        "name": "Klaratunneln",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "tunnel": "yes",
+        "wikidata": "Q10546062",
+        "wikipedia": "sv:Klaratunneln"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0627824,
+            59.3298801
+          ],
+          [
+            18.0640758,
+            59.330226
+          ],
+          [
+            18.0651477,
+            59.3304979
+          ],
+          [
+            18.0656054,
+            59.3306465
+          ],
+          [
+            18.0658026,
+            59.3307332
+          ],
+          [
+            18.0659419,
+            59.330808
+          ],
+          [
+            18.0660251,
+            59.3308661
+          ],
+          [
+            18.0660965,
+            59.3309224
+          ],
+          [
+            18.0662087,
+            59.3310387
+          ],
+          [
+            18.0662811,
+            59.3311383
+          ],
+          [
+            18.0663218,
+            59.331232
+          ],
+          [
+            18.0663534,
+            59.3313496
+          ],
+          [
+            18.0663534,
+            59.3314645
+          ],
+          [
+            18.06631,
+            59.3316163
+          ],
+          [
+            18.0662738,
+            59.3317049
+          ],
+          [
+            18.0659693,
+            59.3322515
+          ]
+        ]
+      },
+      "id": "way/41274652"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/41274654",
+        "foot": "no",
+        "highway": "tertiary",
+        "lanes": "3",
+        "maxspeed": "30",
+        "name": "Rödbodgatan",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0625556,
+            59.329685
+          ],
+          [
+            18.0625987,
+            59.3296431
+          ],
+          [
+            18.0630979,
+            59.3291322
+          ],
+          [
+            18.0631441,
+            59.3290551
+          ],
+          [
+            18.0631479,
+            59.3290153
+          ],
+          [
+            18.0630902,
+            59.3288946
+          ]
+        ]
+      },
+      "id": "way/41274654"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/41274655",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary_link",
+        "maxspeed": "50",
+        "name": "Rödbodgatan",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0628264,
+            59.3297419
+          ],
+          [
+            18.0627691,
+            59.3298033
+          ],
+          [
+            18.0627613,
+            59.3298417
+          ],
+          [
+            18.06277,
+            59.3298751
+          ]
+        ]
+      },
+      "id": "way/41274655"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/41574208",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "secondary",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0589895,
+            59.3308184
+          ],
+          [
+            18.0591054,
+            59.3306975
+          ],
+          [
+            18.0592,
+            59.3306099
+          ],
+          [
+            18.0599395,
+            59.3297869
+          ],
+          [
+            18.0600321,
+            59.3296864
+          ]
+        ]
+      },
+      "id": "way/41574208"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/41771254",
+        "highway": "unclassified",
+        "lanes": "1",
+        "maxspeed": "30",
+        "name": "Herkulesgatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10522357",
+        "wikipedia": "sv:Herkulesgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0645036,
+            59.3301716
+          ],
+          [
+            18.0649856,
+            59.330295
+          ],
+          [
+            18.065643,
+            59.3304657
+          ],
+          [
+            18.066562,
+            59.3306987
+          ]
+        ]
+      },
+      "id": "way/41771254"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/42559625",
+        "bicycle": "yes",
+        "check_date": "2020-01-05",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "tertiary",
+        "junction": "roundabout",
+        "maxspeed": "50",
+        "name": "Sergels Torg",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.064863,
+            59.3327601
+          ],
+          [
+            18.0648209,
+            59.3327376
+          ],
+          [
+            18.0647806,
+            59.3327096
+          ],
+          [
+            18.0647382,
+            59.3326671
+          ],
+          [
+            18.0647103,
+            59.332616
+          ],
+          [
+            18.0647036,
+            59.3325655
+          ],
+          [
+            18.0647195,
+            59.3325096
+          ],
+          [
+            18.0647625,
+            59.3324537
+          ],
+          [
+            18.0648118,
+            59.3324156
+          ]
+        ]
+      },
+      "id": "way/42559625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/80894035",
+        "access": "no",
+        "bicycle": "yes",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Klarabergsgatan",
+        "oneway": "yes",
+        "railway": "tram",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10546048",
+        "wikipedia": "sv:Klarabergsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0629991,
+            59.3322909
+          ],
+          [
+            18.0639599,
+            59.3325183
+          ],
+          [
+            18.0640663,
+            59.3325397
+          ],
+          [
+            18.0641788,
+            59.3325499
+          ],
+          [
+            18.0642882,
+            59.3325488
+          ],
+          [
+            18.0643867,
+            59.3325393
+          ],
+          [
+            18.0644949,
+            59.3325247
+          ],
+          [
+            18.0645943,
+            59.3324992
+          ],
+          [
+            18.0646946,
+            59.3324667
+          ],
+          [
+            18.0648118,
+            59.3324156
+          ]
+        ]
+      },
+      "id": "way/80894035"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/87218362",
+        "access": "permissive",
+        "highway": "steps",
+        "level": "-1;0",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0597103,
+            59.3307356
+          ],
+          [
+            18.0595572,
+            59.3306996
+          ],
+          [
+            18.0595426,
+            59.3306992
+          ]
+        ]
+      },
+      "id": "way/87218362"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/87218363",
+        "cycleway:right": "lane",
+        "foot": "no",
+        "highway": "secondary",
+        "lcn": "yes",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0580355,
+            59.3318675
+          ],
+          [
+            18.0581361,
+            59.3317523
+          ]
+        ]
+      },
+      "id": "way/87218363"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/88920324",
+        "access": "no",
+        "bicycle": "yes",
+        "cycleway:right": "track",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Klarabergsgatan",
+        "oneway": "yes",
+        "psv": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0606717,
+            59.3316529
+          ],
+          [
+            18.0608606,
+            59.3317531
+          ]
+        ]
+      },
+      "id": "way/88920324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/96830849",
+        "foot": "no",
+        "highway": "service",
+        "lanes:forward": "2",
+        "layer": "-1",
+        "maxheight": "3.3",
+        "maxspeed": "30",
+        "name": "Klarafaret",
+        "source": "Trafikverkets vägdatabas",
+        "surface": "asphalt",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0627419,
+            59.3296501
+          ],
+          [
+            18.0626213,
+            59.3297693
+          ],
+          [
+            18.0625185,
+            59.3298754
+          ],
+          [
+            18.0623564,
+            59.3300338
+          ],
+          [
+            18.0622838,
+            59.3300595
+          ],
+          [
+            18.0622171,
+            59.3300711
+          ],
+          [
+            18.0621393,
+            59.3300738
+          ],
+          [
+            18.0615659,
+            59.3299237
+          ],
+          [
+            18.0614354,
+            59.3298898
+          ],
+          [
+            18.0612597,
+            59.3298442
+          ],
+          [
+            18.0611362,
+            59.3298117
+          ],
+          [
+            18.0610308,
+            59.3297847
+          ],
+          [
+            18.0609055,
+            59.3297533
+          ]
+        ]
+      },
+      "id": "way/96830849"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/101257888",
+        "bridge": "yes",
+        "highway": "unclassified",
+        "layer": "2",
+        "name": "Nils Ericsons Plan",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0562202,
+            59.3299956
+          ],
+          [
+            18.057201,
+            59.3292376
+          ],
+          [
+            18.0573058,
+            59.3292277
+          ],
+          [
+            18.0573789,
+            59.3292517
+          ],
+          [
+            18.0574154,
+            59.3293051
+          ],
+          [
+            18.0565543,
+            59.3299604
+          ],
+          [
+            18.0562202,
+            59.3299956
+          ]
+        ]
+      },
+      "id": "way/101257888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/110655211",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "maxheight": "3",
+        "maxspeed": "50",
+        "name": "Klaratunneln",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt",
+        "wikidata": "Q10546062",
+        "wikipedia": "sv:Klaratunneln"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0652439,
+            59.3332619
+          ],
+          [
+            18.0647148,
+            59.3341752
+          ],
+          [
+            18.0645587,
+            59.3344714
+          ]
+        ]
+      },
+      "id": "way/110655211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/121536294",
+        "access": "no",
+        "bicycle": "yes",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Klarabergsgatan",
+        "oneway": "yes",
+        "railway": "tram",
+        "surface": "asphalt",
+        "wikidata": "Q10546048",
+        "wikipedia": "sv:Klarabergsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0619124,
+            59.3320183
+          ],
+          [
+            18.0628728,
+            59.3322616
+          ],
+          [
+            18.0629991,
+            59.3322909
+          ]
+        ]
+      },
+      "id": "way/121536294"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/129464802",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "secondary",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0582036,
+            59.3319084
+          ],
+          [
+            18.0576924,
+            59.3324695
+          ]
+        ]
+      },
+      "id": "way/129464802"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/129464812",
+        "check_date": "2020-01-05",
+        "foot": "no",
+        "highway": "secondary_link",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0571428,
+            59.3330415
+          ],
+          [
+            18.0569669,
+            59.3331206
+          ]
+        ]
+      },
+      "id": "way/129464812"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/129535725",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "secondary",
+        "lcn": "yes",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0586776,
+            59.3311602
+          ],
+          [
+            18.0589895,
+            59.3308184
+          ]
+        ]
+      },
+      "id": "way/129535725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/129535726",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "lanes": "1",
+        "layer": "0",
+        "maxspeed": "50",
+        "name": "Vattugatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10713471",
+        "wikipedia": "sv:Vattugatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0623569,
+            59.3301242
+          ],
+          [
+            18.0617345,
+            59.3299484
+          ],
+          [
+            18.0614187,
+            59.3298254
+          ]
+        ]
+      },
+      "id": "way/129535726"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/129535733",
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0600321,
+            59.3296864
+          ],
+          [
+            18.0599693,
+            59.3296737
+          ],
+          [
+            18.059843,
+            59.3296482
+          ],
+          [
+            18.0597562,
+            59.3296263
+          ],
+          [
+            18.05969,
+            59.3296097
+          ],
+          [
+            18.0592966,
+            59.3294934
+          ]
+        ]
+      },
+      "id": "way/129535733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/130897821",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0631722,
+            59.3308071
+          ],
+          [
+            18.0632201,
+            59.3308217
+          ]
+        ]
+      },
+      "id": "way/130897821"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/136979789",
+        "highway": "service",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0591647,
+            59.3320138
+          ],
+          [
+            18.0592397,
+            59.3319313
+          ]
+        ]
+      },
+      "id": "way/136979789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/148002250",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "maxspeed": "50",
+        "name": "Vattugatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10713471",
+        "wikipedia": "sv:Vattugatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0614187,
+            59.3298254
+          ],
+          [
+            18.0608662,
+            59.3296874
+          ]
+        ]
+      },
+      "id": "way/148002250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/162177597",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "secondary",
+        "lanes": "3",
+        "lcn": "yes",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "turn:lanes": "left|through|through",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0610325,
+            59.3287935
+          ],
+          [
+            18.060938,
+            59.3289044
+          ],
+          [
+            18.0608393,
+            59.3290175
+          ],
+          [
+            18.0607285,
+            59.3291362
+          ],
+          [
+            18.0602658,
+            59.3296653
+          ]
+        ]
+      },
+      "id": "way/162177597"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/167816643",
+        "bicycle": "yes",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "tertiary",
+        "junction": "roundabout",
+        "maxspeed": "50",
+        "name": "Sergels Torg",
+        "railway": "tram",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0648118,
+            59.3324156
+          ],
+          [
+            18.0648558,
+            59.3323909
+          ],
+          [
+            18.0649007,
+            59.3323714
+          ],
+          [
+            18.0649096,
+            59.3323684
+          ],
+          [
+            18.0649568,
+            59.3323526
+          ],
+          [
+            18.0650423,
+            59.3323332
+          ],
+          [
+            18.0651157,
+            59.3323237
+          ],
+          [
+            18.0651926,
+            59.33232
+          ],
+          [
+            18.0652833,
+            59.3323235
+          ],
+          [
+            18.0653399,
+            59.3323301
+          ],
+          [
+            18.0654346,
+            59.3323497
+          ],
+          [
+            18.0654964,
+            59.3323696
+          ]
+        ]
+      },
+      "id": "way/167816643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/167816644",
+        "bicycle": "yes",
+        "foot": "no",
+        "highway": "tertiary",
+        "junction": "roundabout",
+        "maxspeed": "50",
+        "name": "Sergels Torg",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0650061,
+            59.3328075
+          ],
+          [
+            18.0649522,
+            59.3327935
+          ],
+          [
+            18.0649094,
+            59.3327794
+          ],
+          [
+            18.064863,
+            59.3327601
+          ]
+        ]
+      },
+      "id": "way/167816644"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/203404922",
+        "highway": "steps",
+        "layer": "-1",
+        "lit": "yes",
+        "ramp": "?",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0637347,
+            59.3333686
+          ],
+          [
+            18.0636196,
+            59.3333346
+          ],
+          [
+            18.0636455,
+            59.3332913
+          ]
+        ]
+      },
+      "id": "way/203404922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/205673187",
+        "highway": "service",
+        "layer": "-1",
+        "maxheight": "3.4",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0596794,
+            59.3328557
+          ],
+          [
+            18.0597673,
+            59.3328797
+          ]
+        ]
+      },
+      "id": "way/205673187"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/205673188",
+        "highway": "service",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0594741,
+            59.3319905
+          ],
+          [
+            18.0593989,
+            59.3320716
+          ]
+        ]
+      },
+      "id": "way/205673188"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/205673189",
+        "highway": "service",
+        "maxheight": "3.1",
+        "oneway": "yes",
+        "tunnel": "building_passage"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0592397,
+            59.3319313
+          ],
+          [
+            18.0592659,
+            59.3319065
+          ],
+          [
+            18.0593893,
+            59.3319362
+          ],
+          [
+            18.0594981,
+            59.3319645
+          ],
+          [
+            18.0594741,
+            59.3319905
+          ]
+        ]
+      },
+      "id": "way/205673189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/205696001",
+        "highway": "service",
+        "layer": "-1",
+        "maxheight": "2.9",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0609862,
+            59.3323851
+          ],
+          [
+            18.0610234,
+            59.3323458
+          ]
+        ]
+      },
+      "id": "way/205696001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/207237152",
+        "highway": "steps",
+        "layer": "-1",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0575738,
+            59.3312236
+          ],
+          [
+            18.0573316,
+            59.3311683
+          ]
+        ]
+      },
+      "id": "way/207237152"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/207495304",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0607087,
+            59.3315269
+          ],
+          [
+            18.0607498,
+            59.331482
+          ]
+        ]
+      },
+      "id": "way/207495304"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/207495306",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0620147,
+            59.3318275
+          ],
+          [
+            18.062093,
+            59.331847
+          ]
+        ]
+      },
+      "id": "way/207495306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/233545450",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "unclassified",
+        "maxspeed": "40",
+        "name": "Klarabergsgatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10546048",
+        "wikipedia": "sv:Klarabergsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0605438,
+            59.3317972
+          ],
+          [
+            18.059342,
+            59.3314796
+          ],
+          [
+            18.0592725,
+            59.331462
+          ]
+        ]
+      },
+      "id": "way/233545450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/233545452",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Mäster Samuelsgatan",
+        "surface": "asphalt",
+        "wikidata": "Q10593269",
+        "wikipedia": "sv:Mäster Samuelsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0583112,
+            59.3317973
+          ],
+          [
+            18.0584788,
+            59.3318394
+          ],
+          [
+            18.0585889,
+            59.3318676
+          ],
+          [
+            18.0591647,
+            59.3320138
+          ],
+          [
+            18.0593989,
+            59.3320716
+          ],
+          [
+            18.0601207,
+            59.3322587
+          ]
+        ]
+      },
+      "id": "way/233545452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/233545453",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Mäster Samuelsgatan",
+        "surface": "asphalt",
+        "wikidata": "Q10593269",
+        "wikipedia": "sv:Mäster Samuelsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0601207,
+            59.3322587
+          ],
+          [
+            18.0609036,
+            59.3324694
+          ],
+          [
+            18.0624201,
+            59.3328715
+          ],
+          [
+            18.0633052,
+            59.3331214
+          ],
+          [
+            18.063687,
+            59.3332258
+          ],
+          [
+            18.0637302,
+            59.3332362
+          ]
+        ]
+      },
+      "id": "way/233545453"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/233545458",
+        "cycleway:right": "lane",
+        "foot": "no",
+        "highway": "secondary",
+        "lcn": "yes",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0583112,
+            59.3317973
+          ],
+          [
+            18.0582036,
+            59.3319084
+          ]
+        ]
+      },
+      "id": "way/233545458"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/233545459",
+        "cycleway:right": "lane",
+        "foot": "no",
+        "highway": "secondary",
+        "lcn": "yes",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0581361,
+            59.3317523
+          ],
+          [
+            18.0582045,
+            59.3316731
+          ],
+          [
+            18.058542,
+            59.331306
+          ],
+          [
+            18.0586149,
+            59.3312241
+          ]
+        ]
+      },
+      "id": "way/233545459"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251962175",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "secondary",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0574777,
+            59.3324946
+          ],
+          [
+            18.0579863,
+            59.3319207
+          ],
+          [
+            18.0580355,
+            59.3318675
+          ]
+        ]
+      },
+      "id": "way/251962175"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/251962197",
+        "highway": "unclassified",
+        "name": "Vasaplan",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0574777,
+            59.3324946
+          ],
+          [
+            18.0576319,
+            59.3325353
+          ]
+        ]
+      },
+      "id": "way/251962197"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/252133170",
+        "highway": "service",
+        "name": "Beridarebansgatan",
+        "oneway": "yes",
+        "wikidata": "Q10428639",
+        "wikipedia": "sv:Beridarebansgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0652612,
+            59.3318478
+          ],
+          [
+            18.0651756,
+            59.3318456
+          ],
+          [
+            18.065123,
+            59.3318147
+          ],
+          [
+            18.0651251,
+            59.3317795
+          ],
+          [
+            18.0653867,
+            59.3314809
+          ],
+          [
+            18.0654642,
+            59.3314702
+          ],
+          [
+            18.0655679,
+            59.3315022
+          ]
+        ]
+      },
+      "id": "way/252133170"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/252693052",
+        "cycleway:right": "shared_lane",
+        "foot": "no",
+        "highway": "secondary",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0569669,
+            59.3331206
+          ],
+          [
+            18.0569852,
+            59.3330403
+          ],
+          [
+            18.0570316,
+            59.3329682
+          ],
+          [
+            18.0573548,
+            59.332629
+          ],
+          [
+            18.0574056,
+            59.3325741
+          ],
+          [
+            18.0574777,
+            59.3324946
+          ]
+        ]
+      },
+      "id": "way/252693052"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278468172",
+        "cycleway:right": "lane",
+        "foot": "no",
+        "highway": "tertiary",
+        "lanes": "1",
+        "maxspeed": "50",
+        "name": "Sveavägen",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q1788276",
+        "wikipedia": "sv:Sveavägen"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0647279,
+            59.3338453
+          ],
+          [
+            18.0651473,
+            59.3331187
+          ]
+        ]
+      },
+      "id": "way/278468172"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/291464526",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "secondary",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0600321,
+            59.3296864
+          ],
+          [
+            18.0602739,
+            59.3294198
+          ]
+        ]
+      },
+      "id": "way/291464526"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/291464527",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "secondary",
+        "lcn": "yes",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0602658,
+            59.3296653
+          ],
+          [
+            18.0601329,
+            59.3298309
+          ],
+          [
+            18.0597641,
+            59.3302385
+          ]
+        ]
+      },
+      "id": "way/291464527"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/354582311",
+        "foot": "no",
+        "highway": "cycleway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0649096,
+            59.3323684
+          ],
+          [
+            18.0649991,
+            59.3322158
+          ]
+        ]
+      },
+      "id": "way/354582311"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/383103906",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Klara Norra Kyrkogata",
+        "surface": "asphalt",
+        "wikidata": "Q10546043",
+        "wikipedia": "sv:Klara norra kyrkogata"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0606717,
+            59.3316529
+          ],
+          [
+            18.0606337,
+            59.3316956
+          ],
+          [
+            18.0605825,
+            59.3317536
+          ],
+          [
+            18.0605438,
+            59.3317972
+          ]
+        ]
+      },
+      "id": "way/383103906"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/403439813",
+        "highway": "unclassified",
+        "lanes": "1",
+        "maxspeed": "30",
+        "name": "Herkulesgatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10522357",
+        "wikipedia": "sv:Herkulesgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0628264,
+            59.3297419
+          ],
+          [
+            18.0629402,
+            59.3297712
+          ],
+          [
+            18.0645036,
+            59.3301716
+          ]
+        ]
+      },
+      "id": "way/403439813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/403439819",
+        "cycleway": "opposite",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Vattugatan",
+        "oneway": "yes",
+        "parking:lane:right": "no_stopping",
+        "surface": "asphalt",
+        "wikidata": "Q10713471",
+        "wikipedia": "sv:Vattugatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0661549,
+            59.3311118
+          ],
+          [
+            18.0645796,
+            59.3307028
+          ],
+          [
+            18.0640942,
+            59.3305767
+          ]
+        ]
+      },
+      "id": "way/403439819"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/411449793",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Klara Norra Kyrkogata",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "wikidata": "Q10546043",
+        "wikipedia": "sv:Klara norra kyrkogata"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0604968,
+            59.3318455
+          ],
+          [
+            18.0601207,
+            59.3322587
+          ]
+        ]
+      },
+      "id": "way/411449793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/411449795",
+        "highway": "service",
+        "layer": "-1",
+        "maxheight": "3.2",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0632201,
+            59.3308217
+          ],
+          [
+            18.0633024,
+            59.330844
+          ]
+        ]
+      },
+      "id": "way/411449795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/412505020",
+        "access": "no",
+        "bicycle": "yes",
+        "bridge": "yes",
+        "cycleway:right": "track",
+        "highway": "unclassified",
+        "layer": "2",
+        "maxspeed": "50",
+        "name": "Klarabergsviadukten",
+        "oneway": "yes",
+        "psv": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0575542,
+            59.3309149
+          ],
+          [
+            18.0577971,
+            59.3309752
+          ],
+          [
+            18.0593884,
+            59.3313412
+          ]
+        ]
+      },
+      "id": "way/412505020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427926628",
+        "cycleway:right": "lane",
+        "foot": "no",
+        "highway": "secondary",
+        "lcn": "yes",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0586149,
+            59.3312241
+          ],
+          [
+            18.0586776,
+            59.3311602
+          ]
+        ]
+      },
+      "id": "way/427926628"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427926629",
+        "cycleway:right": "lane",
+        "foot": "no",
+        "highway": "secondary",
+        "lcn": "yes",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0593116,
+            59.3307465
+          ],
+          [
+            18.0589164,
+            59.3311795
+          ],
+          [
+            18.0588573,
+            59.3312396
+          ]
+        ]
+      },
+      "id": "way/427926629"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427926630",
+        "highway": "steps",
+        "lit": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0579071,
+            59.330423
+          ],
+          [
+            18.0577355,
+            59.3305663
+          ]
+        ]
+      },
+      "id": "way/427926630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427926633",
+        "highway": "service",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0586776,
+            59.3311602
+          ],
+          [
+            18.0588573,
+            59.3312396
+          ]
+        ]
+      },
+      "id": "way/427926633"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427926634",
+        "highway": "service",
+        "motor_vehicle": "no",
+        "oneway": "yes",
+        "taxi": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0588573,
+            59.3312396
+          ],
+          [
+            18.0586149,
+            59.3312241
+          ]
+        ]
+      },
+      "id": "way/427926634"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427926635",
+        "highway": "service",
+        "motor_vehicle": "no",
+        "name": "Centralplan",
+        "oneway": "yes",
+        "taxi": "yes",
+        "wikidata": "Q10444904",
+        "wikipedia": "sv:Centralplan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0584134,
+            59.3310953
+          ],
+          [
+            18.0585003,
+            59.3310146
+          ],
+          [
+            18.0588313,
+            59.3307239
+          ],
+          [
+            18.0588738,
+            59.330718
+          ],
+          [
+            18.0589214,
+            59.3307149
+          ],
+          [
+            18.0591054,
+            59.3306975
+          ]
+        ]
+      },
+      "id": "way/427926635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427926636",
+        "highway": "service",
+        "motor_vehicle": "no",
+        "name": "Centralplan",
+        "oneway": "yes",
+        "taxi": "yes",
+        "wikidata": "Q10444904",
+        "wikipedia": "sv:Centralplan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0582734,
+            59.3310616
+          ],
+          [
+            18.0583648,
+            59.3309765
+          ],
+          [
+            18.0587092,
+            59.330671
+          ],
+          [
+            18.0587321,
+            59.3306657
+          ],
+          [
+            18.0587662,
+            59.3306661
+          ],
+          [
+            18.0588216,
+            59.3306801
+          ],
+          [
+            18.0589214,
+            59.3307149
+          ]
+        ]
+      },
+      "id": "way/427926636"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427926637",
+        "highway": "service",
+        "motor_vehicle": "no",
+        "name": "Centralplan",
+        "oneway": "yes",
+        "taxi": "yes",
+        "wikidata": "Q10444904",
+        "wikipedia": "sv:Centralplan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0583507,
+            59.3310808
+          ],
+          [
+            18.0584389,
+            59.330997
+          ],
+          [
+            18.0587776,
+            59.3307006
+          ],
+          [
+            18.0587938,
+            59.3306906
+          ],
+          [
+            18.0588216,
+            59.3306801
+          ],
+          [
+            18.058962,
+            59.330664
+          ]
+        ]
+      },
+      "id": "way/427926637"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427926638",
+        "highway": "service",
+        "motor_vehicle": "no",
+        "name": "Centralplan",
+        "oneway": "yes",
+        "taxi": "yes",
+        "wikidata": "Q10444904",
+        "wikipedia": "sv:Centralplan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0581953,
+            59.3310419
+          ],
+          [
+            18.0582857,
+            59.3309565
+          ],
+          [
+            18.0586412,
+            59.3306416
+          ],
+          [
+            18.0586726,
+            59.3306285
+          ],
+          [
+            18.0587123,
+            59.3306183
+          ],
+          [
+            18.0587536,
+            59.3306153
+          ],
+          [
+            18.0588089,
+            59.3306223
+          ],
+          [
+            18.058962,
+            59.330664
+          ],
+          [
+            18.0591054,
+            59.3306975
+          ]
+        ]
+      },
+      "id": "way/427926638"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427928442",
+        "check_date": "2019-12-19",
+        "highway": "steps",
+        "width": "25"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0635846,
+            59.3320736
+          ],
+          [
+            18.0634886,
+            59.3320466
+          ]
+        ]
+      },
+      "id": "way/427928442"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427928443",
+        "check_date": "2019-12-19",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-1",
+        "level": "-1;0",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0626919,
+            59.332304
+          ],
+          [
+            18.0626176,
+            59.3324377
+          ]
+        ]
+      },
+      "id": "way/427928443"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427928444",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0591489,
+            59.3304172
+          ],
+          [
+            18.0592507,
+            59.3303165
+          ]
+        ]
+      },
+      "id": "way/427928444"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427928445",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-2",
+        "level": "-1;0",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0632754,
+            59.3322576
+          ],
+          [
+            18.0633971,
+            59.3321405
+          ]
+        ]
+      },
+      "id": "way/427928445"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427928446",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-2",
+        "level": "-3;-2;-1",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0625033,
+            59.3322308
+          ],
+          [
+            18.0626919,
+            59.332304
+          ]
+        ]
+      },
+      "id": "way/427928446"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/427928447",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-2",
+        "level": "-3;-2;-1",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0605609,
+            59.3311276
+          ],
+          [
+            18.0603766,
+            59.3309535
+          ]
+        ]
+      },
+      "id": "way/427928447"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/432147272",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "layer": "-1",
+        "lit": "24/7",
+        "maxheight": "3",
+        "maxspeed": "50",
+        "name": "Klaratunneln",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "tunnel": "yes",
+        "wikidata": "Q10546062",
+        "wikipedia": "sv:Klaratunneln"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0640299,
+            59.3303737
+          ],
+          [
+            18.0626365,
+            59.3300075
+          ]
+        ]
+      },
+      "id": "way/432147272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/432147273",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "lanes": "1",
+        "layer": "-2",
+        "maxheight": "3",
+        "maxspeed": "50",
+        "name": "Klaratunneln",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "tunnel": "yes",
+        "wikidata": "Q10546062",
+        "wikipedia": "sv:Klaratunneln"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0665597,
+            59.3345254
+          ],
+          [
+            18.0663724,
+            59.3344922
+          ],
+          [
+            18.0661807,
+            59.3344378
+          ],
+          [
+            18.0658409,
+            59.3343043
+          ],
+          [
+            18.0656199,
+            59.3341758
+          ],
+          [
+            18.0654263,
+            59.3340171
+          ],
+          [
+            18.0652671,
+            59.3338427
+          ],
+          [
+            18.0651567,
+            59.3336882
+          ],
+          [
+            18.0650862,
+            59.3335345
+          ],
+          [
+            18.0650446,
+            59.3333906
+          ],
+          [
+            18.0650356,
+            59.3332854
+          ],
+          [
+            18.0650573,
+            59.3331775
+          ],
+          [
+            18.0650989,
+            59.3330686
+          ],
+          [
+            18.0652436,
+            59.3328269
+          ],
+          [
+            18.0654553,
+            59.3324947
+          ],
+          [
+            18.0657031,
+            59.3322105
+          ]
+        ]
+      },
+      "id": "way/432147273"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/457054807",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Klara Norra Kyrkogata",
+        "surface": "asphalt",
+        "wikidata": "Q10546043",
+        "wikipedia": "sv:Klara norra kyrkogata"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0605438,
+            59.3317972
+          ],
+          [
+            18.0604968,
+            59.3318455
+          ]
+        ]
+      },
+      "id": "way/457054807"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/459163013",
+        "bicycle": "yes",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Klara Vattugränd",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0593116,
+            59.3307465
+          ],
+          [
+            18.0594477,
+            59.3307802
+          ],
+          [
+            18.0604385,
+            59.331026
+          ]
+        ]
+      },
+      "id": "way/459163013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/467760757",
+        "bridge": "yes",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "unclassified",
+        "layer": "2",
+        "maxspeed": "50",
+        "name": "Klarabergsviadukten",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0592725,
+            59.331462
+          ],
+          [
+            18.0577282,
+            59.3310443
+          ],
+          [
+            18.0576022,
+            59.3310133
+          ]
+        ]
+      },
+      "id": "way/467760757"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/471998666",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Klara Östra Kyrkogata",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0620512,
+            59.3318903
+          ],
+          [
+            18.062093,
+            59.331847
+          ],
+          [
+            18.062928,
+            59.3310356
+          ],
+          [
+            18.0631722,
+            59.3308071
+          ],
+          [
+            18.063554,
+            59.3304364
+          ]
+        ]
+      },
+      "id": "way/471998666"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/485953186",
+        "highway": "service",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0597562,
+            59.3296263
+          ],
+          [
+            18.0595976,
+            59.3297086
+          ],
+          [
+            18.0595669,
+            59.3297768
+          ],
+          [
+            18.0595473,
+            59.3298787
+          ],
+          [
+            18.0593638,
+            59.3300763
+          ]
+        ]
+      },
+      "id": "way/485953186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/493752030",
+        "cycleway:right": "lane",
+        "foot": "no",
+        "highway": "secondary",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0576924,
+            59.3324695
+          ],
+          [
+            18.0576319,
+            59.3325353
+          ],
+          [
+            18.0575647,
+            59.3326115
+          ],
+          [
+            18.0571428,
+            59.3330415
+          ],
+          [
+            18.0570391,
+            59.333229
+          ],
+          [
+            18.0566798,
+            59.3336587
+          ]
+        ]
+      },
+      "id": "way/493752030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/493752031",
+        "cycleway:right": "shared_lane",
+        "foot": "no",
+        "highway": "secondary",
+        "lcn": "yes",
+        "maxspeed": "50",
+        "name": "Vasagatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q679282",
+        "wikipedia": "sv:Vasagatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0597641,
+            59.3302385
+          ],
+          [
+            18.0593917,
+            59.3306546
+          ],
+          [
+            18.0593116,
+            59.3307465
+          ]
+        ]
+      },
+      "id": "way/493752031"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/500603867",
+        "highway": "service",
+        "lanes": "1",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.05969,
+            59.3296097
+          ],
+          [
+            18.0597317,
+            59.3295264
+          ],
+          [
+            18.0597681,
+            59.3294783
+          ],
+          [
+            18.0595206,
+            59.3294104
+          ],
+          [
+            18.0596983,
+            59.3292505
+          ],
+          [
+            18.0598812,
+            59.3293284
+          ],
+          [
+            18.0597681,
+            59.3294783
+          ]
+        ]
+      },
+      "id": "way/500603867"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/520217664",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary_link",
+        "maxspeed": "50",
+        "name": "Rödbodgatan",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0624555,
+            59.3297921
+          ],
+          [
+            18.0625556,
+            59.329685
+          ]
+        ]
+      },
+      "id": "way/520217664"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/520217665",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Herkulesgatan",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0624555,
+            59.3297921
+          ],
+          [
+            18.06277,
+            59.3298751
+          ],
+          [
+            18.0627824,
+            59.3298801
+          ]
+        ]
+      },
+      "id": "way/520217665"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/546431431",
+        "bridge": "yes",
+        "cycleway:right": "lane",
+        "foot": "no",
+        "highway": "unclassified",
+        "layer": "2",
+        "maxspeed": "50",
+        "name": "Klarabergsviadukten",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0564759,
+            59.3306471
+          ],
+          [
+            18.0575542,
+            59.3309149
+          ]
+        ]
+      },
+      "id": "way/546431431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402833",
+        "highway": "steps",
+        "layer": "-1",
+        "level": "-1;0",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0576758,
+            59.33276
+          ],
+          [
+            18.0578803,
+            59.3325747
+          ]
+        ]
+      },
+      "id": "way/552402833"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402835",
+        "highway": "steps",
+        "layer": "-1",
+        "level": "-1;0",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0577623,
+            59.3322901
+          ],
+          [
+            18.0575094,
+            59.3322227
+          ]
+        ]
+      },
+      "id": "way/552402835"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402837",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-1",
+        "level": "-4.5;-4;-3;-2;-1",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0584623,
+            59.3323955
+          ],
+          [
+            18.0577623,
+            59.3322901
+          ]
+        ]
+      },
+      "id": "way/552402837"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402841",
+        "conveying": "yes",
+        "highway": "steps",
+        "level": "-4;-3;-2;-1",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0583728,
+            59.3320833
+          ],
+          [
+            18.0577623,
+            59.3322901
+          ]
+        ]
+      },
+      "id": "way/552402841"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402843",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-4",
+        "level": "-5;-4.5",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0585777,
+            59.3325788
+          ],
+          [
+            18.0586185,
+            59.3324021
+          ]
+        ]
+      },
+      "id": "way/552402843"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402845",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-4",
+        "level": "-5;-4.5",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0590404,
+            59.3324198
+          ],
+          [
+            18.0589755,
+            59.3325787
+          ]
+        ]
+      },
+      "id": "way/552402845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402847",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-5",
+        "level": "-4.5;-4",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0595054,
+            59.3324393
+          ],
+          [
+            18.0595867,
+            59.3321422
+          ]
+        ]
+      },
+      "id": "way/552402847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402849",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-3",
+        "level": "-3.5;-3;-2",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0613173,
+            59.3316912
+          ],
+          [
+            18.0611022,
+            59.3317714
+          ]
+        ]
+      },
+      "id": "way/552402849"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402851",
+        "conveying": "yes",
+        "highway": "steps",
+        "level": "-4;-3.5",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.06029,
+            59.3321758
+          ],
+          [
+            18.060152,
+            59.3321512
+          ],
+          [
+            18.0599825,
+            59.3321604
+          ]
+        ]
+      },
+      "id": "way/552402851"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402859",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-3",
+        "level": "-4.5;-4;-3;-2;-1",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0591743,
+            59.3315147
+          ],
+          [
+            18.0596183,
+            59.3308563
+          ]
+        ]
+      },
+      "id": "way/552402859"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402864",
+        "conveying": "yes",
+        "highway": "steps",
+        "location": "indoor",
+        "name": "Klarabergsgenvägen"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0599191,
+            59.3311523
+          ],
+          [
+            18.0598449,
+            59.3313431
+          ]
+        ]
+      },
+      "id": "way/552402864"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402866",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-3",
+        "level": "-4.5;-3.5",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0606217,
+            59.331647
+          ],
+          [
+            18.0611022,
+            59.3317714
+          ]
+        ]
+      },
+      "id": "way/552402866"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402867",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-2",
+        "level": "-4;-3;-2;-1",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.06201,
+            59.3322622
+          ],
+          [
+            18.0626919,
+            59.332304
+          ]
+        ]
+      },
+      "id": "way/552402867"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402869",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-1",
+        "level": "-1;0",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0596697,
+            59.330782
+          ],
+          [
+            18.0599917,
+            59.3310792
+          ]
+        ]
+      },
+      "id": "way/552402869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402870",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-4",
+        "level": "-5;-4.5",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0588971,
+            59.3313846
+          ],
+          [
+            18.0588928,
+            59.331489
+          ],
+          [
+            18.0588408,
+            59.3315953
+          ]
+        ]
+      },
+      "id": "way/552402870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552402872",
+        "conveying": "yes",
+        "highway": "steps",
+        "layer": "-4",
+        "level": "-5;-4.5",
+        "location": "underground",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0594724,
+            59.3316147
+          ],
+          [
+            18.0594706,
+            59.3315418
+          ],
+          [
+            18.0595139,
+            59.3314657
+          ]
+        ]
+      },
+      "id": "way/552402872"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/614158962",
+        "bridge": "yes",
+        "cycleway:right": "lane",
+        "foot": "no",
+        "highway": "unclassified",
+        "layer": "2",
+        "maxspeed": "50",
+        "name": "Klarabergsviadukten",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0576022,
+            59.3310133
+          ],
+          [
+            18.0574761,
+            59.3309823
+          ],
+          [
+            18.0564083,
+            59.3307154
+          ]
+        ]
+      },
+      "id": "way/614158962"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/614158963",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "tertiary",
+        "lanes": "1",
+        "maxspeed": "50",
+        "name": "Sveavägen",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q1788276",
+        "wikipedia": "sv:Sveavägen"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0651473,
+            59.3331187
+          ],
+          [
+            18.0651692,
+            59.3330533
+          ],
+          [
+            18.0651712,
+            59.3330007
+          ],
+          [
+            18.0651524,
+            59.3329501
+          ],
+          [
+            18.0651162,
+            59.332898
+          ],
+          [
+            18.0650639,
+            59.3328453
+          ],
+          [
+            18.0650061,
+            59.3328075
+          ]
+        ]
+      },
+      "id": "way/614158963"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/620397675",
+        "bridge": "yes",
+        "highway": "unclassified",
+        "layer": "2",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0575542,
+            59.3309149
+          ],
+          [
+            18.0574761,
+            59.3309823
+          ]
+        ]
+      },
+      "id": "way/620397675"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622465148",
+        "direction": "up",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0587962,
+            59.331448
+          ],
+          [
+            18.0592406,
+            59.3315522
+          ],
+          [
+            18.0592914,
+            59.3315325
+          ]
+        ]
+      },
+      "id": "way/622465148"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622465149",
+        "access": "no",
+        "bicycle": "yes",
+        "cycleway:right": "track",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Klarabergsgatan",
+        "oneway": "yes",
+        "psv": "yes",
+        "railway": "tram",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0608606,
+            59.3317531
+          ],
+          [
+            18.0616765,
+            59.3319593
+          ],
+          [
+            18.0619124,
+            59.3320183
+          ]
+        ]
+      },
+      "id": "way/622465149"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622465150",
+        "access": "no",
+        "bicycle": "yes",
+        "cycleway:right": "track",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Klarabergsgatan",
+        "oneway": "yes",
+        "psv": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10546048",
+        "wikipedia": "sv:Klarabergsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0608051,
+            59.3318122
+          ],
+          [
+            18.0605438,
+            59.3317972
+          ]
+        ]
+      },
+      "id": "way/622465150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622465156",
+        "highway": "platform",
+        "railway": "platform"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0628954,
+            59.332227
+          ],
+          [
+            18.0624261,
+            59.332111
+          ],
+          [
+            18.0619451,
+            59.3319942
+          ],
+          [
+            18.060879,
+            59.3317335
+          ]
+        ]
+      },
+      "id": "way/622465156"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622465157",
+        "highway": "platform",
+        "railway": "platform"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.062776,
+            59.3323378
+          ],
+          [
+            18.0611695,
+            59.3319375
+          ],
+          [
+            18.0607796,
+            59.3318395
+          ]
+        ]
+      },
+      "id": "way/622465157"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/622465159",
+        "cycleway:right": "track",
+        "foot": "no",
+        "highway": "tertiary",
+        "junction": "roundabout",
+        "maxspeed": "50",
+        "name": "Sergels Torg",
+        "railway": "tram",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0655981,
+            59.3327421
+          ],
+          [
+            18.0655387,
+            59.3327769
+          ],
+          [
+            18.0654717,
+            59.3328013
+          ],
+          [
+            18.0653831,
+            59.3328194
+          ],
+          [
+            18.0653014,
+            59.3328266
+          ],
+          [
+            18.0652034,
+            59.3328283
+          ],
+          [
+            18.065123,
+            59.3328225
+          ],
+          [
+            18.06506,
+            59.3328157
+          ],
+          [
+            18.0650061,
+            59.3328075
+          ]
+        ]
+      },
+      "id": "way/622465159"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623564886",
+        "cycleway:right": "lane",
+        "foot": "no",
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "Sveavägen",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0655981,
+            59.3327421
+          ],
+          [
+            18.0655626,
+            59.3328893
+          ],
+          [
+            18.0654495,
+            59.3330892
+          ],
+          [
+            18.0646697,
+            59.3343853
+          ],
+          [
+            18.0645587,
+            59.3344714
+          ]
+        ]
+      },
+      "id": "way/623564886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/676101236",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "lanes": "2",
+        "layer": "-1",
+        "lit": "24/7",
+        "maxheight": "3",
+        "maxspeed": "50",
+        "name": "Klaratunneln",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "tunnel": "yes",
+        "wikidata": "Q10546062",
+        "wikipedia": "sv:Klaratunneln"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0657031,
+            59.3322105
+          ],
+          [
+            18.0659184,
+            59.3318636
+          ],
+          [
+            18.0660323,
+            59.3316098
+          ],
+          [
+            18.0660341,
+            59.331405
+          ],
+          [
+            18.066007,
+            59.3312712
+          ],
+          [
+            18.0659473,
+            59.3311798
+          ],
+          [
+            18.0658641,
+            59.3310756
+          ],
+          [
+            18.0656778,
+            59.3309122
+          ],
+          [
+            18.0654788,
+            59.3307923
+          ],
+          [
+            18.0652961,
+            59.330712
+          ],
+          [
+            18.0650627,
+            59.3306308
+          ],
+          [
+            18.0648492,
+            59.3305727
+          ],
+          [
+            18.0640299,
+            59.3303737
+          ],
+          [
+            18.0625889,
+            59.3300616
+          ]
+        ]
+      },
+      "id": "way/676101236"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/676101237",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "maxspeed": "50",
+        "name": "Herkulesgatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10522357",
+        "wikipedia": "sv:Herkulesgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0611869,
+            59.3293602
+          ],
+          [
+            18.0620479,
+            59.3295564
+          ],
+          [
+            18.0625556,
+            59.329685
+          ]
+        ]
+      },
+      "id": "way/676101237"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/676101238",
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "lanes": "1",
+        "layer": "-1",
+        "lit": "24/7",
+        "maxheight": "3",
+        "maxspeed": "50",
+        "name": "Klaratunneln",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "tunnel": "yes",
+        "wikidata": "Q10546062",
+        "wikipedia": "sv:Klaratunneln"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0659693,
+            59.3322515
+          ],
+          [
+            18.0652439,
+            59.3332619
+          ]
+        ]
+      },
+      "id": "way/676101238"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/718340401",
+        "highway": "cycleway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0619124,
+            59.3320183
+          ],
+          [
+            18.0619451,
+            59.3319942
+          ]
+        ]
+      },
+      "id": "way/718340401"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/728264802",
+        "access": "permissive",
+        "highway": "steps",
+        "lit": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0575957,
+            59.3305683
+          ],
+          [
+            18.0577771,
+            59.3306307
+          ]
+        ]
+      },
+      "id": "way/728264802"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/728264804",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0583336,
+            59.3300558
+          ],
+          [
+            18.0585261,
+            59.329907
+          ]
+        ]
+      },
+      "id": "way/728264804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/739657794",
+        "foot": "no",
+        "highway": "unclassified",
+        "maxspeed": "30",
+        "name": "Klara Västra Kyrkogata",
+        "surface": "asphalt",
+        "wikidata": "Q10546047",
+        "wikipedia": "sv:Klara västra kyrkogata"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0615109,
+            59.3299826
+          ],
+          [
+            18.0612231,
+            59.3302914
+          ],
+          [
+            18.0611534,
+            59.3303685
+          ]
+        ]
+      },
+      "id": "way/739657794"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/745133648",
+        "highway": "cycleway",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0591054,
+            59.3306975
+          ],
+          [
+            18.0590938,
+            59.3306537
+          ],
+          [
+            18.059152,
+            59.330598
+          ],
+          [
+            18.0593521,
+            59.3303631
+          ],
+          [
+            18.0598749,
+            59.3297722
+          ],
+          [
+            18.0599693,
+            59.3296737
+          ],
+          [
+            18.0602147,
+            59.3293948
+          ],
+          [
+            18.0608407,
+            59.3287244
+          ]
+        ]
+      },
+      "id": "way/745133648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/764157392",
+        "access": "no",
+        "bicycle": "yes",
+        "cycleway:right": "track",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Klarabergsgatan",
+        "oneway": "yes",
+        "psv": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10546048",
+        "wikipedia": "sv:Klarabergsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.064863,
+            59.3327601
+          ],
+          [
+            18.0644251,
+            59.3327062
+          ]
+        ]
+      },
+      "id": "way/764157392"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7524088",
+        "check_date": "2019-12-19",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0629395,
+          59.3323499
+        ]
+      },
+      "id": "node/7524088"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7530001",
+        "highway": "traffic_signals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0600321,
+          59.3296864
+        ]
+      },
+      "id": "node/7530001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10463631",
+        "crossing": "uncontrolled",
+        "highway": "crossing",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0593088,
+          59.3329833
+        ]
+      },
+      "id": "node/10463631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/25248172",
+        "highway": "traffic_signals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0625556,
+          59.329685
+        ]
+      },
+      "id": "node/25248172"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/25248243",
+        "check_date": "2019-12-19",
+        "highway": "traffic_signals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0624201,
+          59.3328715
+        ]
+      },
+      "id": "node/25248243"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/28867599",
+        "highway": "turning_circle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0585013,
+          59.3327587
+        ]
+      },
+      "id": "node/28867599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/249238334",
+        "highway": "traffic_signals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0628264,
+          59.3297419
+        ]
+      },
+      "id": "node/249238334"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271888183",
+        "check_date": "2019-12-19",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0644251,
+          59.3327062
+        ]
+      },
+      "id": "node/271888183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/289981557",
+        "check_date": "2019-12-19",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0644949,
+          59.3325247
+        ]
+      },
+      "id": "node/289981557"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/393945731",
+        "check_date": "2019-12-19",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0629991,
+          59.3322909
+        ]
+      },
+      "id": "node/393945731"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/416050720",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0580355,
+          59.3318675
+        ]
+      },
+      "id": "node/416050720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/416679334",
+        "highway": "traffic_signals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0601329,
+          59.3298309
+        ]
+      },
+      "id": "node/416679334"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/472644577",
+        "highway": "bus_stop",
+        "local_ref": "L",
+        "name": "Centralstationen",
+        "network": "SL",
+        "ref": "10537",
+        "route_ref": "54;65;69;190;191;192;193;194;195",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.057341,
+          59.3307934
+        ]
+      },
+      "id": "node/472644577"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/476518320",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.06049,
+          59.3309799
+        ]
+      },
+      "id": "node/476518320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/504630039",
+        "highway": "bus_stop",
+        "local_ref": "I",
+        "name": "Vattugatan",
+        "network": "SL",
+        "ref": "80200",
+        "route_ref": "809C;818C",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0614629,
+          59.3299437
+        ]
+      },
+      "id": "node/504630039"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/504630042",
+        "highway": "bus_stop",
+        "local_ref": "H",
+        "name": "Vattugatan",
+        "network": "SL",
+        "ref": "80055",
+        "route_ref": "812C;813C;815C",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0608976,
+          59.3297994
+        ]
+      },
+      "id": "node/504630042"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/504630065",
+        "highway": "traffic_signals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0624555,
+          59.3297921
+        ]
+      },
+      "id": "node/504630065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/877649653",
+        "bench": "yes",
+        "highway": "bus_stop",
+        "local_ref": "G",
+        "name": "Centralen",
+        "network": "SL",
+        "ref": "10842",
+        "route_ref": "196;197;198;595",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.058928,
+          59.3313059
+        ]
+      },
+      "id": "node/877649653"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/942951426",
+        "check_date": "2020-01-05",
+        "highway": "traffic_signals",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "forward"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0647195,
+          59.3325096
+        ]
+      },
+      "id": "node/942951426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1121948642",
+        "check_date": "2020-01-05",
+        "highway": "traffic_signals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0651692,
+          59.3330533
+        ]
+      },
+      "id": "node/1121948642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1153092065",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0620091,
+          59.3319339
+        ]
+      },
+      "id": "node/1153092065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1397154406",
+        "crossing": "uncontrolled",
+        "highway": "crossing",
+        "kerb": "lowered"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.059843,
+          59.3296482
+        ]
+      },
+      "id": "node/1397154406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1428317077",
+        "highway": "traffic_signals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0592,
+          59.3306099
+        ]
+      },
+      "id": "node/1428317077"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1428317078",
+        "highway": "traffic_signals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0593917,
+          59.3306546
+        ]
+      },
+      "id": "node/1428317078"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1428317082",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0594477,
+          59.3307802
+        ]
+      },
+      "id": "node/1428317082"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1428317100",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0582045,
+          59.3316731
+        ]
+      },
+      "id": "node/1428317100"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1428317101",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0583895,
+          59.3317161
+        ]
+      },
+      "id": "node/1428317101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1428317104",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0584788,
+          59.3318394
+        ]
+      },
+      "id": "node/1428317104"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1428317106",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0582036,
+          59.3319084
+        ]
+      },
+      "id": "node/1428317106"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1428317110",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.057301,
+          59.332448
+        ]
+      },
+      "id": "node/1428317110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1428317115",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0574056,
+          59.3325741
+        ]
+      },
+      "id": "node/1428317115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1428317116",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0575647,
+          59.3326115
+        ]
+      },
+      "id": "node/1428317116"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1428997228",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0623023,
+          59.3301786
+        ]
+      },
+      "id": "node/1428997228"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1428997232",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0612231,
+          59.3302914
+        ]
+      },
+      "id": "node/1428997232"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1428997235",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0613466,
+          59.3304181
+        ]
+      },
+      "id": "node/1428997235"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2190156372",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0575907,
+          59.3308526
+        ]
+      },
+      "id": "node/2190156372"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2190156397",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0577971,
+          59.3309752
+        ]
+      },
+      "id": "node/2190156397"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2190156400",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0573708,
+          59.3310308
+        ]
+      },
+      "id": "node/2190156400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2190156403",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0577282,
+          59.3310443
+        ]
+      },
+      "id": "node/2190156403"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3620739357",
+        "highway": "bus_stop",
+        "local_ref": "A",
+        "name": "Centralen",
+        "network": "SL",
+        "ref": "11515",
+        "route_ref": "492;496;497;791;794;796",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0577383,
+          59.3320271
+        ]
+      },
+      "id": "node/3620739357"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4270894561",
+        "highway": "traffic_signals",
+        "traffic_signals:direction": "forward"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0586455,
+          59.3311523
+        ]
+      },
+      "id": "node/4270894561"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4270894562",
+        "highway": "traffic_signals",
+        "traffic_signals:direction": "forward"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0589164,
+          59.3311795
+        ]
+      },
+      "id": "node/4270894562"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4270894564",
+        "highway": "traffic_signals",
+        "traffic_signals:direction": "forward"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.058542,
+          59.331306
+        ]
+      },
+      "id": "node/4270894564"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4856288831",
+        "highway": "traffic_signals",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "forward"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0576924,
+          59.3324695
+        ]
+      },
+      "id": "node/4856288831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4952824907",
+        "highway": "elevator",
+        "level": "-1;0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0633753,
+          59.3322173
+        ]
+      },
+      "id": "node/4952824907"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5418151519",
+        "check_date": "2019-12-19",
+        "highway": "traffic_signals",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "forward"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0630215,
+          59.3323699
+        ]
+      },
+      "id": "node/5418151519"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5418151520",
+        "check_date": "2019-12-19",
+        "highway": "traffic_signals",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "forward"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0628728,
+          59.3322616
+        ]
+      },
+      "id": "node/5418151520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5418154324",
+        "highway": "elevator"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0580353,
+          59.332634
+        ]
+      },
+      "id": "node/5418154324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5418154325",
+        "highway": "traffic_signals",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "forward"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0572413,
+          59.3324333
+        ]
+      },
+      "id": "node/5418154325"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5418154326",
+        "highway": "traffic_signals",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "forward"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0573548,
+          59.332629
+        ]
+      },
+      "id": "node/5418154326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5418154327",
+        "highway": "traffic_signals",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "forward"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0579863,
+          59.3319207
+        ]
+      },
+      "id": "node/5418154327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5418154328",
+        "highway": "traffic_signals",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "forward"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0584304,
+          59.3316726
+        ]
+      },
+      "id": "node/5418154328"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5418154329",
+        "highway": "traffic_signals",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "backward"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0585889,
+          59.3318676
+        ]
+      },
+      "id": "node/5418154329"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5879571050",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0608606,
+          59.3317531
+        ]
+      },
+      "id": "node/5879571050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5879571051",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0608051,
+          59.3318122
+        ]
+      },
+      "id": "node/5879571051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6745903817",
+        "highway": "bus_stop",
+        "name": "T-Centralen",
+        "network": "SL",
+        "ref": "10526",
+        "route_ref": "54;65;69;191;192;193;194;195",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0611695,
+          59.3319375
+        ]
+      },
+      "id": "node/6745903817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6745903818",
+        "highway": "bus_stop",
+        "name": "T-Centralen",
+        "network": "SL",
+        "ref": "10291",
+        "route_ref": "54;65;69;191;192;193;194;195",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0624261,
+          59.332111
+        ]
+      },
+      "id": "node/6745903818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6824554034",
+        "highway": "elevator"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0579543,
+          59.3306964
+        ]
+      },
+      "id": "node/6824554034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6925553155",
+        "highway": "turning_circle",
+        "layer": "-1",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0609055,
+          59.3297533
+        ]
+      },
+      "id": "node/6925553155"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6925553157",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0614354,
+          59.3298898
+        ]
+      },
+      "id": "node/6925553157"
+    }
+  ]
+}
