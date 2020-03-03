@@ -56,7 +56,7 @@ public class GeoJsonParser
 
         foreach (Feature feature in parsedData.features)
         {
-            if (feature.geometry.type == "LineString" && feature.properties.surface == "asphalt" && feature.properties.layer >= 0) // Check if it's a "way"
+            if (feature.geometry.type == "LineString" && feature.properties.surface == "asphalt" && !(feature.properties.layer < 0) && !(feature.properties.layer > 1)) // Check if it's a "way"
             {
                 string id = feature.id;
                 
