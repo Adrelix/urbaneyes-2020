@@ -8,7 +8,7 @@ public class GSDRoadSystem : MonoBehaviour{
 	
 	public bool opt_bMultithreading = true;
 	public bool	opt_bSaveMeshes = false;
-    public bool opt_bAllowRoadUpdates = true;
+    public bool opt_bAllowRoadUpdates = false;
 	
 	public GameObject AddRoad(bool bForceSelect = false){
 		Object[] tObj = GameObject.FindObjectsOfType(typeof(GSDRoad));
