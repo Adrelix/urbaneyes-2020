@@ -1,12 +1,12 @@
 public class StreetGenTest {
-    public Coordinate[] coords;
-    public StreetGenTest(Coordinate[] coords){
+    public Vector3[] coords;
+    public StreetGenTest(Vector3[] coords){
         this.coords = coords;
     }
 
-    public makeRoad(Coordinate coords) {
+    public makeRoad(Vector3[] coords) {
         // do road stuff
-        foreach (Coordinate coord in coords) {
+        foreach (Vector3 coord in coords) {
             
         }
     }
