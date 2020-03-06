@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class Floor : MonoBehaviour
 {   
@@ -45,16 +46,29 @@ public class Floor : MonoBehaviour
         mesh.vertices = vertices;
         mesh.triangles = triangles;
         mesh.RecalculateNormals();
-        mesh.RecalculateBounds();
-        //mesh.uv = GeneratePerTriangleUV(mesh);
-        //mesh.Optimize();
+        // TODO: Necessary?
+        // mesh.RecalculateBounds();
+        mesh.uv = generateUV(mesh);
+        // TODO: Necessary?
+        // mesh.RecalculateTangents();
+        mesh.Optimize();
 
         // Set up game object with mesh;
         this.gameObject.AddComponent<MeshFilter>();
         this.gameObject.AddComponent<MeshRenderer>();
         this.gameObject.GetComponent<Transform>().position = position;
-        this.gameObject.GetComponent<MeshRenderer>().material = material;
         this.gameObject.GetComponent<MeshFilter>().mesh = mesh;
-        this.gameObject.AddComponent<MeshCollider>();
+        this.gameObject.GetComponent<MeshRenderer>().material = material;
+        this.gameObject.AddComponent<MeshCollider>();      
+    }
+
+    // From: https://answers.unity.com/questions/1189522/how-do-i-use-the-output-of-unwrappinggeneratepertr.html
+    private Vector2[] generateUV(Mesh mesh) {
+        Vector2[] uvPerTriangle = Unwrapping.GeneratePerTriangleUV(mesh);
+        Vector2[] uvs = new Vector2[mesh.vertices.Length];
+        for (int i = 0; i < mesh.triangles.Length; i++)
+            // Triangle contents reference to vertex # 
+            uvs[mesh.triangles[i]] = uvPerTriangle[i];
+        return uvs;
     }
 }
