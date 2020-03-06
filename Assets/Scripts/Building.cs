@@ -17,12 +17,15 @@ public class Building : MonoBehaviour {
         // TODO: Init material (floor and upper) depending on building type
 
         // Create first floor with specific arguments
+        // TODO: Not hardcode material
         Material firstFloorMaterial = Resources.Load("Materials/brick", typeof(Material)) as Material;
-        generateFloor(0, floorHeight * 2.5f, firstFloorMaterial);
+        generateFloor(0, floorHeight * 1.5f, firstFloorMaterial);
 
         // Handle upper floors if they exist
+        // TODO: Not hardcode material
+        Material upperFloorsMaterial = Resources.Load("Materials/Ground2", typeof(Material)) as Material;
         for (int i = 1 ; i < data.levels; i++) {
-            generateFloor(i, floorHeight, null);
+            generateFloor(i, floorHeight, upperFloorsMaterial);
         }
     }
 
