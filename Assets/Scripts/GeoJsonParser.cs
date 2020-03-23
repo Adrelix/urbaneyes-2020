@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
+using System.Linq;
 using UnityEngine;
 using Newtonsoft.Json;
 using System.Text.RegularExpressions;
+using OsmSharp.Complete;
 
 // Handles the parsing of a GEOjson file into Building objects (defined below)
 // To generate GEOjson files go to https://overpass-turbo.eu/
@@ -23,16 +26,16 @@ public class GeoJsonParser
 
 
     // Creates a list of Building objects from data in parsedData field
-    public List<Building> GetBuildings(){
-        List<Building> buildings = new List<Building>();
+    public List<BuildingData> GetBuildings(){
+        List<BuildingData> buildings = new List<BuildingData>();
 
         foreach (Feature feature in parsedData.features)
         {
             if (feature.properties.building != null && feature.geometry.type == "Polygon") // TODO: Handle when geometry.type == "Multipolygon"
             {
                 string id = feature.id;
-                int buildingLevels = feature.properties.buildingLevels == null ? 1 : (int)feature.properties.buildingLevels;
-                int? buildingMinLevel = feature.properties.buildingMinLevel;
+                int buildingLevels = feature.properties.buildingLevels != null ? (int)feature.properties.buildingLevels : 1;
+                int buildingMinLevel = feature.properties.buildingMinLevel != null ? (int)feature.properties.buildingMinLevel : 0;
                 
                 // Parse height into nullable float
                 string heightString = feature.properties.buildingHeight == null ? "" : feature.properties.buildingHeight;
@@ -42,7 +45,7 @@ public class GeoJsonParser
 
                 List<double[]> outerPolygon = feature.geometry.coordinates[0].ToObject<List<double[]>>(); // Only take first polygon, the rest describe the polygon's holes
                 
-                Building building = new Building(id, outerPolygon, buildingHeight, buildingLevels, buildingMinLevel);
+                BuildingData building = new BuildingData(id, outerPolygon, buildingHeight, buildingLevels, buildingMinLevel);
                 buildings.Add(building);
             }
         }
@@ -167,7 +170,7 @@ public class Road {
     }
 }
 // Structure for holding data of parsed buildings
-public class Building
+public class BuildingData
 {
     // origin describes some point in the middle of Klarabergsgatan
     private const double ORIGIN_LONGITUDE = 18.062910d;
@@ -175,38 +178,51 @@ public class Building
     private const float FLOOR_HEIGHT = 5f;
     public string id { get; set; }
     public int levels { get; set; } // Number of floors
-    public int? minLevel { get; set; } // Minimum floor level of this building piece
-    public float? height { get; set; }
+    public int minLevel { get; set; } // Minimum floor level of this building piece
+    public float height { get; set; }
     public Vector3 position { get; set; } // position of first point in basePolygon in relation to (ORIGIN_LATITUDE, ORIGIN_LONGITUDE) (in meters)
     public Vector3[] basePolygon { get; set; } // set of vertices describing polygon shape of building's base
     public Vector3[] roofPolygon { get; set; } // set of vertices describing polygon shape of building's roof
 
-    public Building(string buildingID, List<double[]> roofVertexList, float? buildingHeight, int buildingLevels, int? buildingMinLevel){
+    public BuildingData(string buildingID, List<double[]> roofVertexList, float? buildingHeight, int buildingLevels, int buildingMinLevel){
         id = buildingID;
         levels = buildingLevels;
         minLevel = buildingMinLevel;
+        height = buildingHeight != null ? (float)buildingHeight : (FLOOR_HEIGHT * levels) + 2; 
         position = GetBuildingPosition(roofVertexList[0][0], roofVertexList[0][1]); // Relative position from origin to first vertex
         basePolygon = TranslateCoordsToBuildingVertices(roofVertexList);
 
         // Create roof vertices from basePolygon
         roofPolygon = new Vector3[basePolygon.Length];
-        float roofHeight;
-        if(buildingHeight != null){
-            roofHeight = (float)buildingHeight;
-        }
-        else {
-            roofHeight = (levels * FLOOR_HEIGHT) + 2;
-        }
-
         for(int i = 0; i<basePolygon.Length; i++)
         {
-            roofPolygon[i] = new Vector3(basePolygon[i].x, roofHeight, basePolygon[i].z);
+            roofPolygon[i] = new Vector3(basePolygon[i].x, height, basePolygon[i].z);
         }
+    }
+
+    public BuildingData(CompleteWay buildingWay)
+    {
+        id = buildingWay.Id.ToString();
+        levels = buildingWay.Tags.ContainsKey("building:levels") ? int.Parse(buildingWay.Tags.GetValue("building:levels")) : 1;
+        minLevel = buildingWay.Tags.ContainsKey("building:min_level") ? int.Parse(buildingWay.Tags.GetValue("building:min_level")) : 0;
+
+        // Parse height into float
+        string heightString = buildingWay.Tags.ContainsKey("building:height") ? buildingWay.Tags.GetValue("building:height") : "";
+        heightString = Regex.Replace(heightString, "[A-Za-z ]", ""); // Remove unit labels
+        float temp;
+        height = float.TryParse(heightString, out temp) ? float.Parse(heightString): FLOOR_HEIGHT * levels + 3;
+
+        // Create building polygons
+        List<double[]> coordList = buildingWay.Nodes.ToList().ConvertAll<double[]>(node => new double[2] {(double)node.Longitude, (double)node.Latitude});
+        position = GetBuildingPosition(coordList[0][0], coordList[0][1]); // Relative position from origin to first vertex
+        basePolygon = TranslateCoordsToBuildingVertices(coordList);
+        roofPolygon = Array.ConvertAll(basePolygon, (baseVector => new Vector3(baseVector.x, height, baseVector.z)));
     }
 
     // Translates a list of GEOjson coordinates into an array of distances (in meters) relative to the first GEOjson coordinate.
     // Therefore the first coordinate will be translated to (0,0) and the rest translated to their distance in meters from this "origin".
     // Uses the approximation that 1degree latitude is 111km and 1degree longitude is 111km * cos(latitude) when distances are small
+    // Approximation taken from https://stackoverflow.com/a/39540339
     private Vector3[] TranslateCoordsToBuildingVertices(List<double[]> latLonCoordList)
     {
         Vector3[] vertices = new Vector3[latLonCoordList.Count-1]; // One less element since last element in GEOjson coordinates is always first coordinate repeated
@@ -220,11 +236,37 @@ public class Building
 
             double xRelative = changeInLongitude * 111316 * System.Math.Cos(buildingLatOrigin * System.Math.PI / 180d);
             double zRelative = changeInLatitude * 111111d;
-            float yRelative = minLevel == null ? 0 : (int)minLevel * FLOOR_HEIGHT;
+            float yRelative = minLevel * FLOOR_HEIGHT;
             vertices[i] = new Vector3((float)xRelative, yRelative ,(float)zRelative);
         }
-        return vertices;
+        return SimplifyBuildingShapes(vertices);
     }
+
+    // Takes an array of vertices that describe a polygon and removes the vertices whose angle approximately
+    // describes a straight line. This makes buildings have less vertices overall and makes it more likely
+    // that walls will be created as one piece.
+    private Vector3[] SimplifyBuildingShapes(Vector3[] vertices)
+    {
+        List<Vector3> necessaryVerts = new List<Vector3>();
+        necessaryVerts.Add(vertices[0]);
+
+        for (int i = 1; i < vertices.Length; i++)
+        {
+            float prevChangeInX = vertices[i].x - vertices[i-1].x;
+            float prevChangeInZ = vertices[i].z - vertices[i-1].z;
+            float nextChangeInX = vertices[i].x - vertices[(i+1) % vertices.Length].x;
+            float nextChangeInZ = vertices[i].z - vertices[(i+1) % vertices.Length].z;
+            float angle = Vector3.Angle(new Vector2(prevChangeInX, prevChangeInZ), new Vector2(nextChangeInX, nextChangeInZ));
+            
+            // Deem nearly straight angles to be unnecessary (Vector3.angle is always between 180 and 0)
+            if (!(angle > 177 || angle < 3))
+            {
+                necessaryVerts.Add(vertices[i]);
+            }
+        }
+        return necessaryVerts.ToArray();
+    }
+
 
     // Takes a coordinate and returns a vector representing the coordinate's direction in meters from the origin (ORIGIN_LATITUDE, ORIGIN_LONGITUDE) 
     private Vector3 GetBuildingPosition(double lon, double lat){
