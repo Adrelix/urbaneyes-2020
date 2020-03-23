@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -323,7 +323,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171159440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalPosition: {x: -629.5, y: 1.5, z: 568.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
@@ -549,8 +549,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579eb518cfd4e1fd0923e4af1ba9f056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  geojsonData: {fileID: 4900000, guid: a9d4655dd665bed16ad1600d2ebf8a1f, type: 3}
-  material: {fileID: 2100000, guid: 08b55c0d5cf2654718ce7413a1db4854, type: 2}
+  geojsonData: {fileID: 4900000, guid: fd6a9d59312a7427eb655bddec1da07c, type: 3}
+  material: {fileID: 2100000, guid: 3883faa0bda6d44b39e893977f88187e, type: 2}
 --- !u!4 &1606222272
 Transform:
   m_ObjectHideFlags: 0
