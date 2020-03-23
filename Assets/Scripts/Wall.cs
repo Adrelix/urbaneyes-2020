@@ -21,15 +21,17 @@ public class Wall : MonoBehaviour {
         this.gameObject.GetComponent<MeshFilter>().mesh = mesh;
         this.gameObject.GetComponent<MeshRenderer>().material = material;
 
-        var renderer = this.gameObject.GetComponent<MeshRenderer>();
-        var tempMaterial = new Material(renderer.sharedMaterial);
+        MeshRenderer renderer = this.gameObject.GetComponent<MeshRenderer>();
+        Material tempMaterial = new Material(renderer.sharedMaterial);
+        
+        // Scale texture according to width and height of the wall
+        // TODO: Remove arbitrary scalar (5f)
+        float x = mesh.bounds.size.x;
+        float z = mesh.bounds.size.z;
+        float scaleXZ = Mathf.Sqrt((x * x) + (z * z)) / 5f;
+        float scaleY = mesh.bounds.size.y / 5f;
 
-        // TODO: Remove arbitrary scalar (1.5f)
-        // TODO: Find pattern for matching very long objects
-        float scaleX = mesh.bounds.size.x * transform.localScale.x * 1.5f;
-        float scaleY = mesh.bounds.size.y * transform.localScale.y;
-
-        tempMaterial.mainTextureScale = new Vector2(scaleX, scaleY);
+        tempMaterial.mainTextureScale = new Vector2(scaleXZ, scaleY);
         renderer.sharedMaterial = tempMaterial;
 
         this.gameObject.AddComponent<MeshCollider>();  

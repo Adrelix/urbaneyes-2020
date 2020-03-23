@@ -148,6 +148,7 @@ public class BuildingData
     // Translates a list of GEOjson coordinates into an array of distances (in meters) relative to the first GEOjson coordinate.
     // Therefore the first coordinate will be translated to (0,0) and the rest translated to their distance in meters from this "origin".
     // Uses the approximation that 1degree latitude is 111km and 1degree longitude is 111km * cos(latitude) when distances are small
+    // Approximation taken from https://stackoverflow.com/a/39540339
     private Vector3[] TranslateCoordsToBuildingVertices(List<double[]> latLonCoordList)
     {
         Vector3[] vertices = new Vector3[latLonCoordList.Count-1]; // One less element since last element in GEOjson coordinates is always first coordinate repeated
@@ -164,8 +165,34 @@ public class BuildingData
             float yRelative = minLevel * FLOOR_HEIGHT;
             vertices[i] = new Vector3((float)xRelative, yRelative ,(float)zRelative);
         }
-        return vertices;
+        return SimplifyBuildingShapes(vertices);
     }
+
+    // Takes an array of vertices that describe a polygon and removes the vertices whose angle approximately
+    // describes a straight line. This makes buildings have less vertices overall and makes it more likely
+    // that walls will be created as one piece.
+    private Vector3[] SimplifyBuildingShapes(Vector3[] vertices)
+    {
+        List<Vector3> necessaryVerts = new List<Vector3>();
+        necessaryVerts.Add(vertices[0]);
+
+        for (int i = 1; i < vertices.Length; i++)
+        {
+            float prevChangeInX = vertices[i].x - vertices[i-1].x;
+            float prevChangeInZ = vertices[i].z - vertices[i-1].z;
+            float nextChangeInX = vertices[i].x - vertices[(i+1) % vertices.Length].x;
+            float nextChangeInZ = vertices[i].z - vertices[(i+1) % vertices.Length].z;
+            float angle = Vector3.Angle(new Vector2(prevChangeInX, prevChangeInZ), new Vector2(nextChangeInX, nextChangeInZ));
+            
+            // Deem nearly straight angles to be unnecessary (Vector3.angle is always between 180 and 0)
+            if (!(angle > 177 || angle < 3))
+            {
+                necessaryVerts.Add(vertices[i]);
+            }
+        }
+        return necessaryVerts.ToArray();
+    }
+
 
     // Takes a coordinate and returns a vector representing the coordinate's direction in meters from the origin (ORIGIN_LATITUDE, ORIGIN_LONGITUDE) 
     private Vector3 GetBuildingPosition(double lon, double lat){
