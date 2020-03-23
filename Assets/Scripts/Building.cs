@@ -5,7 +5,7 @@ using System;
 
 public class Building : MonoBehaviour {
 
-    private float floorHeight = 5f;
+    private float floorHeight = 2.5f;
     private Vector3[] floorBase;
     private Vector3 buildingPosition;
 
@@ -19,7 +19,7 @@ public class Building : MonoBehaviour {
         // Create first floor with specific arguments
         // TODO: Not hardcode material
         Material firstFloorMaterial = Resources.Load("Materials/brick", typeof(Material)) as Material;
-        generateFloor(0, floorHeight * 1.5f, firstFloorMaterial);
+        generateFloor(0, floorHeight * 1.25f, firstFloorMaterial);
 
         // Handle upper floors if they exist
         // TODO: Not hardcode material
