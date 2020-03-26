@@ -8,15 +8,16 @@ public class Building : MonoBehaviour {
     private float floorHeight = 2.5f;
     private Vector3[] floorBase;
 
-    // private Color redsand = new Color(0.55f, 0.23f, 0.23f);
-    // private Color green = new Color(0.28f, 0.38f, 0.28f);
-    // private Color beige = new Color(0.55f, 0.47f, 0.23f);
-    // private List<Color> colors = new List<Color>{redsand, green, beige};
-    // above doesn't compile so use ugly version instead:
-    private List<Color> colors = new List<Color>{
-        new Color(0.55f, 0.23f, 0.23f),     // red sand
-        new Color(0.28f, 0.38f, 0.28f),     // dark green
-        new Color(0.55f, 0.47f, 0.23f)      // beige
+    // magnitude of random element for house colors
+    private float hueVar = 0.05f;
+    private float satVar = 0.2f;
+    private float valVar = 0.2f;
+
+    // Stockholm colors (add more...)
+    private List<float[]> baseColorsHSV = new List<float[]> {
+        new float[] {0f, 0.58f, 0.55f},     // red sand
+        new float[] {0.33f, 0.27f, 0.28f},  // dark green
+        new float[] {0.125f, 0.58f, 0.55f}  // beige
     };
 
     public void initBuilding(BuildingData data) {
@@ -35,11 +36,17 @@ public class Building : MonoBehaviour {
         // TODO: Not hardcode material
         Material upperFloorsMaterial =
             Resources.Load("Materials/wall08/wall08b", typeof(Material)) as Material;
-        // randomize stucco color for rest of buildning
+        // randomize stucco color for upper floors
         var rand = new System.Random();
-        Color thisHouseColor = colors[rand.Next(colors.Count)];
-        // TODO: add random color deviation
+        var thisBaseColor = baseColorsHSV[rand.Next(baseColorsHSV.Count)];
+        // TODO: improve randomization of color variations
+        Color thisHouseColor = Color.HSVToRGB(
+            thisBaseColor[0] + UnityEngine.Random.Range(-hueVar, hueVar),
+            thisBaseColor[1] + UnityEngine.Random.Range(-satVar, satVar),
+            thisBaseColor[2] + UnityEngine.Random.Range(-valVar, valVar)
+        );
         upperFloorsMaterial.SetColor("_Color", thisHouseColor);
+        // generate upper floors
         for (int i = 1 ; i < data.levels; i++) {
             generateFloor(i, floorHeight, upperFloorsMaterial);
         }
@@ -57,7 +64,7 @@ public class Building : MonoBehaviour {
         mesh.RecalculateNormals();
 
         this.gameObject.AddComponent<MeshRenderer>();
-        // Change to roof material
+        // TODO: add proper roof material
         Material roofMaterial =
             Resources.Load("Materials/Ground2", typeof(Material)) as Material;
         this.gameObject.GetComponent<MeshRenderer>().material = roofMaterial;
