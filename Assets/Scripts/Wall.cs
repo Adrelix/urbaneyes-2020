@@ -57,7 +57,7 @@ public class Wall : MonoBehaviour
             windowPosition += wallPath * windowLength / 2f;
 
             // Load window prefab and set as child
-            GameObject windowInst = Instantiate(Resources.Load("Window_low_poly"), windowPosition, Quaternion.identity) as GameObject;
+            GameObject windowInst = Instantiate(Resources.Load("Window_low_poly2"), windowPosition, Quaternion.identity) as GameObject;
             windowInst.transform.parent = this.transform;
 
             // Rotate window to be parallel with wall
