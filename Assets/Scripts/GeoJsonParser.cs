@@ -59,19 +59,34 @@ public class GeoJsonParser
 
         foreach (Feature feature in parsedData.features)
         {
-            if (feature.geometry.type == "LineString" && feature.properties.surface == "asphalt" && !(feature.properties.layer < 0) && !(feature.properties.layer > 1)) // Check if it's a "way"
+            if (feature.geometry.type == "LineString" && feature.properties.surface == "asphalt" && !(feature.properties.layer < 0) && !(feature.properties.layer > 1) && (feature.properties.name != null)) // Check if it's a "way"
             {
-                string id = feature.id;
-                
-                Road road = new Road(id);
-                List<double[]> roadNodes = new List<double[]>();
-                //road.addNodes(feature.geometry.coordinates.Cast<List<double[]>>().ToList());
-                foreach(dynamic coord in feature.geometry.coordinates) {
-                    roadNodes.Add(coord.ToObject<double[]>());
+                String roadname = feature.properties.name;
+                Road road = roads.Find(x => x.name == roadname);
+                if (road == null)
+                {
+                    road = new Road(feature.properties.id, roadname);
+                    //road.addNodes(feature.geometry.coordinates.Cast<List<double[]>>().ToList());
+                    foreach (dynamic coord in feature.geometry.coordinates)
+                    {
+                        road.rawNodes.Add(coord.ToObject<double[]>());
+                    }
+                    roads.Add(road);
+                } else
+                {
+                    // List<double[]> roadNodes = new List<double[]>();
+                    //road.addNodes(feature.geometry.coordinates.Cast<List<double[]>>().ToList());
+                    foreach (dynamic coord in feature.geometry.coordinates)
+                    {
+                        road.rawNodes.Add(coord.ToObject<double[]>());
+                    }
                 }
-                road.addNode(roadNodes);
-                roads.Add(road);
             }
+        }
+        foreach(Road road in roads)
+        {
+            road.sortNodes();
+            road.addNode();
         }
         return roads;
     }
@@ -112,6 +127,7 @@ public class GeoJsonParser
         public string type { get; set; }
         public string surface { get; set; }
         public int layer { get; set; }
+        public string name { get; set; }
     }
 
     private class Geometry
@@ -127,17 +143,31 @@ public class Road {
     private const double ORIGIN_LATITUDE = 59.332349d;
     public List<Vector3> nodes;
     public string id;
-
+    public string name;
+    //public Vector3 nullVector = new Vector3(-9999, -9999, -9999);
     private Vector3 position;
+    public List<double[]> rawNodes;
 
-    public Road(string id) {
+    public Road(string id, string name) {
         this.nodes = new List<Vector3>();
         this.id = id;
+        this.name = name;
+        this.rawNodes = new List<double[]>();
+        // this.position = new Vector3(-9999, -9999, -9999);
     }
 
-    public void addNode(List<double[]> longLatNodes){
-        this.position = GetRoadPosition(longLatNodes[0][0], longLatNodes[0][1]);
-        this.nodes = TranslateCoordsToVertices(longLatNodes);
+    public void addNode(){
+        this.position = GetRoadPosition(rawNodes[0][0], rawNodes[0][1]);
+        TranslateCoordsToVertices(rawNodes);
+    }
+
+    public void sortNodes(){
+        rawNodes.Sort(delegate (double[] elem1, double[] elem2)
+        {
+            return elem1[0].CompareTo(elem2[0]);
+        });
+
+        Debug.Log("Rawnodes sorterade " + rawNodes);
     }
 
     // Takes a coordinate and returns a vector representing the coordinate's direction in meters from the origin (ORIGIN_LATITUDE, ORIGIN_LONGITUDE) 
@@ -150,7 +180,7 @@ public class Road {
         double distFromOriginZ = changeInLatitude * 111111d;
         return new Vector3((float)distFromOriginX, 0, (float)distFromOriginZ);
     }
-    private List<Vector3> TranslateCoordsToVertices(List<double[]> latLonCoordList)
+    private void TranslateCoordsToVertices(List<double[]> latLonCoordList)
     {
         List<Vector3> vertices = new List<Vector3>(); // One less element since last element in GEOjson coordinates is always first coordinate repeated
         double roadLonOrigin = latLonCoordList[0][0];
@@ -164,10 +194,9 @@ public class Road {
             double xRelative = changeInLongitude * 111316 * System.Math.Cos(roadLatOrigin * System.Math.PI / 180d);
             double zRelative = changeInLatitude * 111111d;
             // yval will always be 0 since the world is flat
-            vertices.Add(new Vector3((float)xRelative + this.position.x, 0 ,(float)zRelative + this.position.z));
+            this.nodes.Add(new Vector3((float)xRelative + this.position.x, 0 ,(float)zRelative + this.position.z));
         }
-        return vertices;
-    }
+    } 
 }
 // Structure for holding data of parsed buildings
 public class BuildingData
