@@ -1,0 +1,67 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-03-23T12:42:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/43055852",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Västmannagatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15116455",
+        "wikipedia": "sv:Västmannagatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0474025,
+            59.3419793
+          ],
+          [
+            18.0474782,
+            59.3418971
+          ],
+          [
+            18.0491465,
+            59.3402013
+          ],
+          [
+            18.0492247,
+            59.3401218
+          ],
+          [
+            18.0493002,
+            59.3400446
+          ],
+          [
+            18.0498327,
+            59.3395001
+          ],
+          [
+            18.0499018,
+            59.33943
+          ],
+          [
+            18.0499914,
+            59.3393398
+          ],
+          [
+            18.0508729,
+            59.3384508
+          ],
+          [
+            18.0509433,
+            59.3383799
+          ]
+        ]
+      },
+      "id": "way/43055852"
+    }
+  ]
+}

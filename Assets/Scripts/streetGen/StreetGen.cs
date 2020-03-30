@@ -14,7 +14,7 @@ using GSD.Roads;
     //
     // See "GSDUnitTests.cs" for an example on automation (ignore unit test #3).
 public class StreetGen : MonoBehaviour {
-
+    [ExecuteInEditMode]
     public TextAsset geojsonData;
     // Get building data from GEOjson file
     void Start(){
