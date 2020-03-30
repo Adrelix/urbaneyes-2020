@@ -1,0 +1,4846 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-03-24T08:47:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1682316",
+        "cycleway": "opposite",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Vegagatan",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15904442",
+        "wikipedia": "sv:Vegagatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0499088,
+            59.3426019
+          ],
+          [
+            18.0499927,
+            59.3425174
+          ],
+          [
+            18.0517392,
+            59.3407588
+          ]
+        ]
+      },
+      "id": "way/1682316"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4352795",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Tegnérgatan",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0502654,
+            59.3370127
+          ],
+          [
+            18.0504329,
+            59.3370358
+          ],
+          [
+            18.0505172,
+            59.3370476
+          ],
+          [
+            18.051754,
+            59.3373776
+          ],
+          [
+            18.0518929,
+            59.3374335
+          ]
+        ]
+      },
+      "id": "way/4352795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4353030",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Tegnérgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0518929,
+            59.3374335
+          ],
+          [
+            18.0520158,
+            59.337466
+          ],
+          [
+            18.053222,
+            59.3377879
+          ],
+          [
+            18.0533662,
+            59.337823
+          ]
+        ]
+      },
+      "id": "way/4353030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4485702",
+        "cycleway": "opposite",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Wallingatan",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10719196",
+        "wikipedia": "sv:Wallingatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.053463,
+            59.336012
+          ],
+          [
+            18.0536262,
+            59.3361611
+          ],
+          [
+            18.0545838,
+            59.3363856
+          ],
+          [
+            18.0547508,
+            59.3364273
+          ],
+          [
+            18.0549256,
+            59.3364717
+          ],
+          [
+            18.0574269,
+            59.3371078
+          ],
+          [
+            18.0578575,
+            59.3372167
+          ]
+        ]
+      },
+      "id": "way/4485702"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4486542",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Tegnérgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10691873",
+        "wikipedia": "sv:Tegnérgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0556173,
+            59.3384135
+          ],
+          [
+            18.05583,
+            59.3384665
+          ],
+          [
+            18.0565001,
+            59.338633
+          ]
+        ]
+      },
+      "id": "way/4486542"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4486574",
+        "cycleway": "opposite",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Saltmätargatan",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15813074",
+        "wikipedia": "sv:Saltmätargatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0587965,
+            59.3392285
+          ],
+          [
+            18.0578587,
+            59.3401638
+          ],
+          [
+            18.057793,
+            59.340229
+          ],
+          [
+            18.0574657,
+            59.3405603
+          ],
+          [
+            18.0569424,
+            59.3410779
+          ],
+          [
+            18.0568991,
+            59.3411157
+          ]
+        ]
+      },
+      "id": "way/4486574"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4490982",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Drottninggatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q2066219",
+        "wikipedia": "sv:Drottninggatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0528195,
+            59.3410324
+          ],
+          [
+            18.0529374,
+            59.3410618
+          ],
+          [
+            18.0530635,
+            59.3410549
+          ],
+          [
+            18.0534737,
+            59.3409442
+          ],
+          [
+            18.0542141,
+            59.3407491
+          ],
+          [
+            18.0544578,
+            59.3406791
+          ],
+          [
+            18.0546363,
+            59.3406288
+          ],
+          [
+            18.0547795,
+            59.3405679
+          ]
+        ]
+      },
+      "id": "way/4490982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4490987",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Tegnérlunden",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0556173,
+            59.3384135
+          ],
+          [
+            18.0555366,
+            59.3384861
+          ],
+          [
+            18.0552635,
+            59.3387634
+          ],
+          [
+            18.0552152,
+            59.3387863
+          ],
+          [
+            18.055158,
+            59.338794
+          ],
+          [
+            18.0550774,
+            59.3387876
+          ],
+          [
+            18.0543738,
+            59.338601
+          ],
+          [
+            18.0542277,
+            59.3385636
+          ],
+          [
+            18.0530848,
+            59.3382733
+          ],
+          [
+            18.0529499,
+            59.3382395
+          ]
+        ]
+      },
+      "id": "way/4490987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4491067",
+        "cycleway": "opposite",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Teknologgatan",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0528055,
+            59.3401668
+          ],
+          [
+            18.052876,
+            59.3400983
+          ],
+          [
+            18.0534217,
+            59.3395617
+          ],
+          [
+            18.0537906,
+            59.3391861
+          ],
+          [
+            18.0538611,
+            59.3391129
+          ],
+          [
+            18.0539251,
+            59.3390487
+          ],
+          [
+            18.0543738,
+            59.338601
+          ]
+        ]
+      },
+      "id": "way/4491067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4491342",
+        "cycleway": "opposite",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Barnhusgatan",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10426539",
+        "wikipedia": "sv:Barnhusgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0551181,
+            59.3357657
+          ],
+          [
+            18.0552184,
+            59.3357907
+          ],
+          [
+            18.056209,
+            59.3360377
+          ],
+          [
+            18.0566755,
+            59.336154
+          ],
+          [
+            18.0571334,
+            59.3362722
+          ],
+          [
+            18.0584335,
+            59.3365923
+          ]
+        ]
+      },
+      "id": "way/4491342"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4492795",
+        "cycleway": "opposite",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Kungstensgatan",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15120837",
+        "wikipedia": "sv:Kungstensgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0568991,
+            59.3411157
+          ],
+          [
+            18.0577949,
+            59.3413563
+          ],
+          [
+            18.0579083,
+            59.3413851
+          ]
+        ]
+      },
+      "id": "way/4492795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4492815",
+        "cycleway": "opposite",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Rådmansgatan",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10658680",
+        "wikipedia": "sv:Rådmansgatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0555876,
+            59.3395369
+          ],
+          [
+            18.0549808,
+            59.3393881
+          ],
+          [
+            18.0539715,
+            59.3391397
+          ],
+          [
+            18.0538611,
+            59.3391129
+          ],
+          [
+            18.0525705,
+            59.3387899
+          ],
+          [
+            18.0524325,
+            59.3387566
+          ]
+        ]
+      },
+      "id": "way/4492815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4498215",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Upplandsgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15116497",
+        "wikipedia": "sv:Upplandsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0547508,
+            59.3364273
+          ],
+          [
+            18.0546876,
+            59.3364916
+          ],
+          [
+            18.0541976,
+            59.3369892
+          ],
+          [
+            18.0541447,
+            59.337042
+          ],
+          [
+            18.0540913,
+            59.3370962
+          ],
+          [
+            18.0537574,
+            59.3374349
+          ],
+          [
+            18.0537078,
+            59.3374841
+          ]
+        ]
+      },
+      "id": "way/4498215"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4499038",
+        "bicycle": "dismount",
+        "check_date": "2020-02-13",
+        "highway": "steps",
+        "name": "Rådmansgatan",
+        "pram": "yes",
+        "ramp": "yes",
+        "source": "survey",
+        "step_count": "53",
+        "wikidata": "Q10658680",
+        "wikipedia": "sv:Rådmansgatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0574772,
+            59.3400391
+          ],
+          [
+            18.0575575,
+            59.3400356
+          ],
+          [
+            18.0575936,
+            59.3400849
+          ],
+          [
+            18.0577676,
+            59.340141
+          ]
+        ]
+      },
+      "id": "way/4499038"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4648011",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Norrtullsgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q3344057",
+        "wikipedia": "sv:Norrtullsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0528195,
+            59.3410324
+          ],
+          [
+            18.0527235,
+            59.3411314
+          ],
+          [
+            18.0519357,
+            59.3419444
+          ],
+          [
+            18.0515618,
+            59.3423331
+          ]
+        ]
+      },
+      "id": "way/4648011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/4968801",
+        "check_date": "2020-02-12",
+        "handrail": "yes",
+        "highway": "steps",
+        "lit": "yes",
+        "ramp": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0532681,
+            59.3412936
+          ],
+          [
+            18.0531669,
+            59.3412379
+          ]
+        ]
+      },
+      "id": "way/4968801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/22884861",
+        "bridge": "yes",
+        "cycleway": "track",
+        "highway": "tertiary",
+        "layer": "1",
+        "lit": "yes",
+        "material": "concrete",
+        "maxspeed": "40",
+        "name": "Barnhusbron",
+        "sidewalk": "both",
+        "start_date": "1969",
+        "surface": "asphalt",
+        "wikidata": "Q3373233",
+        "wikipedia": "sv:Barnhusbron"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0461604,
+            59.334377
+          ],
+          [
+            18.0461953,
+            59.3344272
+          ],
+          [
+            18.0465155,
+            59.334959
+          ],
+          [
+            18.0466943,
+            59.3352239
+          ],
+          [
+            18.0468985,
+            59.3354821
+          ],
+          [
+            18.047125,
+            59.3357418
+          ],
+          [
+            18.0473789,
+            59.3359951
+          ],
+          [
+            18.0475252,
+            59.3361127
+          ],
+          [
+            18.047699,
+            59.3362275
+          ],
+          [
+            18.0478896,
+            59.3363334
+          ],
+          [
+            18.0480903,
+            59.3364294
+          ]
+        ]
+      },
+      "id": "way/22884861"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/22884865",
+        "cycleway:left": "track",
+        "cycleway:right": "lane",
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "Tegnérgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0480903,
+            59.3364294
+          ],
+          [
+            18.0481915,
+            59.3364715
+          ],
+          [
+            18.0483329,
+            59.3365172
+          ],
+          [
+            18.0487171,
+            59.3366373
+          ],
+          [
+            18.0500912,
+            59.3369708
+          ],
+          [
+            18.0502654,
+            59.3370127
+          ]
+        ]
+      },
+      "id": "way/22884865"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/23089542",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Observatoriegatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15905329",
+        "wikipedia": "sv:Observatoriegatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0475845,
+            59.3397063
+          ],
+          [
+            18.0477248,
+            59.3397419
+          ],
+          [
+            18.0490913,
+            59.340088
+          ],
+          [
+            18.0492247,
+            59.3401218
+          ],
+          [
+            18.0493749,
+            59.3401597
+          ],
+          [
+            18.0505313,
+            59.3404528
+          ],
+          [
+            18.0506911,
+            59.3404933
+          ],
+          [
+            18.0508271,
+            59.3405287
+          ],
+          [
+            18.0515745,
+            59.3407174
+          ],
+          [
+            18.0517392,
+            59.3407588
+          ],
+          [
+            18.0527376,
+            59.3410078
+          ],
+          [
+            18.0528195,
+            59.3410324
+          ]
+        ]
+      },
+      "id": "way/23089542"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/23089562",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Kungstensgatan",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15120837",
+        "wikipedia": "sv:Kungstensgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0562013,
+            59.340928
+          ],
+          [
+            18.054873,
+            59.3405916
+          ],
+          [
+            18.0547795,
+            59.3405679
+          ]
+        ]
+      },
+      "id": "way/23089562"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35205842",
+        "highway": "cycleway",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0518929,
+            59.3374335
+          ],
+          [
+            18.05171,
+            59.3374185
+          ],
+          [
+            18.0503924,
+            59.337078
+          ],
+          [
+            18.0502654,
+            59.3370127
+          ]
+        ]
+      },
+      "id": "way/35205842"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35205845",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Rådmansgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10658680",
+        "wikipedia": "sv:Rådmansgatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0524325,
+            59.3387566
+          ],
+          [
+            18.0522981,
+            59.3387233
+          ],
+          [
+            18.05109,
+            59.3384164
+          ],
+          [
+            18.0509433,
+            59.3383799
+          ]
+        ]
+      },
+      "id": "way/35205845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35205846",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Crafoords Väg",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0493073,
+            59.3379728
+          ],
+          [
+            18.0491777,
+            59.3379355
+          ],
+          [
+            18.0486264,
+            59.3377989
+          ],
+          [
+            18.0484755,
+            59.3377257
+          ],
+          [
+            18.0483783,
+            59.3376346
+          ],
+          [
+            18.0483182,
+            59.3375383
+          ],
+          [
+            18.0483194,
+            59.3374104
+          ],
+          [
+            18.0483269,
+            59.3373713
+          ],
+          [
+            18.0483336,
+            59.337338
+          ],
+          [
+            18.048367,
+            59.3371402
+          ],
+          [
+            18.0483845,
+            59.3370386
+          ],
+          [
+            18.0485468,
+            59.3368631
+          ],
+          [
+            18.0485758,
+            59.3368111
+          ],
+          [
+            18.0485375,
+            59.3367652
+          ]
+        ]
+      },
+      "id": "way/35205846"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35205847",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Hälsobrunnsgatan",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0481915,
+            59.3364715
+          ],
+          [
+            18.0481282,
+            59.3365178
+          ],
+          [
+            18.0477409,
+            59.3368659
+          ],
+          [
+            18.0476456,
+            59.3369153
+          ],
+          [
+            18.0472668,
+            59.3370133
+          ],
+          [
+            18.04599,
+            59.3373315
+          ],
+          [
+            18.0458741,
+            59.3373894
+          ],
+          [
+            18.0457414,
+            59.3375169
+          ]
+        ]
+      },
+      "id": "way/35205847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35551374",
+        "cycleway": "opposite_lane",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Upplandsgatan",
+        "oneway": "yes",
+        "oneway:bicycle": "no",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15116497",
+        "wikipedia": "sv:Upplandsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0551181,
+            59.3357657
+          ],
+          [
+            18.055075,
+            59.3358376
+          ],
+          [
+            18.0547985,
+            59.3363723
+          ],
+          [
+            18.0547508,
+            59.3364273
+          ]
+        ]
+      },
+      "id": "way/35551374"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39471680",
+        "check_date": "2020-02-13",
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "down",
+        "step_count": "53"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0548764,
+            59.3410932
+          ],
+          [
+            18.0547906,
+            59.3410276
+          ],
+          [
+            18.0547649,
+            59.3409444
+          ],
+          [
+            18.054722,
+            59.3408744
+          ]
+        ]
+      },
+      "id": "way/39471680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/41208830",
+        "check_date": "2020-02-13",
+        "highway": "service",
+        "maxheight": "1.95"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0574657,
+            59.3405603
+          ],
+          [
+            18.0575212,
+            59.3405741
+          ]
+        ]
+      },
+      "id": "way/41208830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/41527693",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Upplandsgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15116497",
+        "wikipedia": "sv:Upplandsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0513815,
+            59.3398049
+          ],
+          [
+            18.051313,
+            59.3398732
+          ],
+          [
+            18.0507674,
+            59.3404172
+          ],
+          [
+            18.0506911,
+            59.3404933
+          ],
+          [
+            18.0506095,
+            59.3405746
+          ],
+          [
+            18.0489197,
+            59.3422593
+          ],
+          [
+            18.0488378,
+            59.342341
+          ]
+        ]
+      },
+      "id": "way/41527693"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/41527698",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Dalagatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10466054",
+        "wikipedia": "sv:Dalagatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0502654,
+            59.3370127
+          ],
+          [
+            18.0501259,
+            59.3371526
+          ],
+          [
+            18.0493938,
+            59.3378861
+          ],
+          [
+            18.0493073,
+            59.3379728
+          ],
+          [
+            18.0492288,
+            59.3380513
+          ],
+          [
+            18.0483914,
+            59.3388906
+          ],
+          [
+            18.048373,
+            59.338909
+          ],
+          [
+            18.0482667,
+            59.3390157
+          ]
+        ]
+      },
+      "id": "way/41527698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/41527699",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Kungstensgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15120837",
+        "wikipedia": "sv:Kungstensgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0513815,
+            59.3398049
+          ],
+          [
+            18.0512319,
+            59.339767
+          ],
+          [
+            18.0500515,
+            59.3394676
+          ],
+          [
+            18.0499018,
+            59.33943
+          ],
+          [
+            18.0497589,
+            59.339394
+          ],
+          [
+            18.048425,
+            59.3390552
+          ],
+          [
+            18.0482667,
+            59.3390157
+          ]
+        ]
+      },
+      "id": "way/41527699"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/41574210",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Västmannagatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15116455",
+        "wikipedia": "sv:Västmannagatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.053046,
+            59.336122
+          ],
+          [
+            18.0529869,
+            59.3362082
+          ],
+          [
+            18.0526638,
+            59.3366605
+          ]
+        ]
+      },
+      "id": "way/41574210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/41658690",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Dalagatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10466054",
+        "wikipedia": "sv:Dalagatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0482667,
+            59.3390157
+          ],
+          [
+            18.0481876,
+            59.3390958
+          ],
+          [
+            18.0481668,
+            59.3391169
+          ],
+          [
+            18.047976,
+            59.33931
+          ],
+          [
+            18.0476884,
+            59.3396074
+          ],
+          [
+            18.0475845,
+            59.3397063
+          ],
+          [
+            18.0471127,
+            59.3401839
+          ],
+          [
+            18.0470225,
+            59.3402752
+          ],
+          [
+            18.0469977,
+            59.3403003
+          ],
+          [
+            18.0469709,
+            59.3403274
+          ],
+          [
+            18.0458387,
+            59.3414736
+          ],
+          [
+            18.0457603,
+            59.3415476
+          ]
+        ]
+      },
+      "id": "way/41658690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/42038905",
+        "check_date": "2020-02-19",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0549463,
+            59.3379679
+          ],
+          [
+            18.0550416,
+            59.3378858
+          ]
+        ]
+      },
+      "id": "way/42038905"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/42038910",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0544835,
+            59.3384822
+          ],
+          [
+            18.0545456,
+            59.3385167
+          ]
+        ]
+      },
+      "id": "way/42038910"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/42979013",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Upplandsgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15116497",
+        "wikipedia": "sv:Upplandsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0524325,
+            59.3387566
+          ],
+          [
+            18.0523503,
+            59.3388402
+          ],
+          [
+            18.0523051,
+            59.3388852
+          ],
+          [
+            18.0522915,
+            59.3389001
+          ],
+          [
+            18.051462,
+            59.3397234
+          ],
+          [
+            18.0513815,
+            59.3398049
+          ]
+        ]
+      },
+      "id": "way/42979013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/42979121",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Rådmansgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10658680",
+        "wikipedia": "sv:Rådmansgatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0509433,
+            59.3383799
+          ],
+          [
+            18.0507888,
+            59.338341
+          ],
+          [
+            18.0494615,
+            59.338011
+          ],
+          [
+            18.0493073,
+            59.3379728
+          ]
+        ]
+      },
+      "id": "way/42979121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/42979122",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Västmannagatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15116455",
+        "wikipedia": "sv:Västmannagatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0509433,
+            59.3383799
+          ],
+          [
+            18.0510208,
+            59.3383022
+          ],
+          [
+            18.0517743,
+            59.3375487
+          ],
+          [
+            18.0518158,
+            59.3375097
+          ],
+          [
+            18.0518929,
+            59.3374335
+          ],
+          [
+            18.0519701,
+            59.3373561
+          ],
+          [
+            18.052005,
+            59.337321
+          ],
+          [
+            18.0526638,
+            59.3366605
+          ]
+        ]
+      },
+      "id": "way/42979122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/43055852",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Västmannagatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15116455",
+        "wikipedia": "sv:Västmannagatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0474025,
+            59.3419793
+          ],
+          [
+            18.0474782,
+            59.3418971
+          ],
+          [
+            18.0491465,
+            59.3402013
+          ],
+          [
+            18.0492247,
+            59.3401218
+          ],
+          [
+            18.0493002,
+            59.3400446
+          ],
+          [
+            18.0498327,
+            59.3395001
+          ],
+          [
+            18.0499018,
+            59.33943
+          ],
+          [
+            18.0499914,
+            59.3393398
+          ],
+          [
+            18.0508729,
+            59.3384508
+          ],
+          [
+            18.0509433,
+            59.3383799
+          ]
+        ]
+      },
+      "id": "way/43055852"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/67252820",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0476894,
+            59.3373691
+          ],
+          [
+            18.0478464,
+            59.3372766
+          ]
+        ]
+      },
+      "id": "way/67252820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/67252832",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0479329,
+            59.3372766
+          ],
+          [
+            18.0479232,
+            59.3372396
+          ]
+        ]
+      },
+      "id": "way/67252832"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/67252850",
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0483269,
+            59.3373713
+          ],
+          [
+            18.0485325,
+            59.3373789
+          ],
+          [
+            18.0489776,
+            59.337488
+          ],
+          [
+            18.049289,
+            59.3375643
+          ],
+          [
+            18.0493936,
+            59.3375342
+          ],
+          [
+            18.0494777,
+            59.3374517
+          ],
+          [
+            18.0495797,
+            59.337346
+          ]
+        ]
+      },
+      "id": "way/67252850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/67252854",
+        "check_date": "2020-01-09",
+        "highway": "service",
+        "incline": "up"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0476934,
+            59.3392368
+          ],
+          [
+            18.047735,
+            59.3391976
+          ],
+          [
+            18.0478542,
+            59.3390852
+          ]
+        ]
+      },
+      "id": "way/67252854"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/67252863",
+        "access": "yes",
+        "highway": "service",
+        "source": "survey",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0463825,
+            59.3374759
+          ],
+          [
+            18.047224,
+            59.3372975
+          ],
+          [
+            18.0473445,
+            59.3372901
+          ],
+          [
+            18.0474612,
+            59.3373102
+          ],
+          [
+            18.0476894,
+            59.3373691
+          ],
+          [
+            18.0483182,
+            59.3375383
+          ]
+        ]
+      },
+      "id": "way/67252863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/71570565",
+        "check_date": "2020-02-13",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0557884,
+            59.3410452
+          ],
+          [
+            18.0560029,
+            59.3410178
+          ],
+          [
+            18.0563185,
+            59.340987
+          ]
+        ]
+      },
+      "id": "way/71570565"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/71570588",
+        "check_date": "2020-02-13",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0554773,
+            59.3410801
+          ],
+          [
+            18.0556918,
+            59.3410561
+          ]
+        ]
+      },
+      "id": "way/71570588"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/71570590",
+        "check_date": "2020-02-13",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0557401,
+            59.3410917
+          ],
+          [
+            18.0558098,
+            59.3410753
+          ]
+        ]
+      },
+      "id": "way/71570590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/112791734",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "maxweight": "12",
+        "name": "Dalagatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10466054",
+        "wikipedia": "sv:Dalagatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0509812,
+            59.3362789
+          ],
+          [
+            18.0502654,
+            59.3370127
+          ]
+        ]
+      },
+      "id": "way/112791734"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/122041452",
+        "check_date": "2020-02-13",
+        "foot": "yes",
+        "highway": "living_street",
+        "name": "Bertil Ohlins Gata",
+        "wikidata": "Q18237715",
+        "wikipedia": "sv:Bertil Ohlins gata"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0562248,
+            59.3418062
+          ],
+          [
+            18.0565118,
+            59.3415056
+          ],
+          [
+            18.0568358,
+            59.3411669
+          ],
+          [
+            18.0568558,
+            59.3411508
+          ],
+          [
+            18.0568991,
+            59.3411157
+          ]
+        ]
+      },
+      "id": "way/122041452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/129567715",
+        "check_date": "2019-12-19",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0574269,
+            59.3371078
+          ],
+          [
+            18.0573883,
+            59.337146
+          ]
+        ]
+      },
+      "id": "way/129567715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/129881110",
+        "cycleway": "opposite",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Kammakargatan",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10543155",
+        "wikipedia": "sv:Kammakargatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0572994,
+            59.3378597
+          ],
+          [
+            18.0555504,
+            59.337405
+          ],
+          [
+            18.0542792,
+            59.337077
+          ],
+          [
+            18.0541447,
+            59.337042
+          ],
+          [
+            18.0539738,
+            59.336998
+          ],
+          [
+            18.0526638,
+            59.3366605
+          ],
+          [
+            18.0514483,
+            59.3363432
+          ]
+        ]
+      },
+      "id": "way/129881110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/131692639",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Kungstensgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15120837",
+        "wikipedia": "sv:Kungstensgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0544578,
+            59.3406791
+          ],
+          [
+            18.0543923,
+            59.3406246
+          ],
+          [
+            18.0543175,
+            59.3405624
+          ],
+          [
+            18.0529444,
+            59.3402031
+          ],
+          [
+            18.0528055,
+            59.3401668
+          ],
+          [
+            18.0515316,
+            59.339843
+          ],
+          [
+            18.0513815,
+            59.3398049
+          ]
+        ]
+      },
+      "id": "way/131692639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/132465962",
+        "check_date": "2020-02-19",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0536753,
+            59.3399624
+          ],
+          [
+            18.0539665,
+            59.3400361
+          ],
+          [
+            18.0545529,
+            59.3401845
+          ]
+        ]
+      },
+      "id": "way/132465962"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/132465963",
+        "check_date": "2020-02-13",
+        "highway": "steps",
+        "name": "Kungstenstrappan",
+        "wikidata": "Q15120837",
+        "wikipedia": "sv:Kungstensgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0566702,
+            59.3410595
+          ],
+          [
+            18.0568626,
+            59.3411061
+          ],
+          [
+            18.0568991,
+            59.3411157
+          ]
+        ]
+      },
+      "id": "way/132465963"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/132465966",
+        "check_date": "2020-02-19",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0534217,
+            59.3395617
+          ],
+          [
+            18.0534854,
+            59.3395782
+          ],
+          [
+            18.0539348,
+            59.3396911
+          ]
+        ]
+      },
+      "id": "way/132465966"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/132465968",
+        "fixme": "maybe this is removed?",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0547254,
+            59.3396438
+          ],
+          [
+            18.0541203,
+            59.3394999
+          ]
+        ]
+      },
+      "id": "way/132465968"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/133349311",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0567329,
+            59.340272
+          ],
+          [
+            18.0567502,
+            59.3402532
+          ]
+        ]
+      },
+      "id": "way/133349311"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/133349312",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0567865,
+            59.3402137
+          ],
+          [
+            18.0567999,
+            59.3401991
+          ]
+        ]
+      },
+      "id": "way/133349312"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/133349318",
+        "check_date": "2020-03-06",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0550989,
+            59.3402527
+          ],
+          [
+            18.0551664,
+            59.3402686
+          ],
+          [
+            18.0555033,
+            59.3403483
+          ]
+        ]
+      },
+      "id": "way/133349318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/224153556",
+        "check_date": "2019-12-19",
+        "highway": "service",
+        "layer": "-1",
+        "maxheight": "2.1",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0573883,
+            59.337146
+          ],
+          [
+            18.0573583,
+            59.337179
+          ]
+        ]
+      },
+      "id": "way/224153556"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/238362750",
+        "check_date": "2020-02-19",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0549808,
+            59.3393881
+          ],
+          [
+            18.0550258,
+            59.3393403
+          ]
+        ]
+      },
+      "id": "way/238362750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/238362751",
+        "check_date": "2020-02-19",
+        "highway": "service",
+        "layer": "-1",
+        "maxheight": "2.4",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0550258,
+            59.3393403
+          ],
+          [
+            18.055077,
+            59.3392879
+          ]
+        ]
+      },
+      "id": "way/238362751"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/241159971",
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0489776,
+            59.337488
+          ],
+          [
+            18.0490977,
+            59.3373599
+          ]
+        ]
+      },
+      "id": "way/241159971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/241159973",
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0494777,
+            59.3374517
+          ],
+          [
+            18.0490977,
+            59.3373599
+          ],
+          [
+            18.0487096,
+            59.3372661
+          ]
+        ]
+      },
+      "id": "way/241159973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/241707589",
+        "check_date": "2020-02-14",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0534507,
+            59.3402448
+          ],
+          [
+            18.0535006,
+            59.3402353
+          ]
+        ]
+      },
+      "id": "way/241707589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/241707593",
+        "check_date": "2020-02-19",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0541203,
+            59.3394999
+          ],
+          [
+            18.0539348,
+            59.3396911
+          ],
+          [
+            18.0536753,
+            59.3399624
+          ],
+          [
+            18.0534774,
+            59.340166
+          ]
+        ]
+      },
+      "id": "way/241707593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/252558065",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Upplandsgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15116497",
+        "wikipedia": "sv:Upplandsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0529499,
+            59.3382395
+          ],
+          [
+            18.0525354,
+            59.3386487
+          ],
+          [
+            18.0525254,
+            59.3386586
+          ],
+          [
+            18.0525076,
+            59.3386762
+          ],
+          [
+            18.0524325,
+            59.3387566
+          ]
+        ]
+      },
+      "id": "way/252558065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/252558066",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Upplandsgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15116497",
+        "wikipedia": "sv:Upplandsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0537078,
+            59.3374841
+          ],
+          [
+            18.0534571,
+            59.3377331
+          ],
+          [
+            18.0533662,
+            59.337823
+          ]
+        ]
+      },
+      "id": "way/252558066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/316039836",
+        "highway": "steps",
+        "lit": "yes",
+        "note": "yes, steps and fine_gravel",
+        "surface": "fine_gravel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.055537,
+            59.3381918
+          ],
+          [
+            18.0552806,
+            59.3382789
+          ]
+        ]
+      },
+      "id": "way/316039836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/328378655",
+        "check_date": "2020-02-13",
+        "highway": "steps",
+        "name": "Kungstenstrappan",
+        "surface": "paved",
+        "wikidata": "Q15120837",
+        "wikipedia": "sv:Kungstensgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0565052,
+            59.3410355
+          ],
+          [
+            18.0563522,
+            59.3409948
+          ],
+          [
+            18.0563185,
+            59.340987
+          ]
+        ]
+      },
+      "id": "way/328378655"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/328378894",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Holländargatan",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10525252",
+        "wikipedia": "sv:Holländargatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0568754,
+            59.3402595
+          ],
+          [
+            18.0562013,
+            59.340928
+          ]
+        ]
+      },
+      "id": "way/328378894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/382769102",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Tegnérlunden",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0537078,
+            59.3374841
+          ],
+          [
+            18.0538425,
+            59.3375221
+          ],
+          [
+            18.055843,
+            59.3380529
+          ],
+          [
+            18.0559036,
+            59.3380852
+          ],
+          [
+            18.0559037,
+            59.3381233
+          ],
+          [
+            18.0558851,
+            59.3381588
+          ],
+          [
+            18.0557222,
+            59.3383195
+          ],
+          [
+            18.0556173,
+            59.3384135
+          ]
+        ]
+      },
+      "id": "way/382769102"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/382769103",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Upplandsgatan",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q15116497",
+        "wikipedia": "sv:Upplandsgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0533662,
+            59.337823
+          ],
+          [
+            18.0533013,
+            59.3378874
+          ],
+          [
+            18.0529499,
+            59.3382395
+          ]
+        ]
+      },
+      "id": "way/382769103"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/440395134",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0482011,
+            59.3365764
+          ],
+          [
+            18.048128,
+            59.3366537
+          ]
+        ]
+      },
+      "id": "way/440395134"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/440468879",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.048367,
+            59.3371402
+          ],
+          [
+            18.0486726,
+            59.3371139
+          ],
+          [
+            18.0487797,
+            59.3371191
+          ],
+          [
+            18.0490958,
+            59.3371889
+          ],
+          [
+            18.0491462,
+            59.3372416
+          ],
+          [
+            18.0495797,
+            59.337346
+          ]
+        ]
+      },
+      "id": "way/440468879"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/444137469",
+        "cycleway": "opposite",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Holländargatan",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "wikidata": "Q10525252",
+        "wikipedia": "sv:Holländargatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0580656,
+            59.3390307
+          ],
+          [
+            18.0580064,
+            59.3390909
+          ],
+          [
+            18.0571994,
+            59.3398992
+          ],
+          [
+            18.0571625,
+            59.3399356
+          ]
+        ]
+      },
+      "id": "way/444137469"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/444137470",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Holländargatan",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10525252",
+        "wikipedia": "sv:Holländargatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0571625,
+            59.3399356
+          ],
+          [
+            18.0571465,
+            59.3399927
+          ],
+          [
+            18.0568754,
+            59.3402595
+          ]
+        ]
+      },
+      "id": "way/444137470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/543587650",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Tegnérgatan",
+        "surface": "asphalt",
+        "wikidata": "Q10691873",
+        "wikipedia": "sv:Tegnérgatan"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0567752,
+            59.338701
+          ],
+          [
+            18.0579521,
+            59.3390007
+          ],
+          [
+            18.0580656,
+            59.3390307
+          ],
+          [
+            18.0587108,
+            59.3391936
+          ],
+          [
+            18.0587965,
+            59.3392285
+          ],
+          [
+            18.0588907,
+            59.3392762
+          ],
+          [
+            18.059581,
+            59.339451
+          ],
+          [
+            18.059698,
+            59.3394856
+          ],
+          [
+            18.0598567,
+            59.3395278
+          ]
+        ]
+      },
+      "id": "way/543587650"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/695998358",
+        "check_date": "2020-02-13",
+        "cycleway": "opposite",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Rådmansgatan",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt",
+        "wikidata": "Q10658680",
+        "wikipedia": "sv:Rådmansgatan, Stockholm"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0571625,
+            59.3399356
+          ],
+          [
+            18.055927,
+            59.3396226
+          ]
+        ]
+      },
+      "id": "way/695998358"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/697302460",
+        "foot": "yes",
+        "highway": "steps",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0548857,
+            59.3384728
+          ],
+          [
+            18.0545045,
+            59.3384426
+          ]
+        ]
+      },
+      "id": "way/697302460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/754836054",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0510112,
+            59.337317
+          ],
+          [
+            18.0509871,
+            59.3373451
+          ]
+        ]
+      },
+      "id": "way/754836054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/754849915",
+        "check_date": "2020-02-19",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.055464,
+            59.3384675
+          ],
+          [
+            18.0554211,
+            59.3384294
+          ],
+          [
+            18.0554356,
+            59.3384143
+          ],
+          [
+            18.0553736,
+            59.3384059
+          ],
+          [
+            18.0552795,
+            59.3383798
+          ]
+        ]
+      },
+      "id": "way/754849915"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/756933041",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "30",
+        "name": "Olivecronas Väg",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0458527,
+            59.3387599
+          ],
+          [
+            18.0468134,
+            59.3390088
+          ],
+          [
+            18.0471045,
+            59.3390842
+          ],
+          [
+            18.0476934,
+            59.3392368
+          ],
+          [
+            18.0478168,
+            59.3392688
+          ],
+          [
+            18.047976,
+            59.33931
+          ]
+        ]
+      },
+      "id": "way/756933041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/761944263",
+        "check_date": "2020-01-09",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0478542,
+            59.3390852
+          ],
+          [
+            18.0474877,
+            59.3389931
+          ],
+          [
+            18.0476084,
+            59.3388689
+          ]
+        ]
+      },
+      "id": "way/761944263"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/762080017",
+        "check_date": "2020-02-19",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0539669,
+            59.3376007
+          ],
+          [
+            18.0539339,
+            59.3376271
+          ]
+        ]
+      },
+      "id": "way/762080017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/771829999",
+        "check_date": "2020-02-12",
+        "handrail": "yes",
+        "highway": "steps",
+        "lit": "yes",
+        "ramp": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0528608,
+            59.3413555
+          ],
+          [
+            18.0530305,
+            59.3413956
+          ]
+        ]
+      },
+      "id": "way/771829999"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/771830004",
+        "check_date": "2020-02-12",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0530078,
+            59.3412008
+          ],
+          [
+            18.0531669,
+            59.3412379
+          ]
+        ]
+      },
+      "id": "way/771830004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/771869242",
+        "bicycle": "dismount",
+        "check_date": "2020-02-12",
+        "foot": "yes",
+        "highway": "service",
+        "motorcar": "private",
+        "motorcycle": "private",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0544226,
+            59.3420444
+          ],
+          [
+            18.0542625,
+            59.3420609
+          ],
+          [
+            18.0541337,
+            59.342066
+          ],
+          [
+            18.0540148,
+            59.3420607
+          ],
+          [
+            18.0539087,
+            59.3420384
+          ],
+          [
+            18.053816,
+            59.3419999
+          ],
+          [
+            18.0537099,
+            59.3419329
+          ],
+          [
+            18.0536298,
+            59.3418307
+          ],
+          [
+            18.0536294,
+            59.3417373
+          ],
+          [
+            18.0535606,
+            59.3416841
+          ],
+          [
+            18.0534421,
+            59.3416278
+          ],
+          [
+            18.0532772,
+            59.3415764
+          ],
+          [
+            18.0531785,
+            59.3415269
+          ],
+          [
+            18.0531483,
+            59.3414762
+          ],
+          [
+            18.0531512,
+            59.3414127
+          ],
+          [
+            18.0532681,
+            59.3412936
+          ],
+          [
+            18.0534605,
+            59.3411858
+          ],
+          [
+            18.0534892,
+            59.3411636
+          ],
+          [
+            18.0535804,
+            59.3410932
+          ],
+          [
+            18.0535086,
+            59.3409929
+          ],
+          [
+            18.0534737,
+            59.3409442
+          ]
+        ]
+      },
+      "id": "way/771869242"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/772097800",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0568315,
+            59.3402491
+          ],
+          [
+            18.0567687,
+            59.3402331
+          ]
+        ]
+      },
+      "id": "way/772097800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/772097805",
+        "check_date": "2020-02-13",
+        "highway": "steps"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0555952,
+            59.3412367
+          ],
+          [
+            18.0555728,
+            59.3411734
+          ],
+          [
+            18.0555631,
+            59.3411458
+          ]
+        ]
+      },
+      "id": "way/772097805"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/772130080",
+        "check_date": "2020-01-05",
+        "highway": "steps",
+        "incline": "up",
+        "lit": "yes",
+        "surface": "paving_stones"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0545265,
+            59.3407075
+          ],
+          [
+            18.0545678,
+            59.3407442
+          ],
+          [
+            18.0545987,
+            59.3407722
+          ]
+        ]
+      },
+      "id": "way/772130080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/772136031",
+        "check_date": "2020-02-13",
+        "highway": "path",
+        "surface": "ground"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0542841,
+            59.3413559
+          ],
+          [
+            18.0543564,
+            59.3413058
+          ],
+          [
+            18.0544376,
+            59.3412711
+          ],
+          [
+            18.0546285,
+            59.3412606
+          ],
+          [
+            18.0547656,
+            59.3412618
+          ],
+          [
+            18.054946,
+            59.3412827
+          ],
+          [
+            18.0550369,
+            59.3413366
+          ]
+        ]
+      },
+      "id": "way/772136031"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/774623115",
+        "check_date": "2020-02-19",
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.0539348,
+            59.3396911
+          ],
+          [
+            18.0545038,
+            59.3398347
+          ],
+          [
+            18.0546577,
+            59.3396705
+          ]
+        ]
+      },
+      "id": "way/774623115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/169901",
+        "highway": "traffic_signals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0502654,
+          59.3370127
+        ]
+      },
+      "id": "node/169901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/245307",
+        "highway": "traffic_signals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0493073,
+          59.3379728
+        ]
+      },
+      "id": "node/245307"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7172908",
+        "check_date": "2020-02-13",
+        "crossing": "unmarked",
+        "description": "de-facto",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0562013,
+          59.340928
+        ]
+      },
+      "id": "node/7172908"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/21718823",
+        "check_date": "2019-12-06",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0542141,
+          59.3407491
+        ]
+      },
+      "id": "node/21718823"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/413516209",
+        "highway": "bus_stop",
+        "name": "Tegnérgatan",
+        "network": "SL",
+        "ref": "10807",
+        "route_ref": "53",
+        "shelter": "no",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0511759,
+          59.3380355
+        ]
+      },
+      "id": "node/413516209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/485981406",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0481876,
+          59.3390958
+        ]
+      },
+      "id": "node/485981406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/485981408",
+        "check_date": "2020-01-09",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0478168,
+          59.3392688
+        ]
+      },
+      "id": "node/485981408"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/485981410",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.048425,
+          59.3390552
+        ]
+      },
+      "id": "node/485981410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/485981418",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.048373,
+          59.338909
+        ]
+      },
+      "id": "node/485981418"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/485981422",
+        "bench": "yes",
+        "highway": "bus_stop",
+        "name": "Sabbatsbergs sjukhus",
+        "network": "SL",
+        "ref": "10281",
+        "route_ref": "50;61",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0485189,
+          59.3386238
+        ]
+      },
+      "id": "node/485981422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/485981426",
+        "crossing": "controlled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0492288,
+          59.3380513
+        ]
+      },
+      "id": "node/485981426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/485981428",
+        "crossing": "controlled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0491777,
+          59.3379355
+        ]
+      },
+      "id": "node/485981428"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/485981467",
+        "highway": "bus_stop",
+        "name": "Tegnérgatan",
+        "network": "SL",
+        "ref": "10282",
+        "route_ref": "50;61",
+        "shelter": "no",
+        "source": "survey",
+        "zone": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0497808,
+          59.337627
+        ]
+      },
+      "id": "node/485981467"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/485981474",
+        "button_operated": "yes",
+        "crossing": "traffic_signals",
+        "highway": "crossing",
+        "traffic_signals:sound": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0500912,
+          59.3369708
+        ]
+      },
+      "id": "node/485981474"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/485981493",
+        "highway": "bus_stop",
+        "name": "Tegnérgatan",
+        "network": "SL",
+        "ref": "10283",
+        "route_ref": "50",
+        "shelter": "no",
+        "zone": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0505745,
+          59.3365763
+        ]
+      },
+      "id": "node/485981493"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/485981546",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0545838,
+          59.3363856
+        ]
+      },
+      "id": "node/485981546"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/485981547",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0547985,
+          59.3363723
+        ]
+      },
+      "id": "node/485981547"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/521883929",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0557222,
+          59.3383195
+        ]
+      },
+      "id": "node/521883929"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/521883943",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0555366,
+          59.3384861
+        ]
+      },
+      "id": "node/521883943"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/538191440",
+        "bench": "yes",
+        "check_date": "2020-02-14",
+        "highway": "bus_stop",
+        "name": "Observatoriegatan",
+        "network": "SL",
+        "ref": "10586",
+        "route_ref": "53",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0510162,
+          59.34041
+        ]
+      },
+      "id": "node/538191440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/766792007",
+        "highway": "bus_stop",
+        "name": "Sabbatsbergs sjukhus",
+        "network": "SL",
+        "ref": "10280",
+        "route_ref": "50;61",
+        "shelter": "no",
+        "zone": "A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0481198,
+          59.3393213
+        ]
+      },
+      "id": "node/766792007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/851306924",
+        "check_date": "2020-02-13",
+        "crossing": "unmarked",
+        "description": "de-facto",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0568754,
+          59.3402595
+        ]
+      },
+      "id": "node/851306924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/867360881",
+        "bench": "yes",
+        "highway": "bus_stop",
+        "name": "Tegnérgatan",
+        "network": "SL",
+        "ref": "10588",
+        "route_ref": "53",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0533005,
+          59.3380346
+        ]
+      },
+      "id": "node/867360881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/867361518",
+        "check_date": "2020-02-14",
+        "highway": "bus_stop",
+        "name": "Observatoriegatan",
+        "network": "SL",
+        "ref": "10581",
+        "route_ref": "53",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0503214,
+          59.3407601
+        ]
+      },
+      "id": "node/867361518"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1281326763",
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0483329,
+          59.3365172
+        ]
+      },
+      "id": "node/1281326763"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1403941996",
+        "check_date": "2020-02-13",
+        "crossing": "unmarked",
+        "description": "de-facto",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0571465,
+          59.3399927
+        ]
+      },
+      "id": "node/1403941996"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449088403",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0503924,
+          59.337078
+        ]
+      },
+      "id": "node/1449088403"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1457186394",
+        "check_date": "2020-02-12",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0530635,
+          59.3410549
+        ]
+      },
+      "id": "node/1457186394"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1673493435",
+        "highway": "traffic_signals"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0481915,
+          59.3364715
+        ]
+      },
+      "id": "node/1673493435"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2372316987",
+        "highway": "crossing",
+        "source": "Bing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.051754,
+          59.3373776
+        ]
+      },
+      "id": "node/2372316987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244098",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0533013,
+          59.3378874
+        ]
+      },
+      "id": "node/2647244098"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244099",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.05583,
+          59.3384665
+        ]
+      },
+      "id": "node/2647244099"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244100",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0541976,
+          59.3369892
+        ]
+      },
+      "id": "node/2647244100"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244101",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0525705,
+          59.3387899
+        ]
+      },
+      "id": "node/2647244101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244102",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0542792,
+          59.337077
+        ]
+      },
+      "id": "node/2647244102"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244103",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0549256,
+          59.3364717
+        ]
+      },
+      "id": "node/2647244103"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244104",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0539738,
+          59.336998
+        ]
+      },
+      "id": "node/2647244104"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244105",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0534571,
+          59.3377331
+        ]
+      },
+      "id": "node/2647244105"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244106",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.053222,
+          59.3377879
+        ]
+      },
+      "id": "node/2647244106"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244107",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0525076,
+          59.3386762
+        ]
+      },
+      "id": "node/2647244107"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244108",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0542277,
+          59.3385636
+        ]
+      },
+      "id": "node/2647244108"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244109",
+        "check_date": "2020-01-10",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0538425,
+          59.3375221
+        ]
+      },
+      "id": "node/2647244109"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244110",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0537574,
+          59.3374349
+        ]
+      },
+      "id": "node/2647244110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244111",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0522981,
+          59.3387233
+        ]
+      },
+      "id": "node/2647244111"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244112",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0540913,
+          59.3370962
+        ]
+      },
+      "id": "node/2647244112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244113",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0546876,
+          59.3364916
+        ]
+      },
+      "id": "node/2647244113"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244114",
+        "check_date": "2020-01-10",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0530848,
+          59.3382733
+        ]
+      },
+      "id": "node/2647244114"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2647244115",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0523503,
+          59.3388402
+        ]
+      },
+      "id": "node/2647244115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2837602583",
+        "check_date": "2020-02-14",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.051462,
+          59.3397234
+        ]
+      },
+      "id": "node/2837602583"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2837602584",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0500515,
+          59.3394676
+        ]
+      },
+      "id": "node/2837602584"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2837602585",
+        "check_date": "2020-02-14",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0515316,
+          59.339843
+        ]
+      },
+      "id": "node/2837602585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2837602586",
+        "check_date": "2020-02-14",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0512319,
+          59.339767
+        ]
+      },
+      "id": "node/2837602586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2837602587",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0499914,
+          59.3393398
+        ]
+      },
+      "id": "node/2837602587"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2837602588",
+        "check_date": "2020-02-14",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.051313,
+          59.3398732
+        ]
+      },
+      "id": "node/2837602588"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2837602589",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0498327,
+          59.3395001
+        ]
+      },
+      "id": "node/2837602589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2837602590",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0497589,
+          59.339394
+        ]
+      },
+      "id": "node/2837602590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3126122791",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0537906,
+          59.3391861
+        ]
+      },
+      "id": "node/3126122791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3126122794",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0539251,
+          59.3390487
+        ]
+      },
+      "id": "node/3126122794"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3126122795",
+        "check_date": "2020-02-13",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0571994,
+          59.3398992
+        ]
+      },
+      "id": "node/3126122795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3126122796",
+        "check_date": "2020-02-19",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0539715,
+          59.3391397
+        ]
+      },
+      "id": "node/3126122796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3419360062",
+        "check_date": "2020-02-14",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0505313,
+          59.3404528
+        ]
+      },
+      "id": "node/3419360062"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3419360067",
+        "check_date": "2020-02-14",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0508271,
+          59.3405287
+        ]
+      },
+      "id": "node/3419360067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3419360068",
+        "check_date": "2020-02-14",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0506095,
+          59.3405746
+        ]
+      },
+      "id": "node/3419360068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3419360069",
+        "check_date": "2020-01-06",
+        "crossing": "uncontrolled",
+        "highway": "crossing",
+        "source": "Bing",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0527376,
+          59.3410078
+        ]
+      },
+      "id": "node/3419360069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3419360071",
+        "check_date": "2020-02-14",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0507674,
+          59.3404172
+        ]
+      },
+      "id": "node/3419360071"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3419360073",
+        "check_date": "2019-12-06",
+        "crossing": "uncontrolled",
+        "highway": "crossing",
+        "source": "Bing",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0527235,
+          59.3411314
+        ]
+      },
+      "id": "node/3419360073"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3419360074",
+        "check_date": "2020-02-13",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0515745,
+          59.3407174
+        ]
+      },
+      "id": "node/3419360074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3649978505",
+        "check_date": "2020-02-14",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.052876,
+          59.3400983
+        ]
+      },
+      "id": "node/3649978505"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3649978509",
+        "check_date": "2020-02-14",
+        "crossing": "uncontrolled",
+        "crossing:island": "yes",
+        "highway": "crossing",
+        "source": "Bing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0529444,
+          59.3402031
+        ]
+      },
+      "id": "node/3649978509"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3845040461",
+        "crossing": "controlled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0494615,
+          59.338011
+        ]
+      },
+      "id": "node/3845040461"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3845040462",
+        "crossing": "controlled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0493938,
+          59.3378861
+        ]
+      },
+      "id": "node/3845040462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3845040463",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0510208,
+          59.3383022
+        ]
+      },
+      "id": "node/3845040463"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3845040464",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0508729,
+          59.3384508
+        ]
+      },
+      "id": "node/3845040464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3845040465",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.05109,
+          59.3384164
+        ]
+      },
+      "id": "node/3845040465"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3845040466",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0507888,
+          59.338341
+        ]
+      },
+      "id": "node/3845040466"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3880593034",
+        "check_date": "2020-02-14",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0493002,
+          59.3400446
+        ]
+      },
+      "id": "node/3880593034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3880593037",
+        "check_date": "2020-02-14",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0493749,
+          59.3401597
+        ]
+      },
+      "id": "node/3880593037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3880593049",
+        "check_date": "2020-02-14",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0490913,
+          59.340088
+        ]
+      },
+      "id": "node/3880593049"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3880593053",
+        "check_date": "2020-02-14",
+        "crossing:island": "yes",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0491465,
+          59.3402013
+        ]
+      },
+      "id": "node/3880593053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3977771820",
+        "highway": "crossing",
+        "source": "Bing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0518158,
+          59.3375097
+        ]
+      },
+      "id": "node/3977771820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3977771821",
+        "highway": "crossing",
+        "source": "Bing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0519701,
+          59.3373561
+        ]
+      },
+      "id": "node/3977771821"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3977771822",
+        "highway": "crossing",
+        "source": "Bing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0520158,
+          59.337466
+        ]
+      },
+      "id": "node/3977771822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5177068769",
+        "direction": "backward",
+        "highway": "give_way"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.052005,
+          59.337321
+        ]
+      },
+      "id": "node/5177068769"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5177068770",
+        "direction": "forward",
+        "highway": "give_way"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0517743,
+          59.3375487
+        ]
+      },
+      "id": "node/5177068770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7046774968",
+        "check_date": "2020-01-05",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0535086,
+          59.3409929
+        ]
+      },
+      "id": "node/7046774968"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7046803713",
+        "check_date": "2020-01-05",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0543923,
+          59.3406246
+        ]
+      },
+      "id": "node/7046803713"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7051306469",
+        "button_operated": "yes",
+        "crossing": "traffic_signals",
+        "highway": "crossing",
+        "traffic_signals:sound": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0501259,
+          59.3371526
+        ]
+      },
+      "id": "node/7051306469"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7051342509",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.05171,
+          59.3374185
+        ]
+      },
+      "id": "node/7051342509"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7051342536",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0504329,
+          59.3370358
+        ]
+      },
+      "id": "node/7051342536"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7204722515",
+        "check_date": "2020-02-13",
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0569424,
+          59.3410779
+        ]
+      },
+      "id": "node/7204722515"
+    }
+  ]
+}
