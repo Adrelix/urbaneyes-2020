@@ -35,12 +35,29 @@ public class Wall : MonoBehaviour
         // TODO: Remove arbitrary scalar for brick size (5f)
         tempMaterial.mainTextureScale = new Vector2(wallLength / 5f, wallHeight / 5f);
         renderer.sharedMaterial = tempMaterial;
-        
+
+        if (!transform.parent.GetComponentInParent<Floor>().isFirstFloor()) {
+            generateWindows(wallLength, wallHeight, mesh, position);
+        }
+    }
+
+    // Return uv mapping relative to a rectangle (our wall)
+    private Vector2[] generateUV(Mesh mesh) {
+        Vector2[] uvs = new Vector2[] {
+            new Vector2(1,1),
+            new Vector2(0,1),
+            new Vector2(0,0),
+            new Vector2(1,0)
+        };
+        return uvs;
+    }
+
+    private void generateWindows(float wallLength, float wallHeight, Mesh mesh, Vector3 position) {
         // TODO: get acutal window dimensions
         float windowLength = 2f;
         float windowHeight = 1.5f;
         // Offset is the distance from the corner of the wall to the first window
-        float minOffset = 2f; 
+        float minOffset = 2f;
 
         // Calculate the maximum num. of windows you can fit on the wall
         int numOfWindows = (int)((wallLength - (2f * minOffset)) / windowLength);
@@ -66,17 +83,5 @@ public class Wall : MonoBehaviour
             // Add second half
             windowPosition += wallPath * windowLength / 2f;
         }
-
-    }
-
-    // Return uv mapping relative to a rectangle (our wall)
-    private Vector2[] generateUV(Mesh mesh) {
-        Vector2[] uvs = new Vector2[] {
-            new Vector2(1,1),
-            new Vector2(0,1),
-            new Vector2(0,0),
-            new Vector2(1,0)
-        };
-        return uvs;
     }
 }

@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Floor : MonoBehaviour
-{   
-    public void initFloor(Vector3[] baseVertices, float floorHeight, Vector3 position, Material material) {
+{
+    private int floorNumber;
+
+    public void initFloor(int id, Vector3[] baseVertices, float floorHeight, Vector3 position, Material material) {
+        this.floorNumber = id;
         // Create roof vertices from basePolygon
         Vector3[] roofVertices = new Vector3[baseVertices.Length];
         for (int i = 0; i<baseVertices.Length; i++) {
@@ -28,7 +31,7 @@ public class Floor : MonoBehaviour
             // Generate wall triangles
             // Each wall is rectangular and therefore divided into two triangles.
             // Triangles are described as three integers referring to the index of their
-            // corresponding vertex in vertices. The index the triangles are placed at ensures 
+            // corresponding vertex in vertices. The index the triangles are placed at ensures
             // that they are "clockwise" if facing the face of the rectangle.
             int[] triangles = {
                 0,1,2,2,3,0
@@ -43,7 +46,7 @@ public class Floor : MonoBehaviour
             Vector3 newPosition = baseVertices[i] + position;
             generateWall(i, mesh, newPosition, material);
         }
-            
+
     }
 
     // Generate a wall based on "wall specific arguments"
@@ -52,5 +55,10 @@ public class Floor : MonoBehaviour
         obj.transform.parent = transform; // Set this building as parent
         obj.AddComponent<Wall>();
         obj.GetComponent<Wall>().initWall(wallMesh, wallPosition, wallMaterial);
+    }
+
+    // let children ask if this is first floor
+    public bool isFirstFloor() {
+        return floorNumber==0;
     }
 }
