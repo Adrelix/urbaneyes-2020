@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+Generate the roofs of the buildings
+*/
 public class BuildingEditor : MonoBehaviour
 {
     public int levels;
