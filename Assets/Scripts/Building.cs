@@ -90,11 +90,13 @@ public class Building : MonoBehaviour {
         var rand = new System.Random();
         switch (rand.Next(4)) {
             case 0:
-                mat = Resources.Load("Materials/wall08/wall08", typeof(Material)) as Material;
+                // Create new Material object so as not to change original
+                mat = new Material(Resources.Load("Materials/wall08/wall08", typeof(Material)) as Material);
                 mat.SetColor("_Color", getStuccoColor());
                 break;
             case 1:
-                mat = Resources.Load("Materials/wall16/wall16", typeof(Material)) as Material;
+                // Create new Material object so as not to change original
+                mat = new Material(Resources.Load("Materials/wall16/wall16", typeof(Material)) as Material);
                 mat.SetColor("_Color", getStuccoColor());
                 break;
             case 2:
