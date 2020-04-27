@@ -17,9 +17,6 @@ public class StreetGen : MonoBehaviour {
     [ExecuteInEditMode]
     // Get building data from GEOjson file
     public TextAsset geojsonData;
-    // Options
-    public float laneWidthInPercent;
-    public float shoulderWidthInPercent;
     void Start(){
     }
 
@@ -39,8 +36,8 @@ public class StreetGen : MonoBehaviour {
             RoadSystem.opt_bAllowRoadUpdates = false;
             GSDRoad firstroad = GSDRoadAutomation.CreateRoad_Programmatically(RoadSystem, ref road.nodes);
             // GSDRoadAutomation.CreateIntersections_ProgrammaticallyForRoad(firstroad, GSDRoadIntersection.iIntersectionTypeEnum.None, GSDRoadIntersection.RoadTypeEnum.NoTurnLane);
-            firstroad.opt_LaneWidth = laneWidthInPercent / 100f * 5f;
-            firstroad.opt_ShoulderWidth = shoulderWidthInPercent / 100f * 3f;
+            firstroad.opt_LaneWidth = 100 / 100f * 5f;
+            firstroad.opt_ShoulderWidth = ParameterValues.shoulderWidth / 100f * 3f;
             // firstroad
             RoadSystem.opt_bAllowRoadUpdates = true;
             RoadSystem.UpdateAllRoads();
