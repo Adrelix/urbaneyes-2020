@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 
 
-public static class StartMenuScript : MonoBehaviour
+public class StartMenuScript : MonoBehaviour
 {
     // public Slider[] optionSliders;
     public Text[] texts;
@@ -24,7 +24,7 @@ public static class StartMenuScript : MonoBehaviour
     }
     public void AdjustOption2(float newPar){
     texts[1].text = newPar.ToString("0.00") + "%";
-    ParameterValues.option2 = newPar;
+    ParameterValues.shoulderWidth = newPar;
     }
     public void AdjustOption3(float newPar){
     ParameterValues.option3 = newPar;
