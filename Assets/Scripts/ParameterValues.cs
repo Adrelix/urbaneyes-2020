@@ -4,16 +4,16 @@ using UnityEngine;
 
 public static class ParameterValues
 {
-    public static float option1, option2, option3, option4, option5;
+    public static float streetWidth, shoulderWidth, option3, option4, option5;
 
 
-    public static float Option1 {			//note caps på func namn
-	get{return option1;}
-	set{option1=value;}
+    public static float StreetWidth {			//note caps på func namn
+	get{return streetWidth;}
+	set{streetWidth=value;}
     }
-    public static float Option2 {
-	get{return option2;}
-	set{option2=value;}
+    public static float ShoulderWidth {
+	get{return shoulderWidth;}
+	set{shoulderWidth=value;}
     }
     public static float Option3 {
 	get{return option3;}

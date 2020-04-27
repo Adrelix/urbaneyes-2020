@@ -902,7 +902,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.5
+  m_Text: 100
 --- !u!222 &775358870
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2708,10 +2708,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 1240981553}
   m_HandleRect: {fileID: 2142072932}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: 50
+  m_MaxValue: 200
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
