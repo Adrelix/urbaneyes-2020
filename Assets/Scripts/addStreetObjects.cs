@@ -67,7 +67,7 @@ public class addStreetObjects : MonoBehaviour
 
             if (bench && !customObject)
             {
-                Vector3 scaleChange = new Vector3(0.6f, 0.6f, 0.6f);
+                Vector3 scaleChange = new Vector3(0.45f, 0.45f, 0.45f);
                 GameObject bench = (GameObject)Instantiate(Resources.Load("bench"), pos, Quaternion.identity);
                 bench.transform.localScale = scaleChange;
                 if (benchSideRight && bench)
@@ -104,7 +104,7 @@ public class addStreetObjects : MonoBehaviour
 
                 for (int m = 1; m < 5; m++)
                 {
-                    Vector3 scaleChangeBush = new Vector3(0.1f, 0.1f, 0.1f);
+                    Vector3 scaleChangeBush = new Vector3(0.08f, 0.08f, 0.08f);
                     pos += ((PointB - PointA) / NumberOf)/5;
                     if (m % 2 == 0)
                     {
