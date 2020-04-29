@@ -5,7 +5,7 @@ using UnityEngine;
 public class Wall : MonoBehaviour
 {
 
-    public void initWall(Mesh mesh, Vector3 position, Material material) {
+    public void initWall(Mesh mesh, Vector3 position, float windowDistance, Material material) {
         // For lighting
         mesh.RecalculateNormals();
         // TODO: Necessary?
@@ -37,7 +37,7 @@ public class Wall : MonoBehaviour
         renderer.sharedMaterial = tempMaterial;
 
         if (!transform.parent.GetComponentInParent<Floor>().isFirstFloor()) {
-            generateWindows(wallLength, wallHeight, mesh, position);
+            generateWindows(wallLength, wallHeight, mesh, position, windowDistance);
         }
     }
 
@@ -52,17 +52,19 @@ public class Wall : MonoBehaviour
         return uvs;
     }
 
-    private void generateWindows(float wallLength, float wallHeight, Mesh mesh, Vector3 position) {
+    private void generateWindows(float wallLength, float wallHeight, Mesh mesh, Vector3 position, float minWindowDistance) {
         // TODO: get acutal window dimensions
-        float windowLength = 2f;
+        float windowLength = 0.6f;
         float windowHeight = 1.5f;
         // Offset is the distance from the corner of the wall to the first window
         float minOffset = 2f;
 
+        float totalWindowDist = Mathf.Max(windowLength + minWindowDistance, windowLength);
+
         // Calculate the maximum num. of windows you can fit on the wall
-        int numOfWindows = (int)((wallLength - (2f * minOffset)) / windowLength);
+        int numOfWindows = (int)((wallLength - (2f * minOffset)) / totalWindowDist);
         // Calculate the actual margins
-        float offset = (wallLength - (numOfWindows * windowLength)) / 2f;
+        float offset = (wallLength - (numOfWindows * totalWindowDist)) / 2f;
         // Calculate direction along the wall
         Vector3 wallNormal = mesh.normals[0];
         Vector3 wallPath = Quaternion.AngleAxis(-90f, Vector3.up) * wallNormal;
@@ -71,7 +73,7 @@ public class Wall : MonoBehaviour
         windowPosition.y += (wallHeight - windowHeight) / 2; // place windows in center of wall (y-axis)
         for (int i = 0; i < numOfWindows; i++) {
             // Center window, x/y-axis
-            windowPosition += wallPath * windowLength / 2f;
+            windowPosition += wallPath * totalWindowDist / 2f;
 
             // Load window prefab and set as child
             GameObject windowInst = Instantiate(Resources.Load("Window_low_poly2"), windowPosition, Quaternion.identity) as GameObject;
@@ -81,7 +83,7 @@ public class Wall : MonoBehaviour
             windowInst.transform.rotation = Quaternion.FromToRotation(Vector3.forward, wallNormal);
 
             // Add second half
-            windowPosition += wallPath * windowLength / 2f;
+            windowPosition += wallPath * totalWindowDist / 2f;
         }
     }
 }

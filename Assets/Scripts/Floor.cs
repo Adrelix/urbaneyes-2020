@@ -6,7 +6,7 @@ public class Floor : MonoBehaviour
 {
     private int floorNumber;
 
-    public void initFloor(int id, Vector3[] baseVertices, float floorHeight, Vector3 position, Material material) {
+    public void initFloor(int id, Vector3[] baseVertices, float floorHeight, Vector3 position, float windowDistance, Material material) {
         this.floorNumber = id;
         // Create roof vertices from basePolygon
         Vector3[] roofVertices = new Vector3[baseVertices.Length];
@@ -44,17 +44,17 @@ public class Floor : MonoBehaviour
 
             // Since the vertices are defined at origin, we need to offset the pos by the given position
             Vector3 newPosition = baseVertices[i] + position;
-            generateWall(i, mesh, newPosition, material);
+            generateWall(i, mesh, newPosition, windowDistance, material);
         }
 
     }
 
     // Generate a wall based on "wall specific arguments"
-    private void generateWall(int id, Mesh wallMesh, Vector3 wallPosition, Material wallMaterial) {
+    private void generateWall(int id, Mesh wallMesh, Vector3 wallPosition, float windowDistance, Material wallMaterial) {
         GameObject obj = new GameObject($"Wall {id}");
         obj.transform.parent = transform; // Set this building as parent
         obj.AddComponent<Wall>();
-        obj.GetComponent<Wall>().initWall(wallMesh, wallPosition, wallMaterial);
+        obj.GetComponent<Wall>().initWall(wallMesh, wallPosition, windowDistance, wallMaterial);
     }
 
     // let children ask if this is first floor
