@@ -67,7 +67,7 @@ public class addStreetObjects : MonoBehaviour
 
             if (bench && !customObject)
             {
-                Vector3 scaleChange = new Vector3(0.45f, 0.45f, 0.45f);
+                Vector3 scaleChange = new Vector3(0.25f, 0.25f, 0.25f);
                 GameObject bench = (GameObject)Instantiate(Resources.Load("bench"), pos, Quaternion.identity);
                 bench.transform.localScale = scaleChange;
                 if (benchSideRight && bench)
@@ -87,11 +87,15 @@ public class addStreetObjects : MonoBehaviour
                 pos += ((PointB - PointA) / NumberOf) / 2;
                 if (i % 2 == 0)
                 {
-                    GameObject tree = (GameObject)Instantiate(Resources.Load("Birch_9"), pos, Quaternion.identity);
+                    Vector3 scaleChange = new Vector3(0.22f, 0.22f, 0.22f);
+                    GameObject tree = (GameObject)Instantiate(Resources.Load("Tree1"), pos, Quaternion.identity);
+                    tree.transform.localScale = scaleChange;
                 }
                 else
                 {
-                    GameObject tree = (GameObject)Instantiate(Resources.Load("Birch_3"), pos, Quaternion.identity);
+                    Vector3 scaleChange = new Vector3(0.22f, 0.22f, 0.22f);
+                    GameObject tree = (GameObject)Instantiate(Resources.Load("Tree1"), pos, Quaternion.identity);
+                    tree.transform.localScale = scaleChange;
                 }
             }
 
