@@ -65,8 +65,13 @@ PrefabInstance:
     - target: {fileID: 5197197531770344581, guid: ff7644d0cbc5f25feb16f0e8cb9df87a,
         type: 3}
       propertyPath: m_Name
-      value: Window_low_poly
+      value: Window_low_poly2
       objectReference: {fileID: 0}
+    - target: {fileID: 7405597713197205604, guid: ff7644d0cbc5f25feb16f0e8cb9df87a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a30396aa24fb0e28aefcdafba189fec, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff7644d0cbc5f25feb16f0e8cb9df87a, type: 3}
 --- !u!4 &463584220716577245 stripped
