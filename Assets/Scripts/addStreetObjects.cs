@@ -62,6 +62,8 @@ public class addStreetObjects : MonoBehaviour
                 {
                     Vector3 scaleChangeCustomObject = new Vector3(scaleCustomObject, scaleCustomObject, scaleCustomObject);
                     streetObject.transform.localScale = scaleChangeCustomObject;
+                    Vector3 v = PointB - PointA;
+                    streetObject.transform.rotation = Quaternion.FromToRotation(Vector3.forward, v);
                 }
             }
 
