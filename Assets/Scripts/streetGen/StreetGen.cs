@@ -55,16 +55,15 @@ public class StreetGen : MonoBehaviour {
 
     }
     public void removeRoads() {
-        Transform roadContainer = GameObject.Find("RoadContainer").transform;
-        int children = roadContainer.childCount;
-        for (int i = 0; i < children; i++)
-        {
-            DestroyImmediate(roadContainer.GetChild(0).gameObject);
-            
+        GameObject roadContainer = GameObject.Find("RoadContainer");
+        if(roadContainer) {
+            Transform rc = roadContainer.transform;
+            int children = rc.childCount;
+            for (int i = 0; i < children; i++)
+            {
+                DestroyImmediate(rc.GetChild(0).gameObject);
+                
+            }
         }
-        // foreach (Transform road in roadContainer)
-        // {
-        //     DestroyImmediate(road.gameObject);
-        // }
     }
 }
