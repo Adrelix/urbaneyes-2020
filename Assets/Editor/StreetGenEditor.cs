@@ -14,9 +14,15 @@ public class StreetGenEditor : Editor
         DrawDefaultInspector();
 
         StreetGen streetScript = (StreetGen)target;
-        if(GUILayout.Button("Create street"))
+        if(GUILayout.Button("Create roads"))
         {
             streetScript.makeRoad();
         }
+
+        if(GUILayout.Button("Remove all roads"))
+        {
+            streetScript.removeRoads();
+        }
+
     }
 }

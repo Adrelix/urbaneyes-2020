@@ -28,10 +28,19 @@ public class StreetGen : MonoBehaviour {
         GeoJsonParser p = new GeoJsonParser(geojsonData);
         List<Road> roads = p.GetRoads();
         GSDRoadSystem RoadSystem;
+        GameObject rc;
+        if(!GameObject.Find("RoadContainer")) {
+            rc = new GameObject("RoadContainer");
+        }
 
         // do road stuff
         foreach(Road road in roads) {
+            if(GameObject.Find(road.id)) {
+                // it already exists
+            } else {
+
             GameObject tRoadSystemObj = new GameObject(road.id);
+            tRoadSystemObj.transform.parent = GameObject.Find("RoadContainer").transform;
             RoadSystem = tRoadSystemObj.AddComponent<GSDRoadSystem>(); 	//Add road system component.
             RoadSystem.opt_bAllowRoadUpdates = false;
             GSDRoad firstroad = GSDRoadAutomation.CreateRoad_Programmatically(RoadSystem, ref road.nodes);
@@ -41,7 +50,21 @@ public class StreetGen : MonoBehaviour {
             // firstroad
             RoadSystem.opt_bAllowRoadUpdates = true;
             RoadSystem.UpdateAllRoads();
+            }
         }
 
+    }
+    public void removeRoads() {
+        Transform roadContainer = GameObject.Find("RoadContainer").transform;
+        int children = roadContainer.childCount;
+        for (int i = 0; i < children; i++)
+        {
+            DestroyImmediate(roadContainer.GetChild(0).gameObject);
+            
+        }
+        // foreach (Transform road in roadContainer)
+        // {
+        //     DestroyImmediate(road.gameObject);
+        // }
     }
 }
