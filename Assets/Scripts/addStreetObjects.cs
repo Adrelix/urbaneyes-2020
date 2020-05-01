@@ -62,13 +62,15 @@ public class addStreetObjects : MonoBehaviour
                 {
                     Vector3 scaleChangeCustomObject = new Vector3(scaleCustomObject, scaleCustomObject, scaleCustomObject);
                     streetObject.transform.localScale = scaleChangeCustomObject;
+                    Vector3 v = PointB - PointA;
+                    streetObject.transform.rotation = Quaternion.FromToRotation(Vector3.forward, v);
                 }
             }
 
             if (bench && !customObject)
             {
-                Vector3 scaleChange = new Vector3(0.6f, 0.6f, 0.6f);
-                GameObject bench = (GameObject)Instantiate(Resources.Load("bench"), pos, Quaternion.identity);
+                Vector3 scaleChange = new Vector3(0.25f, 0.25f, 0.25f);
+                GameObject bench = (GameObject)Instantiate(Resources.Load("Street Foilage/bench"), pos, Quaternion.identity);
                 bench.transform.localScale = scaleChange;
                 if (benchSideRight && bench)
                 {
@@ -87,11 +89,15 @@ public class addStreetObjects : MonoBehaviour
                 pos += ((PointB - PointA) / NumberOf) / 2;
                 if (i % 2 == 0)
                 {
-                    GameObject tree = (GameObject)Instantiate(Resources.Load("Birch_9"), pos, Quaternion.identity);
+                    Vector3 scaleChange = new Vector3(0.1332066f, 0.18554f, 0.1430087f);
+                    GameObject tree = (GameObject)Instantiate(Resources.Load("Street Foilage/streetTree1"), pos, Quaternion.identity);
+                    tree.transform.localScale = scaleChange;
                 }
                 else
                 {
-                    GameObject tree = (GameObject)Instantiate(Resources.Load("Birch_3"), pos, Quaternion.identity);
+                    Vector3 scaleChange = new Vector3(0.1332066f, 0.18554f, 0.1430087f);
+                    GameObject tree = (GameObject)Instantiate(Resources.Load("Street Foilage/streetTree2"), pos, Quaternion.identity);
+                    tree.transform.localScale = scaleChange;
                 }
             }
 
@@ -104,7 +110,7 @@ public class addStreetObjects : MonoBehaviour
 
                 for (int m = 1; m < 5; m++)
                 {
-                    Vector3 scaleChangeBush = new Vector3(0.1f, 0.1f, 0.1f);
+                    Vector3 scaleChangeBush = new Vector3(0.08f, 0.08f, 0.08f);
                     pos += ((PointB - PointA) / NumberOf)/5;
                     if (m % 2 == 0)
                     {

@@ -17,9 +17,10 @@ using OsmSharp.Complete;
 public class ObjectBuilder : MonoBehaviour 
 {
     public TextAsset geojsonData;
-    public Material material;
+    public float floorHeight;
+    public float windowDistance;
+    public float doorDistance;
     
-
     // Uses GeoJsonParser to get building information from a file. Then, for each building
     // described by the file, creates a GameObject in the scene by dynamically creating the 
     // buiding's mesh and triangles and placing it in the scene accordingly.
@@ -37,7 +38,7 @@ public class ObjectBuilder : MonoBehaviour
         {
             GameObject obj = new GameObject(building.id); // Adds to the scene
             obj.AddComponent<Building>();
-            obj.GetComponent<Building>().initBuilding(building);
+            obj.GetComponent<Building>().initBuilding(building, floorHeight, windowDistance, doorDistance);
         }
     }
 }

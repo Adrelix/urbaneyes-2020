@@ -5,7 +5,6 @@ using System;
 
 public class Building : MonoBehaviour {
 
-    private float floorHeight = 2.5f;
     private Vector3[] floorBase;
 
     // magnitude of random noise when picking stucco colors
@@ -20,7 +19,7 @@ public class Building : MonoBehaviour {
         new float[] {0.125f, 0.58f, 0.55f}  // beige
     };
 
-    public void initBuilding(BuildingData data) {
+    public void initBuilding(BuildingData data, float floorHeight, float windowDistance, float doorDistance) {
         // Init the floorbase of the building
         this.floorBase = data.basePolygon;
         this.transform.position = data.position;
@@ -30,14 +29,14 @@ public class Building : MonoBehaviour {
         // Create first floor with specific arguments
         // TODO: Not hardcode material
         Material firstFloorMaterial = getRandomFirstFloorMaterial();
-        generateFloor(0, floorHeight * 1.25f, firstFloorMaterial);
+        generateFloor(0, floorHeight * 1.25f, windowDistance, doorDistance, firstFloorMaterial);
 
         // Handle upper floors if they exist
         // TODO: Not hardcode material
         Material upperFloorsMaterial = getRandomUpperFloorMaterial();
         // generate upper floors
         for (int i = 1 ; i < data.levels; i++) {
-            generateFloor(i, floorHeight, upperFloorsMaterial);
+            generateFloor(i, floorHeight, windowDistance, doorDistance, upperFloorsMaterial);
         }
 
         //GameObject meshObj = new GameObject();
@@ -63,11 +62,11 @@ public class Building : MonoBehaviour {
     }
 
     // Generate a floor based on "floor specific arguments"
-    private void generateFloor(int id, float currentFloorHeight, Material material) {
+    private void generateFloor(int id, float currentFloorHeight, float windowDistance, float doorDistance, Material material) {
         GameObject obj = new GameObject($"Floor {id}");
         obj.transform.parent = transform; // Set this building as parent
         obj.AddComponent<Floor>();
-        obj.GetComponent<Floor>().initFloor(id, this.floorBase, currentFloorHeight, this.transform.position, material);
+        obj.GetComponent<Floor>().initFloor(id, this.floorBase, currentFloorHeight, this.transform.position, windowDistance, doorDistance, material);
         // Update global floor base for next floor
         this.floorBase = Array.ConvertAll(this.floorBase, (baseVector => new Vector3(baseVector.x, baseVector.y + currentFloorHeight, baseVector.z)));
     }
