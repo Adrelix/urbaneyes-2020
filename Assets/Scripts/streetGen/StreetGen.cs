@@ -62,7 +62,7 @@ public class StreetGen : MonoBehaviour {
             int children = rc.childCount;
             for (int i = 0; i < children; i++)
             {
-                DestroyImmediate(rc.GetChild(0).gameObject);s
+                DestroyImmediate(rc.GetChild(0).gameObject);
             }
         }
     }
