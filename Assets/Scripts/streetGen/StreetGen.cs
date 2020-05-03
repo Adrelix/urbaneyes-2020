@@ -15,8 +15,10 @@ using GSD.Roads;
     // See "GSDUnitTests.cs" for an example on automation (ignore unit test #3).
 public class StreetGen : MonoBehaviour {
     [ExecuteInEditMode]
-    public TextAsset geojsonData;
     // Get building data from GEOjson file
+    public TextAsset geojsonData;
+    public float laneWidthPercent;
+    public float shoulderWidthPercent;
     void Start(){
     }
 
@@ -28,17 +30,40 @@ public class StreetGen : MonoBehaviour {
         GeoJsonParser p = new GeoJsonParser(geojsonData);
         List<Road> roads = p.GetRoads();
         GSDRoadSystem RoadSystem;
+        GameObject rc;
+        if(!GameObject.Find("RoadContainer")) {
+            rc = new GameObject("RoadContainer");
+        }
 
         // do road stuff
         foreach(Road road in roads) {
-            GameObject tRoadSystemObj = new GameObject(road.id);
-            RoadSystem = tRoadSystemObj.AddComponent<GSDRoadSystem>(); 	//Add road system component.
-            RoadSystem.opt_bAllowRoadUpdates = false;
-            GSDRoad firstroad = GSDRoadAutomation.CreateRoad_Programmatically(RoadSystem, ref road.nodes);
-            //GSDRoadAutomation.CreateIntersections_ProgrammaticallyForRoad(firstroad, GSDRoadIntersection.iIntersectionTypeEnum.None, GSDRoadIntersection.RoadTypeEnum.NoTurnLane);
-            RoadSystem.opt_bAllowRoadUpdates = true;
-            RoadSystem.UpdateAllRoads();
+            if(GameObject.Find(road.id)) {
+                // it already exists
+            } else {
+                GameObject tRoadSystemObj = new GameObject(road.id);
+                tRoadSystemObj.transform.parent = GameObject.Find("RoadContainer").transform;
+                RoadSystem = tRoadSystemObj.AddComponent<GSDRoadSystem>(); 	//Add road system component.
+                RoadSystem.opt_bAllowRoadUpdates = false;
+                GSDRoad firstroad = GSDRoadAutomation.CreateRoad_Programmatically(RoadSystem, ref road.nodes);
+                // GSDRoadAutomation.CreateIntersections_ProgrammaticallyForRoad(firstroad, GSDRoadIntersection.iIntersectionTypeEnum.None, GSDRoadIntersection.RoadTypeEnum.NoTurnLane);
+                firstroad.opt_LaneWidth = laneWidthPercent / 100f * 5f;
+                firstroad.opt_ShoulderWidth = shoulderWidthPercent / 100f * 3f;
+                // firstroad
+                RoadSystem.opt_bAllowRoadUpdates = true;
+                RoadSystem.UpdateAllRoads();
+            }
         }
 
+    }
+    public void removeRoads() {
+        GameObject roadContainer = GameObject.Find("RoadContainer");
+        if(roadContainer) {
+            Transform rc = roadContainer.transform;
+            int children = rc.childCount;
+            for (int i = 0; i < children; i++)
+            {
+                DestroyImmediate(rc.GetChild(0).gameObject);s
+            }
+        }
     }
 }
