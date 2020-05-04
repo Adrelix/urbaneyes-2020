@@ -34,9 +34,19 @@ public class ObjectBuilder : MonoBehaviour
         GeoJsonParser p = new GeoJsonParser(geojsonData);
         List<BuildingData> buildings = p.GetBuildings();
 
+        var oldBuildings = GameObject.FindWithTag("Buildings");
+        if (oldBuildings) {
+            // Immediate to destroy even in edit mode
+            DestroyImmediate(oldBuildings);
+        }
+
+        var newBuildings = new GameObject();
+        newBuildings.tag = "Buildings";
+
         foreach (BuildingData building in buildings)
         {
             GameObject obj = new GameObject(building.id); // Adds to the scene
+            obj.transform.parent = newBuildings.transform;
             obj.AddComponent<Building>();
             obj.GetComponent<Building>().initBuilding(building, floorHeight, windowDistance, doorDistance);
         }
