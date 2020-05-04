@@ -24,8 +24,8 @@ public class PlayerMovement : MonoBehaviour
         float forward = Input.GetAxis("Vertical") * 0.05f;
         float side = Input.GetAxis("Horizontal") * 0.05f;
 
-	Vector3 m = new Vector3(forward, 0, side);
-	Vector3 norm = Vector3.Normalize(m);
+        Vector3 m = new Vector3(forward, 0, side);
+        Vector3 norm = Vector3.Normalize(m);
 
         Vector3 movement = norm.x * transform.forward + norm.z * transform.right;
         characterController.Move(movement * movementSpeed * Time.deltaTime);
@@ -33,15 +33,17 @@ public class PlayerMovement : MonoBehaviour
         float h = sensitivity * Input.GetAxis("Mouse X");
         float v = sensitivity * -Input.GetAxis("Mouse Y");
 
-	if (characterController.isGrounded) {
-		velocity.y = 0;
-	} else {
-		velocity += Physics.gravity * Time.deltaTime;
-	}
-	
-	characterController.Move(velocity);
+        if (characterController.isGrounded) {
+            velocity.y = 0;
+        } else {
+            velocity += Physics.gravity * Time.deltaTime;
+        }
+        
+        characterController.Move(velocity);
 
-        transform.Rotate(0, h, 0);
-        firstPersonCamera.transform.Rotate(v, 0, 0);
+        if (!Input.GetKey(KeyCode.LeftShift)) {
+            transform.Rotate(0, h, 0);
+            firstPersonCamera.transform.Rotate(v, 0, 0);
+        }
     }
 }
